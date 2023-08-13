@@ -1,16 +1,14 @@
-import { Loader } from 'Components'
-import { useThemeManager } from 'Hooks/Ui'
+import { Loader, SideBar } from 'Components'
 import { Suspense } from 'react'
 import { Outlet } from 'react-router-dom'
 
 const PagesLayout = () => {
-  const { isDarkTheme, handleThemeToggle } = useThemeManager()
-
   return (
     <Suspense fallback={<Loader />}>
-      <div className='bg-bg/100-light dark:bg-bg/100-dark min-h-screen'>
+      <div className='bg-bg/100-light dark:bg-bg/100-dark min-h-screen flex justify-between w-full '>
         <Outlet />
-        <button onClick={handleThemeToggle}>Switch to {isDarkTheme() ? 'light mode' : 'dark mode'}</button>
+
+        <SideBar />
       </div>
     </Suspense>
   )
