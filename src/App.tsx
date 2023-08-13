@@ -1,11 +1,8 @@
-import "./App.css";
+import './App.css'
+import RoutesSwitches from 'Routes/Routes'
 
 function App() {
-  return (
-    <div className="App">
-      <h1 className="bg-red-800">aya</h1>
-    </div>
-  );
+  return <RoutesSwitches />
 }
 
-export default App;
+export default App
