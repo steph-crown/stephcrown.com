@@ -8,6 +8,7 @@ module.exports = {
         MSMedium: ['MSMedium', 'sans-serif'],
         MSMediumWide: ['MSMediumWide', 'sans-serif'],
         MSMediumRegular: ['MSMediumRegular', 'sans-serif'],
+        MSMediumItalic: ['MSMediumItalic', 'monospace'],
       },
       colors: {
         'bg/5': {
@@ -19,7 +20,7 @@ module.exports = {
           light: '#FFFFFF',
         },
         'navbg/100': {
-          dark: '#1C1C1C',
+          dark: '#181818',
           light: '#F7F7F5',
         },
         navborder: {
@@ -30,9 +31,29 @@ module.exports = {
           dark: '#FFFFFF',
           light: '#161616',
         },
+        'fg/80': {
+          dark: 'rgba(255, 255, 255, 0.80)',
+          light: 'rgba(0, 0, 0, 0.80)',
+        },
+        'fg/70': {
+          dark: 'rgba(255, 255, 255, 0.70)',
+          light: 'rgba(0, 0, 0, 0.70)',
+        },
+        'fg/60': {
+          dark: 'rgba(255, 255, 255, 0.60)',
+          light: 'rgba(0, 0, 0, 0.60)',
+        },
         'fg/50': {
           dark: 'rgba(255, 255, 255, 0.50)',
           light: 'rgba(0, 0, 0, 0.50)',
+        },
+        'fg/40': {
+          dark: 'rgba(255, 255, 255, 0.40)',
+          light: 'rgba(0, 0, 0, 0.40)',
+        },
+        'fg/20': {
+          dark: 'rgba(255, 255, 255, 0.20)',
+          light: 'rgba(0, 0, 0, 0.20)',
         },
       },
     },
