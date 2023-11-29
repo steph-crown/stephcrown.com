@@ -56,6 +56,9 @@ module.exports = {
           light: 'rgba(0, 0, 0, 0.20)',
         },
       },
+      screens: {
+        xs: '300px',
+      },
     },
   },
   plugins: [],

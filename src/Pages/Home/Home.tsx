@@ -5,15 +5,15 @@ import { PersonViewingMicroscope } from 'Assets/Pngs'
 const Home = () => {
   return (
     <div className='h-full flex-col justify-between flex'>
-      <div>
-        <p className='text-fg/20-light dark:text-fg/20-dark font-MSMedium text-5xl'>{'</>'}</p>
+      <div className=' mt-10 md:mt-0'>
+        <h1 className='h1'>{'</>'}</h1>
 
         <article className='max-w-[757px]'>
-          <h2 className='font-MSMediumWide my-2 text-fg/100-light dark:text-fg/100-dark text-5xl leading-[160%]'>
+          <h1 className='my-2 h1'>
             <span className='font-MSMediumWide text-fg/50-light dark:text-fg/50-dark'>Hey There, I am</span>
             <br />
             Stephen Emmanuel<span className='font-MSMediumWide text-fg/50-light dark:text-fg/50-dark'>.</span>
-          </h2>
+          </h1>
           {/*  */}
 
           <p className='font-MSMediumItalic text-sm text-fg/40-light dark:text-fg/40-dark'>

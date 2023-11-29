@@ -6,7 +6,15 @@
     transition: 0.2s ease-in;
   }
 
+  body {
+    @apply overflow-x-hidden;
+  }
+
   .p {
     @apply text-lg text-fg/80-light dark:text-fg/80-dark mt-8 mb-10 leading-[160%];
+  }
+
+  .h1 {
+    @apply font-MSMediumWide text-fg/100-light dark:text-fg/100-dark text-3xl xs:text-[32px] md:text-5xl leading-[160%];
   }
 }

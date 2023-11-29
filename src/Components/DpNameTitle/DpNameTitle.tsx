@@ -6,8 +6,8 @@ const DpNameTitle = () => {
     <div className='flex items-center '>
       <img src={stephcrown} alt='Steph Crown' className='h-10' />
       <div className='ml-4'>
-        <p className='font-MSMediumWide leading-[160%] dark:text-fg/100-dark text-fg/100-light text-base'>Stephen Emmanuel</p>
-        <p className='leading-[160%] text-fg/50-light dark:text-fg/50-dark font-MSMedium text-sm'>Software Engineer</p>
+        <p className='font-MSMediumWide leading-[160%] dark:text-fg/100-dark text-fg/100-light  text-sm xs:text-base'>Stephen Emmanuel</p>
+        <p className='leading-[160%] text-fg/50-light dark:text-fg/50-dark font-MSMedium text-xs xs:text-sm'>Software Engineer</p>
       </div>
     </div>
   )

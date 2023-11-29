@@ -1,7 +1,7 @@
 import { DpNameTitle, Loader, SideBar } from 'Components'
-import { Suspense, useState } from 'react'
 
 import { Outlet } from 'react-router-dom'
+import { Suspense } from 'react'
 import { useDisclosure } from 'Hooks/Ui'
 
 const PagesLayout = () => {
@@ -14,10 +14,13 @@ const PagesLayout = () => {
         <header className='fixed top-0 w-full md:hidden bg-navbg/100-light dark:bg-navbg/100-dark border-nav border-b p-6 flex justify-between items-center'>
           <DpNameTitle />
 
-          <button onClick={toggleMobileMenu} className={`flex flex-col justify-end items-end gap-2.5 ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
-            <div className={`w-[34px] h-[1px] ${hamburgerDashClassName}`} />
-            <div className={`w-[34px] h-[1px] ${hamburgerDashClassName}`} />
-            <div className={`w-[20px] h-[1px] ${hamburgerDashClassName}`} />
+          <button
+            onClick={toggleMobileMenu}
+            className={`flex flex-col justify-end items-end gap-1.5 xs:gap-2.5 ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}
+          >
+            <div className={`w-[24px] xs:w-[34px] h-[1px] ${hamburgerDashClassName}`} />
+            <div className={`w-[24px] xs:w-[34px] h-[1px] ${hamburgerDashClassName}`} />
+            <div className={`w-[12px] h-[1px] ${hamburgerDashClassName}`} />
           </button>
         </header>
 
@@ -25,7 +28,7 @@ const PagesLayout = () => {
           <SideBar hideDpNameTitle className='w-full' />
         </div>
 
-        <div className='w-full pl-[15%] py-20 pr-[8%] min-h-[100dvh]'>
+        <div className='w-full pl-[8%] md:pl-[15%] py-20 pr-[8%] min-h-[100dvh]'>
           <Outlet />
         </div>
 

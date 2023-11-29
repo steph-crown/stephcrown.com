@@ -50,11 +50,11 @@
   }
 
   .mobile-menu-open div:nth-child(2) {
-    @apply translate-y-0 rotate-45;
+    @apply translate-y-0 xs:translate-y-0 rotate-45;
   }
 
   .mobile-menu-open div:nth-child(1) {
-    @apply translate-y-2.5 -rotate-45;
+    @apply translate-y-[7px] xs:translate-y-2.5 -rotate-45;
   }
 
   .mobile-menu {
