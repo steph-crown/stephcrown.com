@@ -3,9 +3,11 @@ import { ImageHoverSwitch } from 'Components'
 import { PersonViewingMicroscope } from 'Assets/Pngs'
 
 const Home = () => {
+  const visualMetaphorAlt = 'Visual metaphor: Examining details closely like a detective scrutinizing evidence in a case'
+
   return (
     <div className='h-full flex-col justify-between flex'>
-      <div className=' mt-10 md:mt-0'>
+      <div className='mb-10'>
         <h1 className='h1'>{'</>'}</h1>
 
         <article className='max-w-[757px]'>
@@ -34,7 +36,11 @@ const Home = () => {
         </button>
       </div>
 
-      <ImageHoverSwitch imgSrc={PersonViewingMicroscope} />
+      <div className='tooltip'>
+        <ImageHoverSwitch imgSrc={PersonViewingMicroscope} alt={visualMetaphorAlt} />
+
+        <p className='tooltip-content p'>{visualMetaphorAlt}</p>
+      </div>
     </div>
   )
 }

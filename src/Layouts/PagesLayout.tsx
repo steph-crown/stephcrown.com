@@ -28,7 +28,7 @@ const PagesLayout = () => {
           <SideBar hideDpNameTitle className='w-full' />
         </div>
 
-        <div className='w-full pl-[8%] md:pl-[15%] py-20 pr-[8%] min-h-[100dvh]'>
+        <div className='w-full pl-[8%] md:pl-[15%] py-20 pr-[8%] min-h-[100dvh] mt-10 md:mt-0'>
           <Outlet />
         </div>
 

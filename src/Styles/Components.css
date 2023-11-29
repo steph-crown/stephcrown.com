@@ -64,4 +64,17 @@
   .mobile-menu.open {
     @apply translate-x-0;
   }
+
+  /* tooltip. */
+  .tooltip {
+    @apply relative;
+  }
+
+  .tooltip .tooltip-content {
+    @apply hidden;
+  }
+
+  .tooltip:hover .tooltip-content {
+    @apply block w-80 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  bg-[rgba(0,0,0,0.6)] text-fg/80-dark text-[15px] p-4 rounded-lg;
+  }
 }
