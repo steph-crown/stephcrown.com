@@ -19,7 +19,7 @@ const PagesLayout = () => {
           </div>
         </header>
 
-        <div className='w-full pl-[15%] py-20 pr-[8%]'>
+        <div className='w-full pl-[15%] py-20 pr-[8%] min-h-[100dvh]'>
           <Outlet />
         </div>
 

@@ -12,4 +12,39 @@
   .btn {
     @apply px-8 py-4 rounded-lg text-fg/70-light dark:text-fg/70-dark flex items-center justify-center gap-2 bg-bg/5-light dark:bg-bg/5-dark border-bg/5-light dark:border-bg/5-dark border-solid border-[1px] text-sm;
   }
+
+  /* ImageHoverSwitch */
+  /* Define the styles for the black and white and colored images */
+  .bw {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+    animation: fadeOut 1s ease forwards;
+  }
+
+  .colored {
+    filter: grayscale(0%);
+    animation: fadeIn 1s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      filter: grayscale(100%);
+    }
+    to {
+      filter: grayscale(0%);
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      filter: grayscale(0%);
+    }
+    to {
+      filter: grayscale(100%);
+    }
+  }
+
+  /* .bw:hover {
+    animation: fadeOut 5s ease forwards;
+  } */
 }
