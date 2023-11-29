@@ -2,18 +2,29 @@ import { ArticleIcon, CourseIcon, DarkModeIcon, EmailIcon, HomeIcon, LightModeIc
 import { DpNameTitle, SideNavLink } from 'Components'
 
 import { AppRoutes } from 'Constants'
+import { FC } from 'react'
 import { useThemeManager } from 'Hooks/Ui'
 
-const SideBar = () => {
+type Props = {
+  hideDpNameTitle?: boolean
+  className?: string
+}
+
+const SideBar: FC<Props> = ({ hideDpNameTitle, className }) => {
   const { isDarkTheme, handleThemeToggle } = useThemeManager()
 
   return (
-    <div className='w-[17.5rem] bg-navbg/100-light dark:bg-navbg/100-dark h-screen px-4 py-12 border-nav border-l'>
+    <div className={`w-[17.5rem] bg-navbg/100-light dark:bg-navbg/100-dark h-screen px-4 py-12 border-nav border-l ${className}`}>
       <div className='flex flex-col justify-between h-full'>
         <div>
           {/* dp, name and title. */}
-          <DpNameTitle />
-          <div className='flex flex-col gap-4 mt-10'>
+          {!hideDpNameTitle && (
+            <div className='mb-10'>
+              <DpNameTitle />
+            </div>
+          )}
+
+          <div className='flex flex-col gap-4 '>
             <SideNavLink label='Home' to={AppRoutes.Home} icon={<HomeIcon />} />
             {/* <SideNavLink label='Projects' to={AppRoutes.Projects} icon={<ProjectIcon />} /> */}
             <SideNavLink label='Articles' to={AppRoutes.Articles} icon={<ArticleIcon />} />
