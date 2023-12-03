@@ -1,15 +1,16 @@
-import { Worker } from '@react-pdf-viewer/core'
+import { DownloadIcon } from 'Assets/Svgs'
 
 const PdfViewer = () => {
   return (
-    <Worker workerUrl='https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js'>
-      <div
-        style={{
-          border: '1px solid rgba(0, 0, 0, 0.3)',
-          height: '750px',
-          overflowY: 'scroll',
-        }}
-      >
+    <div>
+      <div className='flex justify-end w-full mb-4'>
+        <a href='/Emmanuel_Stephen_Resume.pdf' download={true}>
+          <button className='btn'>
+            Click to download <DownloadIcon />
+          </button>
+        </a>
+      </div>
+      <div className='h-[calc(100vh_-_14rem)] overflow-y-auto border-nav border rounded-lg'>
         <iframe
           style={{ width: '100%', height: '100%' }}
           src='https://drive.google.com/file/d/1QAnAKZIsmKnvjslyWMV39GDYHWPZUX-e/preview'
@@ -19,7 +20,7 @@ const PdfViewer = () => {
           title='Stephen Emmanuel Resume'
         ></iframe>
       </div>
-    </Worker>
+    </div>
   )
 }
 
