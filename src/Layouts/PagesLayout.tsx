@@ -25,7 +25,7 @@ const PagesLayout = () => {
         </header>
 
         <div className={`block md:hidden mobile-menu w-full ${isMobileMenuOpen ? 'open' : ''}`}>
-          <SideBar hideDpNameTitle className='w-full' />
+          <SideBar hideDpNameTitle className='w-full h-[calc(100vh_-_50px)]' />
         </div>
 
         <div className='w-full pl-[8%] md:pl-[15%] py-20 pr-[8%] min-h-[100dvh] mt-10 md:mt-0'>

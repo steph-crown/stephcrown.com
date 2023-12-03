@@ -8,6 +8,7 @@ const AppRoutes = {
   Courses: '/courses',
   Tools: '/tools',
   Socials: '/socials',
+  Resume: '/resume',
 }
 
 export default AppRoutes

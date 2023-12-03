@@ -1,4 +1,4 @@
-import { ArticleIcon, CourseIcon, DarkModeIcon, EmailIcon, HomeIcon, LightModeIcon, SocialIcon, ToolIcon } from 'Assets/Svgs'
+import { ArticleIcon, CourseIcon, DarkModeIcon, EmailIcon, GraduateIcon, HomeIcon, LightModeIcon, SocialIcon, ToolIcon } from 'Assets/Svgs'
 import { DpNameTitle, SideNavLink } from 'Components'
 
 import { AppRoutes } from 'Constants'
@@ -26,6 +26,7 @@ const SideBar: FC<Props> = ({ hideDpNameTitle, className }) => {
 
           <div className='flex flex-col gap-4 '>
             <SideNavLink label='Home' to={AppRoutes.Home} icon={<HomeIcon />} />
+            <SideNavLink label='Resume' to={AppRoutes.Resume} icon={<GraduateIcon />} />
             {/* <SideNavLink label='Projects' to={AppRoutes.Projects} icon={<ProjectIcon />} /> */}
             <SideNavLink label='Articles' to={AppRoutes.Articles} icon={<ArticleIcon />} />
             <SideNavLink label='Courses' to={AppRoutes.Courses} icon={<CourseIcon />} />
@@ -35,7 +36,7 @@ const SideBar: FC<Props> = ({ hideDpNameTitle, className }) => {
 
         <div className='flex flex-col gap-4 pt-6 border-t border-nav '>
           <SideNavLink label='Socials' to={AppRoutes.Socials} icon={<SocialIcon />} />
-          <SideNavLink label='Email' to={AppRoutes.Projects} icon={<EmailIcon />} />
+          <SideNavLink label='Email' to={'mailto:emmanuelstephen024@gmail.com'} icon={<EmailIcon />} isExternal />
 
           {/* dark mode toggle. */}
           <button className='side-nav text-fg/50-light dark:text-fg/50-dark' onClick={handleThemeToggle}>

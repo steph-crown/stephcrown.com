@@ -58,7 +58,7 @@
   }
 
   .mobile-menu {
-    @apply fixed z-[100] right-0 top-[97px] translate-x-[100vw];
+    @apply fixed z-[100] right-0 top-[93px] translate-x-[100vw];
   }
 
   .mobile-menu.open {
