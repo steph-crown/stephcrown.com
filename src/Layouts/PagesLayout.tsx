@@ -1,12 +1,20 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { DpNameTitle, Loader, SideBar } from 'Components'
+import { Outlet, useLocation } from 'react-router-dom'
+import { Suspense, useEffect } from 'react'
 
-import { Outlet } from 'react-router-dom'
-import { Suspense } from 'react'
 import { useDisclosure } from 'Hooks/Ui'
 
 const PagesLayout = () => {
   const hamburgerDashClassName = 'bg-fg/80-light dark:bg-fg/80-dark '
-  const { isOpen: isMobileMenuOpen, toggle: toggleMobileMenu } = useDisclosure()
+  const { isOpen: isMobileMenuOpen, toggle: toggleMobileMenu, close: closeMobileMenu } = useDisclosure()
+
+  // get current path, and close nav menu anytime path changes.
+  const { pathname } = useLocation()
+  useEffect(() => {
+    console.log({ pathname })
+    closeMobileMenu()
+  }, [pathname])
 
   return (
     <Suspense fallback={<Loader />}>
