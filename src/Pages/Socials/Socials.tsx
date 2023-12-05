@@ -17,8 +17,8 @@ const Socials = () => {
           </h1>
 
           <p className='p'>
-            Hover over any of the cards below, copy the username (or id or name) to copy it or click the arrow icon ↗ at the top right to visit my
-            profile. Feel free to say hello 👋 while you&apos;re there!
+            Hover over (or tap) any of the cards below, click on the username (or id or name) to copy it or click the arrow icon ↗ at the top right
+            to visit my profile. Feel free to say hello 👋 while you&apos;re there!
           </p>
         </article>
       </div>

@@ -1,5 +1,7 @@
+import { APP_ROUTES } from 'Constants'
 import { ArrowRightIcon } from 'Assets/Svgs'
 import { ImageHoverSwitch } from 'Components'
+import { Link } from 'react-router-dom'
 import { PersonViewingMicroscope } from 'Assets/Pngs'
 
 const Home = () => {
@@ -31,9 +33,9 @@ const Home = () => {
           <p className='p'>I write articles, text-based courses, and build software applications.</p>
         </article>
 
-        <button className='btn'>
+        <Link to={APP_ROUTES.Contact} className='btn w-max'>
           Send a message <ArrowRightIcon />
-        </button>
+        </Link>
       </div>
 
       <div className='tooltip'>

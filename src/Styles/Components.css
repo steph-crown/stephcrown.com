@@ -77,4 +77,18 @@
   .tooltip:hover .tooltip-content {
     @apply block w-80 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  bg-[rgba(0,0,0,0.6)] text-fg/80-dark text-[15px] p-4 rounded-lg;
   }
+
+  /* form */
+  .form {
+    @apply flex flex-col gap-10 max-w-3xl;
+  }
+
+  /* form label */
+  .label {
+    @apply text-fg/70-light dark:text-fg/70-dark text-sm w-full block;
+  }
+
+  .input {
+    @apply w-full px-4 py-4 rounded-lg border-solid border-[1px] border-bg/5-light dark:border-bg/5-dark bg-bg/5-light dark:bg-bg/5-dark text-fg/70-light dark:text-fg/70-dark block mt-2 outline-none font-MSMediumWide;
+  }
 }
