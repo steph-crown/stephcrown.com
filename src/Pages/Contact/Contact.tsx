@@ -22,7 +22,7 @@ const Contact = () => {
       </div>
 
       <form className='form'>
-        <div className='flex gap-x-10'>
+        <div className='flex gap-6 md:gap-10 flex-col lg:flex-row'>
           <label className='label'>
             Name: <input type='text' className='input' placeholder='Enter your name' />
           </label>

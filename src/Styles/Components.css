@@ -80,7 +80,7 @@
 
   /* form */
   .form {
-    @apply flex flex-col gap-10 max-w-3xl;
+    @apply flex flex-col gap-6 md:gap-10 max-w-3xl;
   }
 
   /* form label */
