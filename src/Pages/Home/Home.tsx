@@ -12,14 +12,14 @@ const Home = () => {
 
         <article className='max-w-[757px]'>
           <h1 className='my-2 h1'>
-            <span className='font-MSMediumWide text-fg/50-light dark:text-fg/50-dark'>Hey There, I am</span>
+            <span className='h1-alt'>Hey there, I am</span>
             <br />
-            Stephen Emmanuel<span className='font-MSMediumWide text-fg/50-light dark:text-fg/50-dark'>.</span>
+            Stephen Emmanuel<span className='h1-alt'>.</span>
           </h1>
           {/*  */}
 
-          <p className='font-MSMediumItalic text-sm text-fg/40-light dark:text-fg/40-dark'>
-            {'{/*'} also known as <span className='text-fg/60-light dark:text-fg/60-dark font-MSMediumItalic'>Steph Crown</span> {'*/}'}
+          <p className='font-MSXenonMediumItalic text-sm text-fg/40-light dark:text-fg/40-dark'>
+            {'{/*'} also known as <span className='text-fg/60-light dark:text-fg/60-dark font-MSXenonMediumItalic'>Steph Crown</span> {'*/}'}
           </p>
 
           <p className='p'>

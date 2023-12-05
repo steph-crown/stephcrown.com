@@ -17,16 +17,16 @@ const ImageHoverSwitch: React.FC<ImageHoverSwitchProps> = ({ imgSrc, alt, ...res
   const [isColored, setIsColored] = useState(false)
 
   return (
-    <>
-      <img
-        src={imgSrc}
-        className={isColored ? 'colored' : 'bw'}
-        onMouseOver={() => setIsColored(true)}
-        onMouseOut={() => setIsColored(false)}
-        {...rest}
-        alt={alt || 'illustration'}
-      />
-    </>
+    <img
+      src={imgSrc}
+      className={isColored ? 'colored' : 'bw'}
+      onMouseOver={() => setIsColored(true)}
+      onMouseOut={() => setIsColored(false)}
+      onFocus={() => setIsColored(true)}
+      onBlur={() => setIsColored(false)}
+      {...rest}
+      alt={alt ?? 'illustration'}
+    />
   )
 }
 

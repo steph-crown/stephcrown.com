@@ -17,3 +17,8 @@
   font-family: 'MSMediumItalic';
   src: url('./../Assets/Fonts/Mona-Sans-MediumItalic.otf');
 }
+
+@font-face {
+  font-family: 'MSXenonMediumItalic';
+  src: url('./../Assets/Fonts/MonaspaceXenon-MediumItalic.otf');
+}

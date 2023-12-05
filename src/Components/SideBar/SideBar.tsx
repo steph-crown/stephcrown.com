@@ -1,4 +1,4 @@
-import { ArticleIcon, CourseIcon, DarkModeIcon, EmailIcon, GraduateIcon, HomeIcon, LightModeIcon, SocialIcon, ToolIcon } from 'Assets/Svgs'
+import { ArticleIcon, CourseIcon, DarkModeIcon, EmailIcon, GraduateIcon, HeartIcon, HomeIcon, LightModeIcon, SocialIcon, ToolIcon } from 'Assets/Svgs'
 import { DpNameTitle, SideNavLink } from 'Components'
 
 import { APP_ROUTES } from 'Constants'
@@ -37,6 +37,7 @@ const SideBar: FC<Props> = ({ hideDpNameTitle, className }) => {
         <div className='flex flex-col gap-4 pt-6 border-t border-nav '>
           <SideNavLink label='Socials' to={APP_ROUTES.Socials} icon={<SocialIcon />} />
           <SideNavLink label='Email' to={'mailto:emmanuelstephen024@gmail.com'} icon={<EmailIcon />} isExternal />
+          <SideNavLink label='Credits' to={APP_ROUTES.Credits} icon={<HeartIcon />} />
 
           {/* dark mode toggle. */}
           <button className='side-nav text-fg/50-light dark:text-fg/50-dark' onClick={handleThemeToggle}>

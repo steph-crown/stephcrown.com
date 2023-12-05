@@ -19,7 +19,7 @@ const PagesLayout = () => {
   return (
     <Suspense fallback={<Loader />}>
       <div className='bg-bg/100-light dark:bg-bg/100-dark min-h-screen flex justify-between w-full '>
-        <header className='fixed top-0 w-full md:hidden bg-navbg/100-light dark:bg-navbg/100-dark border-nav border-b p-6 flex justify-between items-center'>
+        <header className='fixed top-0 w-full md:hidden bg-navbg/100-light dark:bg-navbg/100-dark border-nav border-b p-6 flex justify-between items-center z-[38383]'>
           <DpNameTitle />
 
           <button

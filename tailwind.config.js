@@ -9,6 +9,7 @@ module.exports = {
         MSMediumWide: ['MSMediumWide', 'sans-serif'],
         MSMediumRegular: ['MSMediumRegular', 'sans-serif'],
         MSMediumItalic: ['MSMediumItalic', 'monospace'],
+        MSXenonMediumItalic: ['MSXenonMediumItalic', 'monospace'],
       },
       colors: {
         'bg/5': {

@@ -9,6 +9,8 @@ const APP_ROUTES = {
   Tools: '/tools',
   Socials: '/socials',
   Resume: '/resume',
+  Credits: '/credits',
+  Contact: '/contact',
 }
 
 export default APP_ROUTES
