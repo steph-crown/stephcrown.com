@@ -6,7 +6,8 @@ const Home = () => {
       <div className='mb-10'>
         <ToolIcon className='h-[4.75rem] w-[4.75rem] text-fg/50-light dark:text-fg/50-dark' />
 
-        <article>
+        <p className='text-fg/100-light dark:text-fg/100-dark font-MSMediumWide'>Undergoing Construction ..</p>
+        {/* <article>
           <h1 className='my-2 h1'>
             <span className='h1-alt'>Languages, tools, and frameworks</span>
             <br />I work with<span className='h1-alt'>.</span>
@@ -16,7 +17,7 @@ const Home = () => {
             Here&apos;s a list of some of the languages, tools, and frameworks I work with. I&apos;m always learning new things and I&apos;m open to
             new ideas and technologies.
           </p>
-        </article>
+        </article> */}
       </div>
     </div>
   )

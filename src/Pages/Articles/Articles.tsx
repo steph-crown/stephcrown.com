@@ -2,7 +2,6 @@ import { ArticleCardHoverContent, HoverCard } from 'Components'
 
 import { ARTICLE_LIST } from 'Constants'
 import { ArticleIcon } from 'Assets/Svgs'
-import { WaysVariablesAreDeclared } from 'Assets/Pngs'
 
 const Home = () => {
   return (
@@ -12,8 +11,9 @@ const Home = () => {
 
         <article>
           <h1 className='my-2 h1'>
-            <span className='h1-alt'>Languages, tools, and frameworks</span>
-            <br />I work with<span className='h1-alt'>.</span>
+            <span className='h1-alt'>My Published</span>
+            <br />
+            Articles<span className='h1-alt'>.</span>
           </h1>
 
           <p className='p'>
@@ -32,7 +32,7 @@ const Home = () => {
             from you.
           </p>
 
-          <p className='p'>Hover over (or tap) any of the cards below and click the arrow icon ↗ at the top right to read the article.</p>
+          <p className='p'>Hover over (or tap on) any of the cards below and click the arrow icon ↗ at the top right to read the article.</p>
         </article>
       </div>
 
