@@ -25,7 +25,7 @@ const Socials = () => {
 
       <section className='flex justify-between flex-wrap gap-y-10' aria-details='Stephen Social media links'>
         {SOCIAL_MEDIA_DATA.map((data) => (
-          <div className='w-full lg:w-[47.5%]' key={data?.name}>
+          <div className='w-full lg:w-[47.5%]' key={data?.name} data-aos='fade-up'>
             <HoverCard
               bgImage={data?.bgImage}
               label={data.name}
