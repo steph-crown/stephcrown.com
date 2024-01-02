@@ -14,6 +14,15 @@ import { ArticleType } from 'Types'
 
 const ARTICLE_LIST: ArticleType[] = [
   {
+    name: 'My Fourth Year in Tech and University: A Holistic Review',
+    bgImage:
+      'https://cdn.hashnode.com/res/hashnode/image/upload/v1703835610973/cf4fb56b-1ba2-4400-b409-308a08942d00.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
+    url: 'https://blog.stephcrown.com/my-fourth-year-in-tech-and-university-a-holistic-review',
+    platform: 'Hashnode',
+    description:
+      'This piece is a candid reflection on my journey through tech and academia, filled with ups, downs, and invaluable lessons learned along the way.',
+  },
+  {
     name: '8 Ways Variables Are Declared in JavaScript',
     bgImage: WaysVariablesAreDeclared,
     url: 'https://blog.stephcrown.com/8-ways-variables-are-declared-in-javascript',
