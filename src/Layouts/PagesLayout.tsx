@@ -18,7 +18,7 @@ const PagesLayout = () => {
 
   return (
     <Suspense fallback={<Loader />}>
-      <div className='bg-bg/100-light dark:bg-bg/100-dark min-h-screen flex justify-between w-full '>
+      <div className='bg-bg/100-light dark:bg-bg/100-dark min-h-screen flex justify-between w-full relative'>
         <header className='fixed top-0 w-full md:hidden bg-navbg/100-light dark:bg-navbg/100-dark border-nav border-b p-6 flex justify-between items-center z-[38383]'>
           <DpNameTitle />
 
@@ -32,8 +32,8 @@ const PagesLayout = () => {
           </button>
         </header>
 
-        <div className={`block md:hidden mobile-menu w-full ${isMobileMenuOpen ? 'open' : ''}`}>
-          <SideBar hideDpNameTitle className='w-full h-[calc(100vh_-_50px)]' />
+        <div className={`block md:hidden mobile-menu w-full fixed bottom-0   ${isMobileMenuOpen ? 'open' : ''}`}>
+          <SideBar hideDpNameTitle className='w-full h-[calc(100vh_-_50px)] pb-20' />
         </div>
 
         <div className='w-full pl-[8%] md:pl-[15%] py-20 pr-[8%] min-h-[100dvh] mt-10 md:mt-0'>

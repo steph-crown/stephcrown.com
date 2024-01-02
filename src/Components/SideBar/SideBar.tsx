@@ -14,7 +14,11 @@ const SideBar: FC<Props> = ({ hideDpNameTitle, className }) => {
   const { isDarkTheme, handleThemeToggle } = useThemeManager()
 
   return (
-    <div className={`w-[17.5rem] bg-navbg/100-light dark:bg-navbg/100-dark h-screen px-4 py-12 border-nav border-l ${className}`}>
+    <div
+      className={`w-[17.5rem] overflow-y-auto bg-navbg/100-light dark:bg-navbg/100-dark ${
+        hideDpNameTitle ? '' : 'h-screen'
+      } px-4 py-12 border-nav border-l ${className}`}
+    >
       <div className='flex flex-col justify-between h-full'>
         <div>
           {/* dp, name and title. */}
