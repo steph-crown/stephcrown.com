@@ -14,6 +14,14 @@ import { ArticleType } from 'Types'
 
 const ARTICLE_LIST: ArticleType[] = [
   {
+    name: 'Building An Infinite Select Dropdown Component With React',
+    bgImage: 'https://blog.openreplay.com/images/infinite-select-dropdown-select-component-with-react/images/hero.png',
+    url: 'https://blog.openreplay.com/infinite-select-dropdown-select-component-with-react/',
+    platform: 'Open Replay',
+    description:
+      'Implementing select dropdown components that can deal with huge datasets is not trivial, and this article will show you how to go about it, avoiding performance problems and providing a slick user experience.',
+  },
+  {
     name: 'My Fourth Year in Tech and University: A Holistic Review',
     bgImage:
       'https://cdn.hashnode.com/res/hashnode/image/upload/v1703835610973/cf4fb56b-1ba2-4400-b409-308a08942d00.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',

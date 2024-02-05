@@ -6,7 +6,7 @@ type Props = Omit<ArticleType, 'bgImage' | 'name'>
 
 const ArticleCardHoverContent: FC<Props> = ({ platform, url, description, hasLightBg }) => {
   return (
-    <div className='p-6 flex flex-col h-full justify-between'>
+    <a href={url} rel='noreferrer' target='_blank' className='p-6 flex flex-col h-full justify-between'>
       <div className='flex justify-between '>
         <span
           className={`inline-block text-left break-all font-MSMediumWide text-sm leading-[160%]  rounded-[4px] w-max max-w-[12rem]  border border-solid p-2 ${
@@ -22,7 +22,7 @@ const ArticleCardHoverContent: FC<Props> = ({ platform, url, description, hasLig
       </div>
 
       <p className={`font-MSMediumWide text-sm ${hasLightBg ? 'text-fg/80-light' : 'text-fg/80-dark'}`}>{description}</p>
-    </div>
+    </a>
   )
 }
 

@@ -1,6 +1,6 @@
 // the type of the social media links.
 type ArticleType = {
-  platform: 'Hashnode' | 'DevTo' | 'Medium'
+  platform: 'Hashnode' | 'DevTo' | 'Medium' | 'Open Replay'
   url: string
   bgImage: string
   name: string
