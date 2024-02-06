@@ -21,8 +21,13 @@ const Home = () => {
             <a target='_blank' rel='noreferrer' className='font-MSMediumWide underline' href='https://blog.stephcrown.com'>
               {' '}
               Hashnode{' '}
-            </a>{' '}
-            and{' '}
+            </a>
+            ,{' '}
+            <a target='_blank' rel='noreferrer' className='font-MSMediumWide underline' href='https://blog.openreplay.com'>
+              {' '}
+              Open Replay Blog{' '}
+            </a>
+            , and{' '}
             <a target='_blank' rel='noreferrer' className='font-MSMediumWide underline' href='https://dev.to/stephcrown'>
               {' '}
               Dev.to{' '}
