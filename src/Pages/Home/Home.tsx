@@ -1,7 +1,6 @@
 import { APP_ROUTES } from 'Constants'
 import { ArrowRightIcon } from 'Assets/Svgs'
 import { ImageHoverSwitch } from 'Components'
-import Jeyi from 'Components/Jeyi'
 import { Link } from 'react-router-dom'
 import { PersonViewingMicroscope } from 'Assets/Pngs'
 
@@ -44,8 +43,6 @@ const Home = () => {
 
         <p className='tooltip-content p'>{visualMetaphorAlt}</p>
       </div>
-
-      <Jeyi />
     </div>
   )
 }
