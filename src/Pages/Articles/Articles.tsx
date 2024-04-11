@@ -23,7 +23,7 @@ const Home = () => {
               Hashnode{' '}
             </a>
             ,{' '}
-            <a target='_blank' rel='noreferrer' className='font-MSMediumWide underline' href='https://blog.openreplay.com'>
+            <a target='_blank' rel='noreferrer' className='font-MSMediumWide underline' href='https://blog.openreplay.com/authors/stephen-crown/'>
               {' '}
               Open Replay Blog{' '}
             </a>
