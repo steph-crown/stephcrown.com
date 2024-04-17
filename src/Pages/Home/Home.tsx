@@ -25,9 +25,10 @@ const Home = () => {
           </p>
 
           <p className='p' data-aos='fade-up'>
-            I&apos;m a software engineer with the keen instincts of <span className='font-MSMediumWide'>🔎 Sherlock Holmes 🔎</span>. I scrutinize the
-            digital landscape with the precision of a detective. I craft intuitive user interfaces and solve complex challenges, approaching each
-            project as a captivating mystery to unravel. My mission is to create beautiful digital experiences that leave no enigma unsolved.
+            I&apos;m a software engineer with over 5 years of experience. I love building cool and useful digital products. I&apos;m a problem-solver
+            and enjoy finding clever and simple ways to make things work well for users. I can work on all parts of a software project, from the user
+            interface to the inner workings. My goal is to create well-built systems that people love to use. I&apos;m always learning new things, and
+            I&apos;m especially interested in machine learning, artificial intelligence, and the Internet of Things.
           </p>
 
           <p className='p'>I write articles, text-based courses, and build software applications.</p>
