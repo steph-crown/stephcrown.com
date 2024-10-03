@@ -28,7 +28,7 @@ const Contact = () => {
           </label>
 
           <label className='label'>
-            Email address: <input type='text' className='input' placeholder='Enter your email address' name='email' />
+            Email address: <input type='email' className='input' placeholder='Enter your email address' name='email' />
           </label>
         </div>
 
