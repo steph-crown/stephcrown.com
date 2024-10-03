@@ -6,12 +6,13 @@ type Props = {
   bgImage: string
   label?: string
   hoverContent?: ReactNode
+  isTop?: boolean
 }
 
-const HoverCard: FC<Props> = ({ bgImage, label, hoverContent }) => {
+const HoverCard: FC<Props> = ({ bgImage, label, hoverContent, isTop }) => {
   const { isOpen: isBlurred, open: blur, close: unblur } = useDisclosure()
   const containerStyle = {
-    background: `url(${bgImage}) lightgray 50% / cover no-repeat`,
+    background: `url(${bgImage}) lightgray 50% ${isTop ? 'top' : 'center'} / cover no-repeat`,
   }
 
   const unblurredOverlayStyle = {
@@ -32,7 +33,7 @@ const HoverCard: FC<Props> = ({ bgImage, label, hoverContent }) => {
       }}
     >
       <div
-        className='w-full h-[17.5rem] rounded-[0.25rem] relative'
+        className='w-full h-[17.5rem] rounded-[0.25rem] relative border border-solid border-navborder-light dark:border-navborder-dark'
         style={containerStyle}
         onMouseOver={blur}
         onMouseOut={unblur}

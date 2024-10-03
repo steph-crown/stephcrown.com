@@ -14,11 +14,19 @@
     @apply text-lg text-fg/80-light dark:text-fg/80-dark mt-8 mb-10 leading-[160%];
   }
 
+  .h3 {
+    @apply text-3xl text-fg/80-light dark:text-fg/80-dark mt-8 mb-10 leading-[160%] font-semibold;
+  }
+
   .h1 {
     @apply font-MSMediumWide text-fg/100-light dark:text-fg/100-dark text-2xl xs:text-[32px] md:text-5xl !leading-[140%] xs:!leading-[160%];
   }
 
   .h1-alt {
     @apply font-MSMediumWide text-fg/50-light dark:text-fg/50-dark;
+  }
+
+  .a {
+    @apply font-MSMediumWide underline;
   }
 }
