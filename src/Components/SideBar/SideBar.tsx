@@ -1,4 +1,16 @@
-import { ArticleIcon, CourseIcon, DarkModeIcon, EmailIcon, GraduateIcon, HeartIcon, HomeIcon, LightModeIcon, SocialIcon, ToolIcon } from 'Assets/Svgs'
+import {
+  ArticleIcon,
+  CourseIcon,
+  DarkModeIcon,
+  EmailIcon,
+  GraduateIcon,
+  HeartIcon,
+  HomeIcon,
+  LightModeIcon,
+  ProjectIcon,
+  SocialIcon,
+  ToolIcon,
+} from 'Assets/Svgs'
 import { DpNameTitle, SideNavLink } from 'Components'
 
 import { APP_ROUTES } from 'Constants'
@@ -31,7 +43,7 @@ const SideBar: FC<Props> = ({ hideDpNameTitle, className }) => {
           <div className='flex flex-col gap-4 '>
             <SideNavLink label='Home' to={APP_ROUTES.Home} icon={<HomeIcon />} />
             <SideNavLink label='Resume' to={APP_ROUTES.Resume} icon={<GraduateIcon />} />
-            {/* <SideNavLink label='Projects' to={APP_ROUTES.Projects} icon={<ProjectIcon />} /> */}
+            <SideNavLink label='Projects' to={APP_ROUTES.Projects} icon={<ProjectIcon />} />
             <SideNavLink label='Articles' to={APP_ROUTES.Articles} icon={<ArticleIcon />} />
             <SideNavLink label='Courses' to={APP_ROUTES.Courses} icon={<CourseIcon />} />
             <SideNavLink label='Tools' to={APP_ROUTES.Tools} icon={<ToolIcon />} />

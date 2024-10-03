@@ -21,22 +21,22 @@ const Contact = () => {
         </article>
       </div>
 
-      <form className='form'>
+      <form className='form' name='contact'>
         <div className='flex gap-6 md:gap-10 flex-col lg:flex-row'>
           <label className='label'>
-            Name: <input type='text' className='input' placeholder='Enter your name' />
+            Name: <input type='text' className='input' placeholder='Enter your name' name='name' />
           </label>
 
           <label className='label'>
-            Email address: <input type='text' className='input' placeholder='Enter your email address' />
+            Email address: <input type='text' className='input' placeholder='Enter your email address' name='email' />
           </label>
         </div>
 
         <label className='label'>
-          Message: <textarea className='input h-32' placeholder='Enter your message' />
+          Message: <textarea className='input h-32' placeholder='Enter your message' name='message' />
         </label>
 
-        <button className='btn w-max'>
+        <button className='btn w-max' type='submit'>
           Send <SendIcon />
         </button>
       </form>
