@@ -21,7 +21,8 @@ const Contact = () => {
         </article>
       </div>
 
-      <form className='form' name='contactForm' method='POST' data-netlify='true' id='contactForm'>
+      <form className='form' name='contact' method='post'>
+        <input type='hidden' name='form-name' value='contact' />
         <div className='flex gap-6 md:gap-10 flex-col lg:flex-row'>
           <label className='label'>
             Name: <input type='text' className='input' placeholder='Enter your name' name='name' />
