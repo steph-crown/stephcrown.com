@@ -11,9 +11,9 @@ const Courses = () => {
 
         <article>
           <h1 className='my-2 h1'>
-            <span className='h1-alt'>Explore my interactive, </span>
+            <span className='h1-alt'>Explore my Interactive, </span>
             <br />
-            text-based courses<span className='h1-alt'>.</span>
+            Text-Based Courses<span className='h1-alt'>.</span>
           </h1>
 
           <p className='p'>
