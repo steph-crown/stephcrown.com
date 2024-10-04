@@ -1,4 +1,7 @@
 import { ProjectIcon } from 'Assets/Svgs'
+import { ProjectCard } from 'Components'
+import PROJECTS from 'Constants/Projects'
+import './Projects.css'
 
 const Projects = () => {
   return (
@@ -19,6 +22,12 @@ const Projects = () => {
           </p>
 
           <p className='p'>I&apos;ve listed some of the projects below.</p>
+
+          <div className='grid gap-3 grid-cols-2 projects'>
+            {PROJECTS.map((project) => (
+              <ProjectCard key={project?.url} project={project} />
+            ))}
+          </div>
         </article>
       </div>
     </div>

@@ -5,7 +5,7 @@ type ProjectType = {
   url: string
   shortDescription: string
   extendedDescription?: ReactNode
-  technologies: string[]
+  technologies: string
 }
 
 export default ProjectType

@@ -26,6 +26,10 @@
     @apply font-MSMediumWide text-fg/50-light dark:text-fg/50-dark;
   }
 
+  .h4 {
+    @apply font-MSMediumWide text-fg/80-light dark:text-fg/100-dark text-fg/100-light text-lg leading-[160%];
+  }
+
   .a {
     @apply font-MSMediumWide underline;
   }
