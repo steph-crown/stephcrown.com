@@ -7,5 +7,5 @@
 }
 
 .project:nth-child(2n) {
-  @apply translate-y-6;
+  @apply xl:translate-y-6;
 }

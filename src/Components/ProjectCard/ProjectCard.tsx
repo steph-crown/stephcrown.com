@@ -20,7 +20,16 @@ const ProjectCard: FC<Props> = ({ project }) => {
         href={project.url}
         target='_blank'
         rel='noreferrer'
-        className='text-fg/50-light dark:text-fg/50-dark hover:underline text-xs flex items-center gap-1 mt-20 font-medium font-MSMediumWide hover:dark:text-fg/100-dark hover:text-fg/100-light'
+        className={`text-fg/50-light dark:text-fg/50-dark hover:underline text-xs flex items-center gap-1 mt-20 font-medium font-MSMediumWide hover:dark:text-fg/100-dark hover:text-fg/100-light w-max ${
+          !project.url
+            ? 'cursor-not-allowed line-through text-fg/40-light dark:text-fg/40-dark hover:text-fg/40-light hover:dark:text-fg/40-dark hover:line-through'
+            : ''
+        }`}
+        onClick={(e) => {
+          if (!project.url) {
+            e.preventDefault()
+          }
+        }}
       >
         <svg
           width='24'

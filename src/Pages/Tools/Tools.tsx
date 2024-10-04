@@ -7,6 +7,7 @@ const tools = [
   'JavaScript',
   'TypeScript',
   'Angular',
+  'NgRx',
   'React.js',
   'Redux',
   'Redux Toolkit',

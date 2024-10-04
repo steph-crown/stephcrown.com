@@ -11,9 +11,9 @@ const Projects = () => {
 
         <article>
           <h1 className='my-2 h1'>
-            <span className='h1-alt'>Check Out My </span>
+            <span className='h1-alt'>Some of </span>
             <br />
-            Projects<span className='h1-alt'>.</span>
+            My Projects<span className='h1-alt'>.</span>
           </h1>
 
           <p className='p'>
@@ -23,9 +23,9 @@ const Projects = () => {
 
           <p className='p'>I&apos;ve listed some of the projects below.</p>
 
-          <div className='grid gap-3 grid-cols-2 projects'>
+          <div className='grid gap-8 xl:gap-3 grid-cols-1 xl:grid-cols-2 projects'>
             {PROJECTS.map((project) => (
-              <ProjectCard key={project?.url} project={project} />
+              <ProjectCard key={`${project?.title}${project.url}`} project={project} />
             ))}
           </div>
         </article>
