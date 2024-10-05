@@ -12,7 +12,7 @@ type Props = {
 const HoverCard: FC<Props> = ({ bgImage, label, hoverContent, isTop }) => {
   const { isOpen: isBlurred, open: blur, close: unblur } = useDisclosure()
   const containerStyle = {
-    background: `url(${bgImage}) lightgray 50% ${isTop ? 'top' : 'center'} / cover no-repeat`,
+    background: `url(${bgImage}) lightgray  ${isTop ? '0% top' : '50% center'} / cover no-repeat`,
   }
 
   const unblurredOverlayStyle = {

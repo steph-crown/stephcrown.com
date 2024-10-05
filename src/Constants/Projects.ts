@@ -28,7 +28,7 @@ const PROJECTS: ProjectType[] = [
     title: 'LEA Portal',
     url: '',
     shortDescription:
-      'A platform that allows the client to efficiently manage requests from law enforcement agencies concerning actions on customer accounts.',
+      'A platform that allows the client bank to efficiently manage requests from law enforcement agencies concerning actions on customer accounts.',
     technologies: 'React, TypeScript, TailwindCSS, Redux Toolkit',
   },
   {
