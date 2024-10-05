@@ -25,6 +25,12 @@ const PROJECTS: ProjectType[] = [
     technologies: 'React, TypeScript, Styled Components',
   },
   {
+    title: "Stephen's Portfolio",
+    url: 'https://stephcrown.com/',
+    shortDescription: 'My personal portfolio showcasing my work, skills, and professional journey.',
+    technologies: 'React, TypeScript, TailwindCSS',
+  },
+  {
     title: 'LEA Portal',
     url: '',
     shortDescription:
