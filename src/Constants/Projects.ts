@@ -41,7 +41,7 @@ const PROJECTS: ProjectType[] = [
     title: 'Notification Engine',
     url: '',
     shortDescription:
-      'A notification management system that enables the client bank to manage and send single or bulk notifications to their customers.',
+      'A notification management system that enables the client bank to manage and automate notification dispatch based on various customer account criteria and groups, with the ability to configure templates for different types of notifications, including email and SMS.',
     technologies: 'Angular, NgRx, Quill',
   },
   {
