@@ -7,7 +7,7 @@ const PROJECTS: ProjectType[] = [
     title: 'SeaBaas',
     url: 'https://sterling.ng/sterling-sets-milestone/',
     shortDescription:
-      "Africa's first indigenous banking system. I led the frontend team that built some modules of the system - Customer Management, Customer Forms Configuration, and Product Factory.",
+      "Africa's first indigenous core banking system. I led the frontend team that developed key modules (Customer Management, Customer Forms Configuration, Product Factory) for the application",
     technologies: 'React, TypeScript, TailwindCSS, Redux Toolkit',
   },
   {
