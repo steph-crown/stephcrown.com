@@ -13,7 +13,7 @@ const PdfViewer = () => {
       <div className='h-[calc(100vh_-_14rem)] overflow-y-auto border-nav border rounded-lg'>
         <iframe
           style={{ width: '100%', height: '100%' }}
-          src='https://drive.google.com/file/d/1umBKU-dM0Gk_63a-XzosZFyvPdcL4I6h/preview'
+          src='https://docs.google.com/document/d/1PEEmPrHy_34EAy6wl4ysrPW0BjHIejdxST2AplqJa2A/preview?embedded=true'
           width='640'
           height='480'
           allow='autoplay'

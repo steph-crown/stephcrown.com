@@ -14,6 +14,22 @@ import { ArticleType } from 'Types'
 
 const ARTICLE_LIST: ArticleType[] = [
   {
+    name: "How to Use Typescript's 'omit' Utility Type",
+    bgImage: 'https://blog.openreplay.com/images/how-to-use-typescripts-omit-utility-type/images/hero.png',
+    url: 'https://blog.openreplay.com/how-to-use-typescripts-omit-utility-type/',
+    platform: 'Open Replay',
+    description:
+      'A commonly used utility type in TypeScript is Omit. This type allows developers to form a new type from an existing one by excluding specific fields. This tutorial shows how to use it to handle different scenarios, from simple to complex, and examines practical applications to see some real-life reasons why you might need to use it.',
+  },
+  {
+    name: 'Building an Anonymous Messaging App With React and Phoenix',
+    bgImage: 'https://blog.reventacademy.com/wp-content/uploads/2024/10/Media.jpeg',
+    url: 'https://blog.reventacademy.com/building-an-anonymous-messaging-app-with-react-and-phoenix/',
+    platform: 'Revent Academy Blog',
+    description:
+      'In this article, we’ll build an anonymous messaging application. We’ll use React to create a dynamic user interface and Phoenix to manage the server-side logic',
+  },
+  {
     name: 'Building An Infinite Select Dropdown Component With React',
     bgImage: 'https://blog.openreplay.com/images/infinite-select-dropdown-select-component-with-react/images/hero.png',
     url: 'https://blog.openreplay.com/infinite-select-dropdown-select-component-with-react/',

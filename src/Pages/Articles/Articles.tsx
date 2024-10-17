@@ -27,6 +27,11 @@ const Home = () => {
               {' '}
               Open Replay Blog{' '}
             </a>
+            ,{' '}
+            <a target='_blank' rel='noreferrer' className='font-MSMediumWide underline' href='https://blog.reventacademy.com/author/stephen/'>
+              {' '}
+              Revent Academy Blog{' '}
+            </a>
             , and{' '}
             <a target='_blank' rel='noreferrer' className='font-MSMediumWide underline' href='https://dev.to/stephcrown'>
               {' '}
