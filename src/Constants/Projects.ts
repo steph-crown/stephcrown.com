@@ -17,6 +17,20 @@ const PROJECTS: ProjectType[] = [
       'An AI-based software platform designed to empower businesses in building and managing their online stores, complete with integrated warehouse solutions for their products.',
     technologies: 'Next.js, Internationalization, TailwindCSS, Storybook',
   },
+  {
+    title: 'Flowmono Automate',
+    url: 'https://www.flowmono.com/products/flowmono-automate',
+    shortDescription:
+      'Built comprehensive workflow automation platform featuring a Process Designer with drag-and-drop interface for creating custom approval flows, request tracking systems, and task automation solutions. Developed pre-built workflow templates for common business processes including expense approvals, leave requests, and compliance sign-offs.',
+    technologies: 'Angular, TypeScript, Material UI, SVG manipulation, Drag and Drop',
+  },
+  {
+    title: 'Flowmono Phoenix',
+    url: 'https://www.flowmono.com/products/phoenix',
+    shortDescription:
+      'Developed powerful no-code form builder enabling businesses to create custom forms and workflows without coding. Built smart form creation tools with advanced features for business process automation.',
+    technologies: 'Angular, TypeScript, Material UI, SVG manipulation, Drag and Drop',
+  },
 
   {
     title: "Kemi's Portfolio",
