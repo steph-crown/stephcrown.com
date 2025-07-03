@@ -11,12 +11,27 @@ const PROJECTS: ProjectType[] = [
     technologies: 'React, TypeScript, TailwindCSS, Redux Toolkit',
   },
   {
+    title: 'Checkref',
+    url: 'https://checkref.co/',
+    shortDescription:
+      'Professional reference management platform that empowers HR departments to efficiently handle reference requests, track responses, and maintain organized records throughout the hiring process. Built with mobile-first design and secure document workflows.',
+    technologies: 'Next.js, TypeScript, Chakra UI, TailwindCSS',
+  },
+  {
     title: 'NextBasket',
     url: 'https://nextbasket.com/',
     shortDescription:
       'An AI-based software platform designed to empower businesses in building and managing their online stores, complete with integrated warehouse solutions for their products.',
     technologies: 'Next.js, Internationalization, TailwindCSS, Storybook',
   },
+  {
+    title: 'Khaime AI',
+    url: 'https://www.khaime.ai/',
+    shortDescription:
+      'AI-powered website builder that generates responsive, professional websites based on business type and user prompts. Built intelligent editor with real-time collaboration, drag-and-drop functionality, and automated design suggestions using OpenAI and Claude APIs.',
+    technologies: 'React, TypeScript, OpenAI API, Claude API, Real-time Collaboration',
+  },
+
   {
     title: 'Flowmono Automate',
     url: 'https://www.flowmono.com/products/flowmono-automate',
