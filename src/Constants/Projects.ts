@@ -26,7 +26,7 @@ const PROJECTS: ProjectType[] = [
   },
   {
     title: 'Khaime AI',
-    url: 'https://www.khaime.ai/',
+    url: 'https://khaime.com/',
     shortDescription:
       'AI-powered website builder that generates responsive, professional websites based on business type and user prompts. Built intelligent editor with real-time collaboration, drag-and-drop functionality, and automated design suggestions using OpenAI and Claude APIs.',
     technologies: 'React, TypeScript, OpenAI API, Claude API, Real-time Collaboration',
