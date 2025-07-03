@@ -79,13 +79,7 @@ const PROJECTS: ProjectType[] = [
     shortDescription: 'An application that allows diagnostic centers to securely send images to specialists for analysis and interpretation.',
     technologies: 'React, TypeScript, Styled Components',
   },
-  {
-    title: 'Checkref',
-    url: '',
-    shortDescription:
-      'Empowers HR departments to efficiently handle reference requests, track responses, and maintain organized records throughout the hiring process.',
-    technologies: 'React, JavaScript, ChakraUI',
-  },
+
   {
     title: 'Projecttent',
     url: 'https://projecttent.com/',
