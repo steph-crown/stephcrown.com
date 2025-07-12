@@ -46,6 +46,13 @@ const PROJECTS: ProjectType[] = [
       'Developed powerful no-code form builder enabling businesses to create custom forms and workflows without coding. Built smart form creation tools with advanced features for business process automation.',
     technologies: 'Angular, TypeScript, Material UI, SVG manipulation, Drag and Drop',
   },
+  {
+    title: 'Spotter Flights',
+    url: 'https://spotter-flights-rho.vercel.app/', // Replace with your actual Vercel URL
+    shortDescription:
+      'Google Flights clone. Features responsive flight search with real-time airport suggestions, advanced filtering, URL synchronization for bookmarkable searches, and comprehensive error handling. Integrated with RapidAPI Sky Scraper for live flight data.',
+    technologies: 'React, TypeScript, Redux Toolkit, Material-UI, RTK Query, RapidAPI',
+  },
 
   {
     title: "Kemi's Portfolio",
