@@ -55,6 +55,14 @@ const PROJECTS: ProjectType[] = [
   },
 
   {
+    title: 'Movie Moments',
+    url: 'https://movie-moments.vercel.app/',
+    shortDescription:
+      "Chat with friends about movies you're watching on different platforms. Share reactions tied to specific timestamps, create private rooms, and discuss scenes without spoilers. Works while you watch on Netflix, Disney+, or any streaming service.",
+    technologies: 'Next.js, TypeScript, Supabase, Real-time Chat, TailwindCSS',
+  },
+
+  {
     title: "Kemi's Portfolio",
     url: 'https://www.kemiadeleke.com/',
     shortDescription: 'A personalized portfolio designed for Kemi Adeleke, showcasing her work as a product designer.',
