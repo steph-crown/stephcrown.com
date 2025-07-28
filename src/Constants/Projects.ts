@@ -4,6 +4,13 @@ import { ProjectType } from 'Types'
 
 const PROJECTS: ProjectType[] = [
   {
+    title: 'SyncSkills CMS - Education Technology Platform',
+    url: 'https://syncskills.com.au/', // Replace with actual live URL
+    shortDescription:
+      'Full-stack education technology platform for career transition training. Has comprehensive CMS, mini-course enrollment system, student progress tracking, and referral programs. Features dynamic content management, Stripe payment processing, course scheduling, brochure downloads, and scalable learning infrastructure for professional development.',
+    technologies: 'Next.js 14, TypeScript, PayloadCMS, MongoDB, Prisma, Redux Toolkit, TailwindCSS, Stripe',
+  },
+  {
     title: 'Movie Moments',
     url: 'https://movie-moments.vercel.app/',
     shortDescription:
