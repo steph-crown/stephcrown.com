@@ -11,7 +11,7 @@
   }
 
   .p {
-    @apply text-lg text-fg/80-light dark:text-fg/80-dark mt-8 mb-10 leading-[160%];
+    @apply text-sm sm:text-lg text-fg/80-light dark:text-fg/80-dark mt-8 mb-10 leading-[160%];
   }
 
   .h3 {
@@ -19,7 +19,7 @@
   }
 
   .h1 {
-    @apply font-MSMediumWide text-fg/100-light dark:text-fg/100-dark text-2xl xs:text-[32px] md:text-5xl !leading-[140%] xs:!leading-[160%];
+    @apply font-MSMediumWide text-fg/100-light dark:text-fg/100-dark text-xl sm:text-2xl xs:text-[32px] md:text-5xl !leading-[140%] xs:!leading-[140%];
   }
 
   .h1-alt {

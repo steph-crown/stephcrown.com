@@ -1,5 +1,5 @@
 import { APP_ROUTES } from 'Constants'
-import { ArrowRightIcon } from 'Assets/Svgs'
+import { ArrowRightIcon, ProjectIcon } from 'Assets/Svgs'
 import { ImageHoverSwitch } from 'Components'
 import { Link } from 'react-router-dom'
 import { PersonViewingMicroscope } from 'Assets/Pngs'
@@ -30,13 +30,20 @@ const Home = () => {
             interface to the inner workings. My goal is to create well-built systems that people love to use. I&apos;m always learning new things, and
             I&apos;m especially interested in machine learning, artificial intelligence, and the Internet of Things.
           </p>
-
-          <p className='p'>I write articles, text-based courses, and build software applications.</p>
         </article>
 
-        <Link to={APP_ROUTES.Contact} className='btn w-max'>
-          Send a message <ArrowRightIcon />
-        </Link>
+        <div className='flex flex-col sm:flex-row gap-4 mt-8'>
+          <Link
+            to={APP_ROUTES.Projects}
+            className='px-8 py-4 rounded-lg flex items-center justify-center gap-2 bg-fg/100-light dark:bg-fg/100-dark text-bg/100-light dark:text-bg/100-dark border-fg/100-light dark:border-fg/100-dark border-solid border-[1px] text-sm w-full sm:w-max'
+          >
+            View Projects <ProjectIcon />
+          </Link>
+
+          <Link to={APP_ROUTES.Contact} className='btn w-full sm:w-max'>
+            Send a message <ArrowRightIcon />
+          </Link>
+        </div>
       </div>
 
       <div className='tooltip'>

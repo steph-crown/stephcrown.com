@@ -32,7 +32,7 @@ const SideBar: FC<Props> = ({ hideDpNameTitle, className }) => {
         hideDpNameTitle ? '' : 'h-screen'
       } px-4 py-12 border-nav border-l ${className}`}
     >
-      <div className='flex flex-col justify-between h-full'>
+      <div className='flex flex-col gap-4 h-full'>
         <div>
           {/* dp, name and title. */}
           {!hideDpNameTitle && (
@@ -46,7 +46,7 @@ const SideBar: FC<Props> = ({ hideDpNameTitle, className }) => {
             <SideNavLink label='Resume' to={APP_ROUTES.Resume} icon={<GraduateIcon />} />
             <SideNavLink label='Projects' to={APP_ROUTES.Projects} icon={<ProjectIcon />} />
             <SideNavLink label='Articles' to={APP_ROUTES.Articles} icon={<ArticleIcon />} />
-            <SideNavLink label='Courses' to={APP_ROUTES.Courses} icon={<CourseIcon />} />
+            {/* <SideNavLink label='Courses' to={APP_ROUTES.Courses} icon={<CourseIcon />} /> */}
             <SideNavLink label='Tools' to={APP_ROUTES.Tools} icon={<ToolIcon />} />
           </div>
         </div>
@@ -54,8 +54,8 @@ const SideBar: FC<Props> = ({ hideDpNameTitle, className }) => {
         <div className='flex flex-col gap-4 pt-6 border-t border-nav '>
           <SideNavLink label='Socials' to={APP_ROUTES.Socials} icon={<SocialIcon />} />
           <SideNavLink label='Contact' to={APP_ROUTES.Contact} icon={<ContactIcon className='h-[1.125rem]' />} />
-          <SideNavLink label='Email' to={'mailto:emmanuelstephen024@gmail.com'} icon={<EmailIcon />} isExternal />
-          <SideNavLink label='Credits' to={APP_ROUTES.Credits} icon={<HeartIcon />} />
+          {/* <SideNavLink label='Email' to={'mailto:emmanuelstephen024@gmail.com'} icon={<EmailIcon />} isExternal /> */}
+          {/* <SideNavLink label='Credits' to={APP_ROUTES.Credits} icon={<HeartIcon />} /> */}
 
           {/* dark mode toggle. */}
           <button className='side-nav text-fg/50-light dark:text-fg/50-dark' onClick={handleThemeToggle}>
