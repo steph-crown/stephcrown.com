@@ -1,22 +1,9 @@
-import {
-  ArticleIcon,
-  ContactIcon,
-  CourseIcon,
-  DarkModeIcon,
-  EmailIcon,
-  GraduateIcon,
-  HeartIcon,
-  HomeIcon,
-  LightModeIcon,
-  ProjectIcon,
-  SocialIcon,
-  ToolIcon,
-} from 'Assets/Svgs'
+import { ArticleIcon, ContactIcon, DarkModeIcon, GraduateIcon, HomeIcon, LightModeIcon, ProjectIcon, SocialIcon, ToolIcon } from 'Assets/Svgs'
 import { DpNameTitle, SideNavLink } from 'Components'
 
 import { APP_ROUTES } from 'Constants'
-import { FC } from 'react'
 import { useThemeManager } from 'Hooks/Ui'
+import { FC } from 'react'
 
 type Props = {
   hideDpNameTitle?: boolean

@@ -4,6 +4,13 @@ import { ProjectType } from 'Types'
 
 const PROJECTS: ProjectType[] = [
   {
+    title: 'Movie Moments',
+    url: 'https://movie-moments.vercel.app/',
+    shortDescription:
+      "Chat with friends about movies you're watching on different platforms. Share reactions tied to specific timestamps, create private rooms, and discuss scenes without spoilers. Works while you watch on Netflix, Disney+, or any streaming service.",
+    technologies: 'Next.js, TypeScript, Supabase, Real-time Chat, TailwindCSS',
+  },
+  {
     title: 'SeaBaas',
     url: 'https://sterling.ng/sterling-sets-milestone/',
     shortDescription:
@@ -52,14 +59,6 @@ const PROJECTS: ProjectType[] = [
     shortDescription:
       'Google Flights clone. Features responsive flight search with real-time airport suggestions, advanced filtering, URL synchronization for bookmarkable searches, and comprehensive error handling. Integrated with RapidAPI Sky Scraper for live flight data.',
     technologies: 'React, TypeScript, Redux Toolkit, Material-UI, RTK Query, RapidAPI',
-  },
-
-  {
-    title: 'Movie Moments',
-    url: 'https://movie-moments.vercel.app/',
-    shortDescription:
-      "Chat with friends about movies you're watching on different platforms. Share reactions tied to specific timestamps, create private rooms, and discuss scenes without spoilers. Works while you watch on Netflix, Disney+, or any streaming service.",
-    technologies: 'Next.js, TypeScript, Supabase, Real-time Chat, TailwindCSS',
   },
 
   {
