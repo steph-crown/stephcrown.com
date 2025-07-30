@@ -3,6 +3,13 @@
 import { ProjectType } from 'Types'
 
 const PROJECTS: ProjectType[] = [
+    {
+    title: 'Checkref',
+    url: 'https://checkref.co/',
+    shortDescription:
+      'Professional reference management platform that empowers HR departments to efficiently handle reference requests, track responses, and maintain organized records throughout the hiring process. Built with mobile-first design and secure document workflows.',
+    technologies: 'Next.js, TypeScript, Chakra UI, TailwindCSS',
+  },
   {
     title: 'SyncSkills CMS - Education Technology Platform',
     url: 'https://syncskills.com.au/', // Replace with actual live URL
@@ -24,13 +31,7 @@ const PROJECTS: ProjectType[] = [
       "Africa's first indigenous core banking system. I led the frontend team that developed key modules (Customer Management, Customer Forms Configuration, Product Factory) for the application",
     technologies: 'React, TypeScript, TailwindCSS, Redux Toolkit',
   },
-  {
-    title: 'Checkref',
-    url: 'https://checkref.co/',
-    shortDescription:
-      'Professional reference management platform that empowers HR departments to efficiently handle reference requests, track responses, and maintain organized records throughout the hiring process. Built with mobile-first design and secure document workflows.',
-    technologies: 'Next.js, TypeScript, Chakra UI, TailwindCSS',
-  },
+
   {
     title: 'NextBasket',
     url: 'https://nextbasket.com/',
