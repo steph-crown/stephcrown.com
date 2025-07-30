@@ -3,7 +3,7 @@
 import { ProjectType } from 'Types'
 
 const PROJECTS: ProjectType[] = [
-    {
+  {
     title: 'Checkref',
     url: 'https://checkref.co/',
     shortDescription:
