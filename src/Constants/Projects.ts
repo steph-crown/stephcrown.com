@@ -10,19 +10,20 @@ const PROJECTS: ProjectType[] = [
       'Professional reference management platform that empowers HR departments to efficiently handle reference requests, track responses, and maintain organized records throughout the hiring process. Built with mobile-first design and secure document workflows.',
     technologies: 'Next.js, TypeScript, Chakra UI, TailwindCSS',
   },
-  {
-    title: 'SyncSkills CMS - Education Technology Platform',
-    url: 'https://syncskills.com.au/', // Replace with actual live URL
-    shortDescription:
-      'Full-stack education technology platform for career transition training. Has comprehensive CMS, mini-course enrollment system, student progress tracking, and referral programs. Features dynamic content management, Stripe payment processing, course scheduling, brochure downloads, and scalable learning infrastructure for professional development.',
-    technologies: 'Next.js 14, TypeScript, PayloadCMS, MongoDB, Prisma, Redux Toolkit, TailwindCSS, Stripe',
-  },
+
   {
     title: 'Movie Moments',
     url: 'https://movie-moments.vercel.app/',
     shortDescription:
       "Chat with friends about movies you're watching on different platforms. Share reactions tied to specific timestamps, create private rooms, and discuss scenes without spoilers. Works while you watch on Netflix, Disney+, or any streaming service.",
     technologies: 'Next.js, TypeScript, Supabase, Real-time Chat, TailwindCSS',
+  },
+  {
+    title: 'NextBasket',
+    url: 'https://nextbasket.com/',
+    shortDescription:
+      'An AI-based software platform designed to empower businesses in building and managing their online stores, complete with integrated warehouse solutions for their products.',
+    technologies: 'Next.js, Internationalization, TailwindCSS, Storybook',
   },
   {
     title: 'SeaBaas',
@@ -33,18 +34,18 @@ const PROJECTS: ProjectType[] = [
   },
 
   {
-    title: 'NextBasket',
-    url: 'https://nextbasket.com/',
-    shortDescription:
-      'An AI-based software platform designed to empower businesses in building and managing their online stores, complete with integrated warehouse solutions for their products.',
-    technologies: 'Next.js, Internationalization, TailwindCSS, Storybook',
-  },
-  {
     title: 'Khaime AI',
     url: 'https://khaime.com/',
     shortDescription:
       'AI-powered website builder that generates responsive, professional websites based on business type and user prompts. Built intelligent editor with real-time collaboration, drag-and-drop functionality, and automated design suggestions using OpenAI and Claude APIs.',
     technologies: 'React, TypeScript, OpenAI API, Claude API, Real-time Collaboration',
+  },
+  {
+    title: 'SyncSkills CMS - Education Technology Platform',
+    url: 'https://syncskills.com.au/', // Replace with actual live URL
+    shortDescription:
+      'Full-stack education technology platform for career transition training. Has comprehensive CMS, mini-course enrollment system, student progress tracking, and referral programs. Features dynamic content management, Stripe payment processing, course scheduling, brochure downloads, and scalable learning infrastructure for professional development.',
+    technologies: 'Next.js 14, TypeScript, PayloadCMS, MongoDB, Prisma, Redux Toolkit, TailwindCSS, Stripe',
   },
 
   {
