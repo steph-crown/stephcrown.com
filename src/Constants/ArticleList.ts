@@ -109,3 +109,26 @@ const ARTICLE_LIST: ArticleType[] = [
 ]
 
 export default ARTICLE_LIST
+
+// Export structured data for articles
+export const ARTICLE_STRUCTURED_DATA = ARTICLE_LIST.map((article) => ({
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: article.name,
+  description: article.description,
+  url: article.url,
+  image: article.bgImage,
+  author: {
+    '@type': 'Person',
+    name: 'Stephen Emmanuel',
+    alternateName: 'Steph Crown',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: article.platform,
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://stephcrown.com/stephcrown.png',
+    },
+  },
+}))

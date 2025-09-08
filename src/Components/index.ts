@@ -9,3 +9,4 @@ export { default as SocialCardHoverContent } from './SocialCardHoverContent/Soci
 export { default as ClipboardText } from './ClipboardText/ClipboardText'
 export { default as ArticleCardHoverContent } from './ArticleCardHoverContent/ArticleCardHoverContent'
 export { default as ProjectCard } from './ProjectCard/ProjectCard'
+export { SEO } from './SEO'
