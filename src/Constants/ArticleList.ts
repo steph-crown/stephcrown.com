@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/quotes */
 /* eslint-disable quotes */
 import {
-  BuildingAppWithClojureScript,
+  BuildingWithClojureScript,
   CommonlyConfusedTerms,
   DifferentiateUXFromUI,
   SetupClojureScriptAndPhoenix,
@@ -56,8 +56,8 @@ const ARTICLE_LIST: ArticleType[] = [
       'It is more common to say that we can declare variables in three ways, using var, let, or const. But there are even more ways to do this :)',
   },
   {
-    name: 'Building an Application with ClojureScript',
-    bgImage: BuildingAppWithClojureScript,
+    name: 'How to Build an Application with ClojureScript',
+    bgImage: BuildingWithClojureScript,
     url: 'https://blog.stephcrown.com/building-an-application-with-clojurescript',
     platform: 'Hashnode',
     description: 'Learn how to create a new ClojureScript project, and how to build a simple application with it.',
