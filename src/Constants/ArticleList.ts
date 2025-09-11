@@ -9,6 +9,7 @@ import {
   WaysVariablesAreDeclared,
   WritingBetterCommits,
   MakeWebAppWorkOffline,
+  TypeScriptInsulate,
 } from 'Assets/Pngs'
 
 import { ArticleType } from 'Types'
@@ -21,6 +22,13 @@ const ARTICLE_LIST: ArticleType[] = [
     platform: 'Open Replay',
     description:
       'A commonly used utility type in TypeScript is Omit. This type allows developers to form a new type from an existing one by excluding specific fields. This tutorial shows how to use it to handle different scenarios, from simple to complex, and examines practical applications to see some real-life reasons why you might need to use it.',
+  },
+  {
+    name: 'TypeScript Doesn’t Insulate Your Code From Failure!',
+    bgImage: TypeScriptInsulate,
+    url: 'https://blog.stephcrown.com/typescript-doesnt-insulate-your-code-from-failure',
+    platform: 'Hashnode',
+    description: 'Learn how TypeScript does not insulate your code from failure, and how to use it to your advantage.',
   },
   {
     name: 'How to Build an Anonymous Messaging App With React and Phoenix',

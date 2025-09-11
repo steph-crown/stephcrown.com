@@ -12,3 +12,4 @@ export { default as TransitionFromReactRouter } from './TransitionFromReactRoute
 export { default as JeremiahPorfolioScreenshot } from './JeremiahPorfolioScreenshot.png'
 export { default as KadetPortfolioScreenshot } from './KadetPortfolioScreenshot.png'
 export { default as BuildingWithClojureScript } from './BuildingWithClojureScript.png'
+export { default as TypeScriptInsulate } from './TypeScriptInsulate.png'
