@@ -4,12 +4,12 @@ import {
   BuildingWithClojureScript,
   CommonlyConfusedTerms,
   DifferentiateUXFromUI,
+  MakeWebappOffline,
   SetupClojureScriptAndPhoenix,
   TransitionFromReactRouter,
+  TypeScriptInsulate,
   WaysVariablesAreDeclared,
   WritingBetterCommits,
-  MakeWebAppWorkOffline,
-  TypeScriptInsulate,
 } from 'Assets/Pngs'
 
 import { ArticleType } from 'Types'
@@ -88,7 +88,7 @@ const ARTICLE_LIST: ArticleType[] = [
   },
   {
     name: 'How to make your web app work offline with just HTML, CSS, and JavaScript.',
-    bgImage: MakeWebAppWorkOffline,
+    bgImage: MakeWebappOffline,
     url: 'https://stephcrown.hashnode.dev/how-to-make-your-web-app-work-offline-with-just-html-css-and-javascript',
     platform: 'Hashnode',
     description: 'Learn how to use service workers to ensure that users can access our web app even after going offline.',

@@ -13,3 +13,4 @@ export { default as JeremiahPorfolioScreenshot } from './JeremiahPorfolioScreens
 export { default as KadetPortfolioScreenshot } from './KadetPortfolioScreenshot.png'
 export { default as BuildingWithClojureScript } from './BuildingWithClojureScript.png'
 export { default as TypeScriptInsulate } from './TypeScriptInsulate.png'
+export { default as MakeWebappOffline } from './MakeWebappOffline.png'
