@@ -1,8 +1,84 @@
+import { useState } from 'react'
 import { SendIcon } from 'Assets/Svgs'
 import { SEO } from 'Components'
 import { BREADCRUMB_STRUCTURED_DATA } from 'Constants'
 
+interface FormData {
+  name: string
+  email: string
+  message: string
+}
+
+interface FormErrors {
+  email?: string
+  message?: string
+}
+
 const Contact = () => {
+  const [formData, setFormData] = useState<FormData>({
+    name: '',
+    email: '',
+    message: '',
+  })
+
+  const [errors, setErrors] = useState<FormErrors>({})
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const validateForm = (): boolean => {
+    const newErrors: FormErrors = {}
+
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email address is required'
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = 'Please enter a valid email address'
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = 'Message is required'
+    }
+
+    setErrors(newErrors)
+    return Object.keys(newErrors).length === 0
+  }
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target
+    setFormData((prev) => ({ ...prev, [name]: value }))
+
+    // Clear error when user starts typing
+    if (errors[name as keyof FormErrors]) {
+      setErrors((prev) => ({ ...prev, [name]: undefined }))
+    }
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+
+    if (!validateForm()) {
+      return
+    }
+
+    setIsSubmitting(true)
+
+    try {
+      // Here you would typically send the form data to your backend
+      // For now, we'll just simulate a submission
+      console.log('Form submitted:', formData)
+
+      // Reset form after successful submission
+      setFormData({ name: '', email: '', message: '' })
+      setErrors({})
+
+      // You might want to show a success message here
+      alert('Message sent successfully!')
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      alert('There was an error sending your message. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   const breadcrumbData = [
     { name: 'Home', url: 'https://stephcrown.com' },
     { name: 'Contact', url: 'https://stephcrown.com/contact' },
@@ -38,24 +114,42 @@ const Contact = () => {
           </article>
         </div>
 
-        <form className='form' name='contact' method='post'>
+        <form className='form' name='contact' method='post' onSubmit={handleSubmit}>
           <input type='hidden' name='form-name' value='contact' />
           <div className='flex gap-6 md:gap-10 flex-col lg:flex-row'>
             <label className='label'>
-              Name: <input type='text' className='input' placeholder='Enter your name' name='name' />
+              Name:{' '}
+              <input type='text' className='input' placeholder='Enter your name' name='name' value={formData.name} onChange={handleInputChange} />
             </label>
 
-            <label className='label'>
-              Email address: <input type='email' className='input' placeholder='Enter your email address' name='email' />
-            </label>
+            <div className='label'>
+              Email address:
+              <input
+                type='email'
+                className={`input ${errors.email ? 'border-red-500 focus:border-red-500' : ''}`}
+                placeholder='Enter your email address'
+                name='email'
+                value={formData.email}
+                onChange={handleInputChange}
+              />
+              {errors.email && <span className='text-red-500 text-sm mt-1 block'>{errors.email}</span>}
+            </div>
           </div>
 
-          <label className='label'>
-            Message: <textarea className='input h-32' placeholder='Enter your message' name='message' />
-          </label>
+          <div className='label'>
+            Message:
+            <textarea
+              className={`input h-32 ${errors.message ? 'border-red-500 focus:border-red-500' : ''}`}
+              placeholder='Enter your message'
+              name='message'
+              value={formData.message}
+              onChange={handleInputChange}
+            />
+            {errors.message && <span className='text-red-500 text-sm mt-1 block'>{errors.message}</span>}
+          </div>
 
-          <button className='btn w-max' type='submit'>
-            Send <SendIcon />
+          <button className='btn w-max' type='submit' disabled={isSubmitting}>
+            {isSubmitting ? 'Sending...' : 'Send'} <SendIcon />
           </button>
         </form>
       </div>
