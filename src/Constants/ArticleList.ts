@@ -8,6 +8,7 @@ import {
   TransitionFromReactRouter,
   WaysVariablesAreDeclared,
   WritingBetterCommits,
+  MakeWebAppWorkOffline,
 } from 'Assets/Pngs'
 
 import { ArticleType } from 'Types'
@@ -22,7 +23,7 @@ const ARTICLE_LIST: ArticleType[] = [
       'A commonly used utility type in TypeScript is Omit. This type allows developers to form a new type from an existing one by excluding specific fields. This tutorial shows how to use it to handle different scenarios, from simple to complex, and examines practical applications to see some real-life reasons why you might need to use it.',
   },
   {
-    name: 'Building an Anonymous Messaging App With React and Phoenix',
+    name: 'How to Build an Anonymous Messaging App With React and Phoenix',
     bgImage: 'https://blog.reventacademy.com/wp-content/uploads/2024/10/Media.jpeg',
     url: 'https://blog.reventacademy.com/building-an-anonymous-messaging-app-with-react-and-phoenix/',
     platform: 'Revent Academy Blog',
@@ -79,10 +80,10 @@ const ARTICLE_LIST: ArticleType[] = [
   },
   {
     name: 'How to make your web app work offline with just HTML, CSS, and JavaScript.',
-    bgImage: WritingBetterCommits,
-    url: 'https://stephcrown.hashnode.dev/writing-better-commit-messages',
+    bgImage: MakeWebAppWorkOffline,
+    url: 'https://stephcrown.hashnode.dev/how-to-make-your-web-app-work-offline-with-just-html-css-and-javascript',
     platform: 'Hashnode',
-    description: 'Learn what commit messages are, and how to write commit messages in a consistent, readable way.',
+    description: 'Learn how to use service workers to ensure that users can access our web app even after going offline.',
     hasLightBg: true,
   },
   {
