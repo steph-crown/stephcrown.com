@@ -4,7 +4,7 @@ const PdfViewer = () => {
   return (
     <div>
       <div className='flex justify-end w-full mb-4'>
-        <a href='./Emmanuel_Stephen_Resume.pdf' download={true}>
+        <a href='https://docs.google.com/document/d/19mHhO3be3o8soVd9fqdWpAM2Y4WSau_8wgi2zLUDMB8/preview?embedded=true' download={true}>
           <button className='btn'>
             Click to download <DownloadIcon />
           </button>
