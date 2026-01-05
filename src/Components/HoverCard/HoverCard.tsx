@@ -7,9 +7,10 @@ type Props = {
   label?: string
   hoverContent?: ReactNode
   isTop?: boolean
+  reducedHeight?: boolean
 }
 
-const HoverCard: FC<Props> = ({ bgImage, label, hoverContent, isTop }) => {
+const HoverCard: FC<Props> = ({ bgImage, label, hoverContent, isTop, reducedHeight }) => {
   const { isOpen: isBlurred, open: blur, close: unblur } = useDisclosure()
   const containerStyle = {
     background: `url(${bgImage}) lightgray  ${isTop ? '0% top' : '50% center'} / cover no-repeat`,
@@ -23,7 +24,7 @@ const HoverCard: FC<Props> = ({ bgImage, label, hoverContent, isTop }) => {
     backdropFilter: 'blur(22.5px)',
   }
 
-  const hoverContentClassName = 'rounded-[0.25rem] w-full h-[17.5rem] absolute top-0 bottom-0 left-0 right-0'
+  const hoverContentClassName = `w-full absolute top-0 bottom-0 left-0 right-0 ${reducedHeight ? 'h-[12rem]' : 'h-[17.5rem]'}`
 
   return (
     <div
@@ -33,8 +34,8 @@ const HoverCard: FC<Props> = ({ bgImage, label, hoverContent, isTop }) => {
       }}
     >
       <div
-        className='w-full h-[17.5rem] rounded-[0.25rem] relative border border-solid border-navborder-light dark:border-navborder-dark'
-        style={containerStyle}
+        className='w-full relative border border-solid border-navborder-light dark:border-navborder-dark'
+        style={{ ...containerStyle, height: reducedHeight ? '12rem' : '17.5rem' }}
         onMouseOver={blur}
         onMouseOut={unblur}
         onFocus={blur}
@@ -45,7 +46,11 @@ const HoverCard: FC<Props> = ({ bgImage, label, hoverContent, isTop }) => {
         <div className={`${hoverContentClassName} ${isBlurred ? 'opacity-100' : 'opacity-0'}`}>{hoverContent}</div>
       </div>
 
-      {label ? <p className='mt-4 text-fg/100-light dark:text-fg/100-dark font-MSMediumWide text-sm leading-[160%] font-medium'>{label}</p> : null}
+      {label ? (
+        <p className='mt-4 text-fg/100-light dark:text-fg/100-dark text-sm' style={{ lineHeight: '1.8' }}>
+          {label}
+        </p>
+      ) : null}
     </div>
   )
 }

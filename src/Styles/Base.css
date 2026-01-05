@@ -2,35 +2,49 @@
 
 @layer base {
   * {
-    @apply p-0 m-0 box-border transition-all ease-in font-MSMediumRegular;
+    @apply p-0 m-0 box-border transition-all ease-in;
     transition: 0.2s ease-in;
   }
 
   body {
-    @apply overflow-x-hidden;
+    @apply overflow-x-hidden font-serif;
+    font-family: Georgia, serif;
+    line-height: 1.8;
   }
 
   .p {
-    @apply text-sm sm:text-lg text-fg/80-light dark:text-fg/80-dark mt-8 mb-10 leading-[160%];
+    @apply text-base text-fg/100-light dark:text-fg/80-dark mb-5;
+    line-height: 1.8;
   }
 
   .h3 {
-    @apply text-3xl text-fg/80-light dark:text-fg/80-dark mt-8 mb-10 leading-[160%] font-semibold;
+    @apply text-base font-semibold text-fg/100-light dark:text-fg/100-dark mt-8 mb-3;
+    letter-spacing: 0.3px;
+    line-height: 1.8;
   }
 
   .h1 {
-    @apply font-MSMediumWide text-fg/100-light dark:text-fg/100-dark text-xl sm:text-2xl xs:text-[32px] md:text-5xl !leading-[140%] xs:!leading-[140%];
+    @apply font-normal text-fg/100-light dark:text-fg/100-dark text-[28px] mb-4;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
   }
 
   .h1-alt {
-    @apply font-MSMediumWide text-fg/50-light dark:text-fg/50-dark;
+    @apply text-fg/60-light dark:text-fg/60-dark;
   }
 
   .h4 {
-    @apply font-MSMediumWide text-fg/80-light dark:text-fg/100-dark text-fg/100-light text-lg leading-[160%];
+    @apply text-fg/100-light dark:text-fg/100-dark text-lg mb-4;
+    line-height: 1.8;
   }
 
   .a {
-    @apply font-MSMediumWide underline;
+    @apply underline;
+  }
+
+  .subtitle {
+    @apply text-sm text-fg/60-light dark:text-fg/60-dark mb-8;
+    font-style: italic;
+    line-height: 1.8;
   }
 }

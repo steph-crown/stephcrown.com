@@ -1,5 +1,3 @@
-import { ToolIcon } from 'Assets/Svgs'
-
 const tools = [
   'HTML',
   'CSS',
@@ -62,35 +60,24 @@ const tools = [
 const Tools = () => {
   return (
     <div>
-      <div className='mb-10'>
-        <ToolIcon className='h-[4.75rem] w-[4.75rem] text-fg/50-light dark:text-fg/50-dark' />
+      <h1 className='h1'>Languages, tools, and frameworks</h1>
 
-        {/* <p className='text-fg/100-light dark:text-fg/100-dark font-MSMediumWide'>Undergoing Construction ..</p> */}
-        <article>
-          <h1 className='my-2 h1'>
-            <span className='h1-alt'>Languages, tools, </span>
-            <br />
-            and frameworks<span className='h1-alt'>.</span>
-          </h1>
+      <div className='section'>
+        <p className='p'>
+          Here&apos;s a list of some of the languages, tools, and frameworks I work with. I&apos;m always learning new things and I&apos;m open to new
+          ideas and technologies.
+        </p>
+      </div>
 
-          <p className='p'>
-            Here&apos;s a list of some of the languages, tools, and frameworks I work with. I&apos;m always learning new things and I&apos;m open to
-            new ideas and technologies.
-          </p>
-
-          <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-4'>
-            {/* Map through the 'tools' array to render each tool */}
-            {tools.map((tool, index) => (
-              <div
-                key={tool}
-                className='bg-bg/5-light dark:bg-bg/5-dark p-4 rounded-md text-center
-                       text-fg/80-light dark:text-fg/80-dark hover:bg-gray-200 dark:hover:bg-gray-700'
-              >
-                {tool}
-              </div>
-            ))}
+      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-6'>
+        {tools.map((tool) => (
+          <div
+            key={tool}
+            className='border border-navborder-light dark:border-navborder-dark p-4 text-center text-fg/100-light dark:text-fg/100-dark hover:bg-bg/5-light dark:hover:bg-bg/5-dark'
+          >
+            {tool}
           </div>
-        </article>
+        ))}
       </div>
     </div>
   )

@@ -39,8 +39,8 @@ const ClipboardText: React.FC<{ text: string }> = ({ text }) => {
   return (
     <button onClick={handleCopyText} className='w-max max-w-[12rem] border-fg/50-dark border border-solid p-2  rounded-[4px] '>
       <span
-        className='inline-block text-left break-all font-MSMediumWide text-sm leading-[160%] text-fg/100-dark rounded-[4px]'
-        style={isCopied ? copiedTextStyle : {}}
+        className='inline-block text-left break-all text-sm text-fg/100-dark rounded-[4px]'
+        style={{ ...(isCopied ? copiedTextStyle : {}), lineHeight: '1.8' }}
       >
         {text}
       </span>

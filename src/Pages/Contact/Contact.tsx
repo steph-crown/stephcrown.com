@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { SendIcon } from 'Assets/Svgs'
 import { SEO } from 'Components'
 import { BREADCRUMB_STRUCTURED_DATA } from 'Constants'
 
@@ -94,24 +93,17 @@ const Contact = () => {
         structuredData={BREADCRUMB_STRUCTURED_DATA(breadcrumbData)}
       />
       <div>
-        <div className='mb-10'>
-          <SendIcon className='h-[4.75rem] w-[4.75rem] text-fg/50-light dark:text-fg/50-dark' />
+        <h1 className='h1'>Send me a message</h1>
 
-          <article>
-            <h1 className='my-2 h1'>
-              <span className='h1-alt'>Send me</span>
-              <br />a message<span className='h1-alt'>.</span>
-            </h1>
-
-            <p className='p'>
-              Fill the form below and hit send. I&apos;ll get back to you as soon as possible. As a <strong>software engineer</strong> and{' '}
-              <strong>frontend developer</strong>, I&apos;m available for <strong>freelance projects</strong>, <strong>collaborations</strong>, and{' '}
-              <strong>technical discussions</strong>. You can also send me an email at{' '}
-              <a target='_blank' rel='noreferrer' className='font-MSMediumWide underline' href='mailto:emmanuelstephen024@gmail.com'>
-                emmanuelstephen024@gmail.com
-              </a>{' '}
-            </p>
-          </article>
+        <div className='section'>
+          <p className='p'>
+            Fill the form below and hit send. I&apos;ll get back to you as soon as possible. As a <strong>software engineer</strong> and{' '}
+            <strong>frontend developer</strong>, I&apos;m available for <strong>freelance projects</strong>, <strong>collaborations</strong>, and{' '}
+            <strong>technical discussions</strong>. You can also send me an email at{' '}
+            <a target='_blank' rel='noreferrer' className='a' href='mailto:emmanuelstephen024@gmail.com'>
+              emmanuelstephen024@gmail.com
+            </a>
+          </p>
         </div>
 
         <form className='form' name='contact' method='post' onSubmit={handleSubmit}>
@@ -148,9 +140,11 @@ const Contact = () => {
             {errors.message && <span className='text-red-500 text-sm mt-1 block'>{errors.message}</span>}
           </div>
 
-          <button className='btn w-max' type='submit' disabled={isSubmitting}>
-            {isSubmitting ? 'Sending...' : 'Send'} <SendIcon />
-          </button>
+          <div className='navigation'>
+            <button className='btn' type='submit' disabled={isSubmitting}>
+              {isSubmitting ? 'Sending...' : 'Send'}
+            </button>
+          </div>
         </form>
       </div>
     </>

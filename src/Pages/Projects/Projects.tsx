@@ -1,8 +1,6 @@
-import { ProjectIcon } from 'Assets/Svgs'
 import { ProjectCard, SEO } from 'Components'
 import { BREADCRUMB_STRUCTURED_DATA } from 'Constants'
 import PROJECTS, { PROJECT_STRUCTURED_DATA } from 'Constants/Projects'
-import './Projects.css'
 
 const Projects = () => {
   const breadcrumbData = [
@@ -22,32 +20,28 @@ const Projects = () => {
         structuredData={combinedStructuredData}
       />
       <div>
-        <div className='mb-10'>
-          <ProjectIcon className='h-[4.75rem] w-[4.75rem] text-fg/50-light dark:text-fg/50-dark' />
+        <h1 className='h1'>Some of My Projects</h1>
 
-          <article>
-            <h1 className='my-2 h1'>
-              <span className='h1-alt'>Some of </span>
-              <br />
-              My Projects<span className='h1-alt'>.</span>
-            </h1>
+        <div className='section'>
+          <p className='p'>
+            In my years of experience as a <strong>software engineer</strong> and <strong>frontend developer</strong>, I&apos;ve been privileged to
+            work on various <strong>React</strong>, <strong>TypeScript</strong>, and <strong>Next.js</strong> projects in different capacities: as an
+            independent contractor, as a member of a team, and as a team lead.
+          </p>
+        </div>
 
-            <p className='p'>
-              In my years of experience as a <strong>software engineer</strong> and <strong>frontend developer</strong>, I&apos;ve been privileged to
-              work on various <strong>React</strong>, <strong>TypeScript</strong>, and <strong>Next.js</strong> projects in different capacities: as
-              an independent contractor, as a member of a team, and as a team lead.
-            </p>
+        <div className='section'>
+          <p className='p'>
+            Below are some of my <strong>software development projects</strong> showcasing my expertise in modern web technologies.
+          </p>
+        </div>
 
-            <p className='p'>
-              Below are some of my <strong>software development projects</strong> showcasing my expertise in modern web technologies.
-            </p>
+        <div className='divider mt-10' />
 
-            <div className='grid gap-8 xl:gap-3 grid-cols-1 xl:grid-cols-2 projects'>
-              {PROJECTS.map((project) => (
-                <ProjectCard key={`${project?.title}${project.url}`} project={project} />
-              ))}
-            </div>
-          </article>
+        <div className='grid gap-0 grid-cols-1'>
+          {PROJECTS.map((project, index) => (
+            <ProjectCard key={`${project?.title}${project.url}`} project={project} isLast={index === PROJECTS.length - 1} />
+          ))}
         </div>
       </div>
     </>

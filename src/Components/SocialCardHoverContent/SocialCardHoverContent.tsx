@@ -17,7 +17,9 @@ const SocialCardHoverContent: FC<Props> = ({ username, url, description }) => {
         </a>
       </div>
 
-      <p className='font-MSMediumWide text-sm text-fg/80-dark'>{description}</p>
+      <p className='text-sm text-fg/80-dark' style={{ lineHeight: '1.8' }}>
+        {description}
+      </p>
     </div>
   )
 }

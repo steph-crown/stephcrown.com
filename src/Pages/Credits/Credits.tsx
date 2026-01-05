@@ -1,25 +1,17 @@
 import { JeremiahPorfolioScreenshot, KadetPortfolioScreenshot } from 'Assets/Pngs'
-import { ArrowIcon, HeartIcon } from 'Assets/Svgs'
+import { ArrowIcon } from 'Assets/Svgs'
 import { HoverCard } from 'Components'
 
 const Credits = () => {
   return (
     <div>
-      <div className='mb-10'>
-        <HeartIcon className='h-[4.75rem] w-[4.75rem] text-fg/50-light dark:text-fg/50-dark' />
+      <h1 className='h1'>Design Inspiration and Credits</h1>
 
-        <article>
-          <h1 className='my-2 h1'>
-            <span className='h1-alt'>Design Inspiration </span>
-            <br />
-            and Credits<span className='h1-alt'>.</span>
-          </h1>
-
-          <p className='p'>This portfolio was designed and built with 💛 by me inspiration from the following websites:</p>
-        </article>
+      <div className='section'>
+        <p className='p'>This portfolio was designed and built with 💛 by me inspiration from the following websites:</p>
       </div>
 
-      <section className='flex justify-between flex-wrap gap-y-10' aria-details='Stephen Social media links'>
+      <section className='flex justify-between flex-wrap gap-y-6 mt-10' aria-details='Stephen Credits'>
         <HoverCard
           isTop
           bgImage={JeremiahPorfolioScreenshot}
@@ -27,7 +19,10 @@ const Credits = () => {
           hoverContent={
             <div className='p-6 flex flex-col h-full justify-between'>
               <div className='flex justify-between '>
-                <span className='inline-block text-left break-all font-MSMediumWide text-sm leading-[160%] text-fg/100-dark rounded-[4px] w-max max-w-[12rem] border-fg/50-dark border border-solid p-2'>
+                <span
+                  className='inline-block text-left break-all text-sm text-fg/100-dark rounded-[4px] w-max max-w-[12rem] border-fg/50-dark border border-solid p-2'
+                  style={{ lineHeight: '1.8' }}
+                >
                   Click the arrow <br />
                   to visit the site
                 </span>
@@ -47,7 +42,10 @@ const Credits = () => {
           hoverContent={
             <div className='p-6 flex flex-col h-full justify-between'>
               <div className='flex justify-between '>
-                <span className='inline-block text-left break-all font-MSMediumWide text-sm leading-[160%] text-fg/100-dark rounded-[4px] w-max max-w-[12rem] border-fg/50-dark border border-solid p-2'>
+                <span
+                  className='inline-block text-left break-all text-sm text-fg/100-dark rounded-[4px] w-max max-w-[12rem] border-fg/50-dark border border-solid p-2'
+                  style={{ lineHeight: '1.8' }}
+                >
                   Click the arrow <br />
                   to visit the site
                 </span>
@@ -61,9 +59,9 @@ const Credits = () => {
         />
       </section>
 
-      <h3 className='h3 mt-20'>Image Credits</h3>
+      <h3 className='h3 mt-16'>Image Credits</h3>
 
-      <ul className='flex flex-col gap-4 list-disc'>
+      <ul className='flex flex-col gap-4 list-disc ml-6'>
         <li className='p my-0'>
           Photo by{' '}
           <a
