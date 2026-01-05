@@ -13,15 +13,20 @@ const Home = () => {
         <div className='section'>
           <p className='p'>
             I&apos;m a software engineer with over 5 years of experience. I love building cool and useful digital products. I&apos;m a problem-solver
-            and enjoy finding clever and simple ways to make things work well for users. I can work on all parts of a software project, from the user
-            interface to the inner workings. My goal is to create well-built systems that people love to use.
+            and enjoy finding clever and simple ways to make things work well for users.
           </p>
         </div>
 
         <div className='section'>
           <p className='p'>
-            I&apos;m always learning new things, and I&apos;m especially interested in machine learning, artificial intelligence, and the Internet of
-            Things.
+            I care deeply about what I do. I believe strongly in the saying, &quot;Whatever you do, do it right.&quot; I love learning and enjoy
+            knowing a bit or a lot about a wide range of things. I graduated from the Department of Mathematics at the University of Lagos as the best
+            graduating student in my department.
+          </p>
+
+          <p>
+            Beyond coding and solving analytical problems, I love to enjoy music. I play the keyboard and have a dream to one day play at an
+            international concert for an international band. And yes, it&apos;s going to happen.
           </p>
         </div>
 
