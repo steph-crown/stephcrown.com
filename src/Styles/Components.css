@@ -204,6 +204,22 @@
     margin: 0;
   }
 
+  .loader-dot {
+    animation: loader-pulse 1.2s ease-in-out infinite;
+  }
+
+  @keyframes loader-pulse {
+    0%,
+    100% {
+      opacity: 0.3;
+      transform: scaleY(0.6);
+    }
+    50% {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+
   .form .label:last-of-type {
     margin-bottom: 0;
   }

@@ -16,7 +16,7 @@ import {
 } from 'lucide-react'
 import { Link, useLocation } from 'react-router-dom'
 import { APP_ROUTES } from 'Constants'
-import { FC, useState } from 'react'
+import { FC, useState, useEffect } from 'react'
 import { useThemeManager } from 'Hooks/Ui'
 
 const navItems = [
@@ -32,6 +32,39 @@ const TopNav: FC = () => {
   const location = useLocation()
   const { isDarkTheme, handleThemeToggle } = useThemeManager()
   const [hoveredItem, setHoveredItem] = useState<string | null>(null)
+  const [isDark, setIsDark] = useState(() => isDarkTheme())
+
+  useEffect(() => {
+    const checkTheme = () => {
+      setIsDark(document.documentElement.classList.contains('dark'))
+    }
+
+    checkTheme()
+
+    const observer = new MutationObserver(checkTheme)
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class'],
+    })
+
+    const handleStorageChange = () => {
+      checkTheme()
+    }
+
+    window.addEventListener('storage', handleStorageChange)
+
+    return () => {
+      observer.disconnect()
+      window.removeEventListener('storage', handleStorageChange)
+    }
+  }, [])
+
+  const handleToggle = () => {
+    handleThemeToggle()
+    setTimeout(() => {
+      setIsDark(document.documentElement.classList.contains('dark'))
+    }, 0)
+  }
 
   return (
     <nav className='nav-strip flex items-center gap-6 px-4 py-3 backdrop-blur-sm'>
@@ -69,10 +102,10 @@ const TopNav: FC = () => {
       })}
       <div className='relative flex items-center ml-auto' onMouseEnter={() => setHoveredItem('theme')} onMouseLeave={() => setHoveredItem(null)}>
         <button
-          onClick={handleThemeToggle}
+          onClick={handleToggle}
           className='flex items-center justify-center transition-all text-fg/60-light dark:text-fg/60-dark hover:text-fg/100-light dark:hover:text-fg/100-dark'
         >
-          {isDarkTheme() ? <Sun className='w-5 h-5' size={20} /> : <Moon className='w-5 h-5' size={20} />}
+          {isDark ? <Sun className='w-5 h-5' size={20} /> : <Moon className='w-5 h-5' size={20} />}
         </button>
         <span
           className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs transition-all duration-300 ${
@@ -80,7 +113,7 @@ const TopNav: FC = () => {
           } text-fg/60-light dark:text-fg/60-dark`}
           style={{ lineHeight: '1.8' }}
         >
-          {isDarkTheme() ? 'Light' : 'Dark'}
+          {isDark ? 'Light' : 'Dark'}
         </span>
       </div>
     </nav>
