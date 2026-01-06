@@ -24,7 +24,7 @@ const Home = () => {
             graduating student in my department.
           </p>
 
-          <p>
+          <p className='p'>
             Beyond coding and solving analytical problems, I love to enjoy music. I play the keyboard and have a dream to one day play at an
             international concert for an international band. And yes, it&apos;s going to happen.
           </p>
