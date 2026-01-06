@@ -67,7 +67,7 @@ const TopNav: FC = () => {
   }
 
   return (
-    <nav className='nav-strip flex items-center gap-6 px-4 py-3 backdrop-blur-sm'>
+    <nav className='nav-strip flex items-center gap-6 px-4 py-3 backdrop-blur-sm' role='navigation' aria-label='Main navigation'>
       {navItems.map((item) => {
         const isActive = location.pathname === item.to
         const Icon = isActive ? item.iconFilled : item.icon
@@ -78,40 +78,53 @@ const TopNav: FC = () => {
             className='relative flex items-center'
             onMouseEnter={() => setHoveredItem(item.to)}
             onMouseLeave={() => setHoveredItem(null)}
+            onFocus={() => setHoveredItem(item.to)}
+            onBlur={() => setHoveredItem(null)}
           >
             <Link
               to={item.to}
-              className={`flex items-center justify-center transition-all ${
+              aria-label={`Navigate to ${item.label} page`}
+              aria-current={isActive ? 'page' : undefined}
+              className={`flex items-center justify-center transition-all focus:outline-none focus:ring-2 focus:ring-fg/60-light dark:focus:ring-fg/60-dark focus:ring-offset-2 rounded ${
                 isActive
                   ? 'text-fg/100-light dark:text-fg/100-dark'
                   : 'text-fg/60-light dark:text-fg/60-dark hover:text-fg/100-light dark:hover:text-fg/100-dark'
               }`}
             >
-              <Icon className='w-5 h-5' size={20} fill={isActive ? 'currentColor' : 'none'} />
+              <Icon className='w-5 h-5' size={20} fill={isActive ? 'currentColor' : 'none'} aria-hidden='true' />
             </Link>
             <span
               className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs transition-all duration-300 ${
                 hoveredItem === item.to ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'
               } ${isActive ? 'text-fg/100-light dark:text-fg/100-dark' : 'text-fg/60-light dark:text-fg/60-dark'}`}
               style={{ lineHeight: '1.8' }}
+              aria-hidden='true'
             >
               {item.label}
             </span>
           </div>
         )
       })}
-      <div className='relative flex items-center ml-auto' onMouseEnter={() => setHoveredItem('theme')} onMouseLeave={() => setHoveredItem(null)}>
+      <div
+        className='relative flex items-center ml-auto'
+        onMouseEnter={() => setHoveredItem('theme')}
+        onMouseLeave={() => setHoveredItem(null)}
+        onFocus={() => setHoveredItem('theme')}
+        onBlur={() => setHoveredItem(null)}
+      >
         <button
           onClick={handleToggle}
-          className='flex items-center justify-center transition-all text-fg/60-light dark:text-fg/60-dark hover:text-fg/100-light dark:hover:text-fg/100-dark'
+          aria-label={`Switch to ${isDark ? 'light' : 'dark'} mode`}
+          className='flex items-center justify-center transition-all text-fg/60-light dark:text-fg/60-dark hover:text-fg/100-light dark:hover:text-fg/100-light focus:outline-none focus:ring-2 focus:ring-fg/60-light dark:focus:ring-fg/60-dark focus:ring-offset-2 rounded'
         >
-          {isDark ? <Sun className='w-5 h-5' size={20} /> : <Moon className='w-5 h-5' size={20} />}
+          {isDark ? <Sun className='w-5 h-5' size={20} aria-hidden='true' /> : <Moon className='w-5 h-5' size={20} aria-hidden='true' />}
         </button>
         <span
           className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs transition-all duration-300 ${
             hoveredItem === 'theme' ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'
           } text-fg/60-light dark:text-fg/60-dark`}
           style={{ lineHeight: '1.8' }}
+          aria-hidden='true'
         >
           {isDark ? 'Light' : 'Dark'}
         </span>

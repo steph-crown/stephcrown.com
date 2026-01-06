@@ -24,6 +24,8 @@ const ImageHoverSwitch: React.FC<ImageHoverSwitchProps> = ({ imgSrc, alt, ...res
       onMouseOut={() => setIsColored(false)}
       onFocus={() => setIsColored(true)}
       onBlur={() => setIsColored(false)}
+      loading='lazy'
+      decoding='async'
       {...rest}
       alt={alt ?? 'illustration'}
     />

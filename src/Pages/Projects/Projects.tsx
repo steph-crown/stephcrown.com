@@ -13,13 +13,13 @@ const Projects = () => {
   return (
     <>
       <SEO
-        title='Software Engineering Projects - Stephen Emmanuel (Steph Crown)'
-        description="Explore Stephen Emmanuel's portfolio of software engineering projects including React, TypeScript, Next.js applications, full-stack web development, and modern digital products. View live demos and case studies."
-        keywords='Stephen Emmanuel projects, Steph Crown portfolio, React projects, TypeScript projects, Next.js applications, full-stack development, web development projects, software engineering portfolio, frontend projects, JavaScript projects'
+        title='Software Engineering Projects - Stephen Emmanuel (Chukwunonso) | Steph Crown'
+        description="Explore Stephen Emmanuel's (Chukwunonso) portfolio of software engineering projects. Nigerian software engineer showcasing React, TypeScript, Next.js, Rust, Elixir, Phoenix, Node.js applications, full-stack web development, and modern digital products. View live demos and case studies."
+        keywords='Stephen Emmanuel projects, Steph Crown portfolio, Chukwunonso projects, Nigerian software engineer projects, React projects, TypeScript projects, Next.js applications, Rust projects, Elixir projects, Phoenix projects, full-stack development, web development projects, software engineering portfolio, frontend projects, backend projects, systems projects, JavaScript projects, Nigeria developer projects'
         canonicalUrl='https://stephcrown.com/projects'
         structuredData={combinedStructuredData}
       />
-      <div>
+      <main role='main' aria-label='Projects page'>
         <h1 className='h1'>Some of My Projects</h1>
 
         <div className='section'>
@@ -33,7 +33,7 @@ const Projects = () => {
             <ProjectCard key={`${project?.title}${project.url}`} project={project} isLast={index === PROJECTS.length - 1} />
           ))}
         </div>
-      </div>
+      </main>
     </>
   )
 }

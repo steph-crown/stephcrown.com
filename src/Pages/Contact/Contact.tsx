@@ -86,13 +86,13 @@ const Contact = () => {
   return (
     <>
       <SEO
-        title='Contact Stephen Emmanuel (Steph Crown) - Software Engineer'
-        description='Get in touch with Stephen Emmanuel (Steph Crown), a software engineer and frontend developer. Available for freelance projects, collaborations, and technical discussions. Contact via email or form.'
-        keywords='contact Stephen Emmanuel, contact Steph Crown, hire software engineer, freelance developer, React developer contact, TypeScript developer, web development services, software engineering consultation'
+        title='Contact Stephen Emmanuel (Chukwunonso) - Nigerian Software Engineer | Steph Crown'
+        description='Get in touch with Stephen Emmanuel (Chukwunonso), also known as Steph Crown, a Nigerian software engineer, frontend developer, backend developer, and systems engineer. Available for freelance projects, collaborations, and technical discussions. Contact via email or form.'
+        keywords='contact Stephen Emmanuel, contact Steph Crown, contact Chukwunonso, hire Nigerian software engineer, freelance developer Nigeria, React developer contact, TypeScript developer, web development services, software engineering consultation, Nigeria developer contact'
         canonicalUrl='https://stephcrown.com/contact'
         structuredData={BREADCRUMB_STRUCTURED_DATA(breadcrumbData)}
       />
-      <div>
+      <main role='main' aria-label='Contact page'>
         <h1 className='h1'>Send me a message</h1>
 
         <div className='section'>
@@ -106,47 +106,73 @@ const Contact = () => {
           </p>
         </div>
 
-        <form className='form' name='contact' method='post' onSubmit={handleSubmit}>
+        <form className='form' name='contact' method='post' onSubmit={handleSubmit} aria-label='Contact form'>
           <input type='hidden' name='form-name' value='contact' />
           <div className='flex gap-6 md:gap-10 flex-col lg:flex-row'>
-            <label className='label'>
+            <label className='label' htmlFor='contact-name'>
               Name:{' '}
-              <input type='text' className='input' placeholder='Enter your name' name='name' value={formData.name} onChange={handleInputChange} />
+              <input
+                type='text'
+                id='contact-name'
+                className='input'
+                placeholder='Enter your name'
+                name='name'
+                value={formData.name}
+                onChange={handleInputChange}
+                aria-required='false'
+                aria-invalid='false'
+              />
             </label>
 
             <div className='label'>
-              Email address:
+              <label htmlFor='contact-email'>Email address:</label>
               <input
                 type='email'
+                id='contact-email'
                 className={`input ${errors.email ? 'border-red-500 focus:border-red-500' : ''}`}
                 placeholder='Enter your email address'
                 name='email'
                 value={formData.email}
                 onChange={handleInputChange}
+                aria-required='true'
+                aria-invalid={!!errors.email}
+                aria-describedby={errors.email ? 'email-error' : undefined}
               />
-              {errors.email && <span className='text-red-500 text-sm mt-1 block'>{errors.email}</span>}
+              {errors.email && (
+                <span id='email-error' className='text-red-500 text-sm mt-1 block' role='alert'>
+                  {errors.email}
+                </span>
+              )}
             </div>
           </div>
 
           <div className='label'>
-            Message:
+            <label htmlFor='contact-message'>Message:</label>
             <textarea
+              id='contact-message'
               className={`input h-32 ${errors.message ? 'border-red-500 focus:border-red-500' : ''}`}
               placeholder='Enter your message'
               name='message'
               value={formData.message}
               onChange={handleInputChange}
+              aria-required='true'
+              aria-invalid={!!errors.message}
+              aria-describedby={errors.message ? 'message-error' : undefined}
             />
-            {errors.message && <span className='text-red-500 text-sm mt-1 block'>{errors.message}</span>}
+            {errors.message && (
+              <span id='message-error' className='text-red-500 text-sm mt-1 block' role='alert'>
+                {errors.message}
+              </span>
+            )}
           </div>
 
           <div className='navigation'>
-            <button className='btn' type='submit' disabled={isSubmitting}>
+            <button className='btn' type='submit' disabled={isSubmitting} aria-label={isSubmitting ? 'Sending message' : 'Send message'}>
               {isSubmitting ? 'Sending...' : 'Send'}
             </button>
           </div>
         </form>
-      </div>
+      </main>
     </>
   )
 }

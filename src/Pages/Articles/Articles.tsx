@@ -14,13 +14,13 @@ const Home = () => {
   return (
     <>
       <SEO
-        title='Technical Articles & Blog Posts - Stephen Emmanuel (Steph Crown)'
-        description="Read Stephen Emmanuel's technical articles on React, TypeScript, JavaScript, ClojureScript, Elixir, Phoenix, and modern web development. Published on Hashnode, Open Replay, Dev.to, and Revent Academy."
-        keywords='Stephen Emmanuel articles, Steph Crown blog, React articles, TypeScript tutorials, JavaScript guides, ClojureScript, Elixir Phoenix, web development tutorials, software engineering articles, technical writing'
+        title='Technical Articles & Blog Posts - Stephen Emmanuel (Chukwunonso) | Steph Crown'
+        description="Read Stephen Emmanuel's (Chukwunonso) technical articles on React, TypeScript, JavaScript, ClojureScript, Elixir, Phoenix, and modern web development. Nigerian software engineer writing technical tutorials and guides. Published on Hashnode, Open Replay, Dev.to, and Revent Academy."
+        keywords='Stephen Emmanuel articles, Steph Crown blog, Chukwunonso articles, Nigerian software engineer articles, React articles, TypeScript tutorials, JavaScript guides, ClojureScript, Elixir Phoenix, web development tutorials, software engineering articles, technical writing, Nigeria developer blog'
         canonicalUrl='https://stephcrown.com/articles'
         structuredData={combinedStructuredData}
       />
-      <div>
+      <main role='main' aria-label='Articles page'>
         <h1 className='h1'>My Published Articles</h1>
 
         <div className='section'>
@@ -65,7 +65,7 @@ const Home = () => {
         </section>
 
         <p className='text-center mt-20 text-fg/60-light dark:text-fg/60-dark italic'>You&apos;re all caught up :{')'}</p>
-      </div>
+      </main>
     </>
   )
 }

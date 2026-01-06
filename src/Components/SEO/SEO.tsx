@@ -14,9 +14,9 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-  title = 'Stephen Emmanuel (Steph Crown) - Software Engineer & Frontend Developer',
-  description = 'Stephen Emmanuel (Steph Crown) is a skilled software engineer with 5+ years of experience building modern web applications. Expert in React, TypeScript, Next.js, and full-stack development. View portfolio, projects, and technical articles.',
-  keywords = 'Stephen Emmanuel, Steph Crown, software engineer, frontend developer, React developer, TypeScript, Next.js, full-stack developer, web developer, JavaScript, portfolio, projects, technical articles, software development, UI/UX, modern web applications',
+  title = 'Stephen Emmanuel (Chukwunonso) - Nigerian Software Engineer, Frontend & Backend Developer | Steph Crown',
+  description = 'Stephen Emmanuel (Chukwunonso), also known as Steph Crown, is a Nigerian software engineer, frontend developer, backend developer, and systems engineer with 5+ years of experience. Best graduating student from University of Lagos Department of Mathematics. Expert in React, TypeScript, Next.js, Rust, Elixir, Phoenix, Node.js, and full-stack development. Available for freelance projects. View portfolio, projects, and technical articles.',
+  keywords = 'Stephen Emmanuel, Steph Crown, Chukwunonso, Stephen Chukwunonso Emmanuel, Nigerian software engineer, Nigeria developer, frontend developer Nigeria, backend developer Nigeria, systems engineer Nigeria, University of Lagos, UNILAG, best graduating student, React developer, TypeScript developer, Rust developer, Elixir developer, Phoenix developer, Next.js developer, Node.js developer, full-stack developer, software engineering, web development, React, TypeScript, JavaScript, Next.js, Rust, Elixir, Phoenix, Angular, Node.js, PostgreSQL, MongoDB, frontend, backend, systems, freelance developer, software engineer portfolio, Nigeria software engineer, Lagos developer, Nigerian frontend developer, Nigerian backend developer',
   canonicalUrl = 'https://stephcrown.com',
   ogImage = 'https://stephcrown.com/stephcrown.png',
   ogType = 'website',
@@ -24,7 +24,7 @@ const SEO: React.FC<SEOProps> = ({
   structuredData,
   noIndex = false,
 }) => {
-  const fullTitle = title.includes('Stephen Emmanuel') ? title : `${title} | Stephen Emmanuel (Steph Crown)`
+  const fullTitle = title.includes('Stephen Emmanuel') || title.includes('Steph Crown') ? title : `${title} | Stephen Emmanuel (Steph Crown)`
 
   return (
     <Helmet>

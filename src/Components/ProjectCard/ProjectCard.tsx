@@ -17,7 +17,7 @@ const ProjectCard: FC<Props> = ({ project, isLast }) => {
         </div>
 
         {project.url && (
-          <a href={project.url} target='_blank' rel='noreferrer' className='btn'>
+          <a href={project.url} target='_blank' rel='noreferrer' className='btn' aria-label={`View ${project.title} project`}>
             View
           </a>
         )}
