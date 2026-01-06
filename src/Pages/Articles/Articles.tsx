@@ -2,6 +2,7 @@ import { ArticleCardHoverContent, HoverCard, SEO } from 'Components'
 
 import { ARTICLE_LIST, BREADCRUMB_STRUCTURED_DATA } from 'Constants'
 import { ARTICLE_STRUCTURED_DATA } from 'Constants/ArticleList'
+import { generatePageStructuredData } from 'Components/SEO/StructuredDataGenerator'
 
 const Home = () => {
   const breadcrumbData = [
@@ -9,7 +10,7 @@ const Home = () => {
     { name: 'Articles', url: 'https://stephcrown.com/articles' },
   ]
 
-  const combinedStructuredData = [BREADCRUMB_STRUCTURED_DATA(breadcrumbData), ...ARTICLE_STRUCTURED_DATA]
+  const combinedStructuredData = [...generatePageStructuredData('articles'), BREADCRUMB_STRUCTURED_DATA(breadcrumbData), ...ARTICLE_STRUCTURED_DATA]
 
   return (
     <>

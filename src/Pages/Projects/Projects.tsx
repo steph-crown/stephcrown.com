@@ -1,6 +1,7 @@
 import { ProjectCard, SEO } from 'Components'
 import { BREADCRUMB_STRUCTURED_DATA } from 'Constants'
 import PROJECTS, { PROJECT_STRUCTURED_DATA } from 'Constants/Projects'
+import { generatePageStructuredData } from 'Components/SEO/StructuredDataGenerator'
 
 const Projects = () => {
   const breadcrumbData = [
@@ -8,7 +9,7 @@ const Projects = () => {
     { name: 'Projects', url: 'https://stephcrown.com/projects' },
   ]
 
-  const combinedStructuredData = [BREADCRUMB_STRUCTURED_DATA(breadcrumbData), ...PROJECT_STRUCTURED_DATA]
+  const combinedStructuredData = [...generatePageStructuredData('projects'), BREADCRUMB_STRUCTURED_DATA(breadcrumbData), ...PROJECT_STRUCTURED_DATA]
 
   return (
     <>

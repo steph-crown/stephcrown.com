@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { SEO } from 'Components'
 import { BREADCRUMB_STRUCTURED_DATA } from 'Constants'
+import { generatePageStructuredData } from 'Components/SEO/StructuredDataGenerator'
 
 interface FormData {
   name: string
@@ -62,7 +63,6 @@ const Contact = () => {
     try {
       // Here you would typically send the form data to your backend
       // For now, we'll just simulate a submission
-      console.log('Form submitted:', formData)
 
       // Reset form after successful submission
       setFormData({ name: '', email: '', message: '' })
@@ -71,7 +71,6 @@ const Contact = () => {
       // You might want to show a success message here
       alert('Message sent successfully!')
     } catch (error) {
-      console.error('Error submitting form:', error)
       alert('There was an error sending your message. Please try again.')
     } finally {
       setIsSubmitting(false)
@@ -90,7 +89,7 @@ const Contact = () => {
         description='Get in touch with Stephen Emmanuel (Chukwunonso), also known as Steph Crown, a Nigerian software engineer, frontend developer, backend developer, and systems engineer. Available for freelance projects, collaborations, and technical discussions. Contact via email or form.'
         keywords='contact Stephen Emmanuel, contact Steph Crown, contact Chukwunonso, hire Nigerian software engineer, freelance developer Nigeria, React developer contact, TypeScript developer, web development services, software engineering consultation, Nigeria developer contact'
         canonicalUrl='https://stephcrown.com/contact'
-        structuredData={BREADCRUMB_STRUCTURED_DATA(breadcrumbData)}
+        structuredData={[...generatePageStructuredData('contact'), BREADCRUMB_STRUCTURED_DATA(breadcrumbData)]}
       />
       <main role='main' aria-label='Contact page'>
         <h1 className='h1'>Send me a message</h1>
