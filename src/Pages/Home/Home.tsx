@@ -39,7 +39,7 @@ const Home = () => {
               international concert for an international band. And yes, it&apos;s going to happen.
             </p>
 
-            <p className='p'>:D</p>
+            <p className='p hidden lg:block'>:D</p>
           </div>
 
           <nav className='navigation' aria-label='Home page navigation'>
