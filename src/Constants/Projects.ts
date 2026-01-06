@@ -8,14 +8,14 @@ const PROJECTS: ProjectType[] = [
     url: 'https://github.com/steph-crown/fintrack',
     shortDescription:
       'A local-first CLI financial tracker I built in Rust. Track your income and expenses on your own machine with zero cloud dependencies. Everything stays on your device, giving you complete control over your financial data. I distributed binaries for Mac, Linux, and Windows using cargo-dist, and used libraries for CLI table rendering, chart visualization, and terminal beautification.',
-    technologies: 'Rust, clap, cargo-dist, CLI libraries (tables, charts, coloring)',
+    technologies: 'Rust, clap, cargo-dist, serde, chrono, colored',
   },
   {
     title: 'filesearch',
     url: 'https://github.com/steph-crown/filesearch',
     shortDescription:
       'A CLI tool I built as practice for Rust. It searches for files matching a given pattern within a directory—essentially a simple version of the find command. Supports wildcard patterns and recursive directory searching. Built with clap for command-line argument parsing.',
-    technologies: 'Rust, clap',
+    technologies: 'Rust, clap, globset',
   },
   {
     title: 'SeaBaas',

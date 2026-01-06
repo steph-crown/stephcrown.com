@@ -25,31 +25,24 @@ const Home = () => {
 
         <div className='section'>
           <p className='p'>
-            I have authored several <strong>technical articles</strong> and <strong>tutorials</strong> on{' '}
+            I&apos;ve written technical articles and tutorials on{' '}
             <a target='_blank' rel='noreferrer' className='a' href='https://blog.stephcrown.com'>
               Hashnode
             </a>
             ,{' '}
             <a target='_blank' rel='noreferrer' className='a' href='https://blog.openreplay.com/authors/stephen-crown/'>
-              Open Replay Blog
+              Open Replay
             </a>
             ,{' '}
             <a target='_blank' rel='noreferrer' className='a' href='https://blog.reventacademy.com/author/stephen/'>
-              Revent Academy Blog
+              Revent Academy
             </a>
             , and{' '}
             <a target='_blank' rel='noreferrer' className='a' href='https://dev.to/stephcrown'>
               Dev.to
-            </a>{' '}
-            on various topics ranging from <strong>React</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>,{' '}
-            <strong>ClojureScript</strong>, <strong>Elixir</strong>, <strong>Phoenix</strong>, and other modern web technologies. As a{' '}
-            <strong>software engineer</strong>, I am always learning new things and I&apos;m open to new ideas and technologies. Feel free to check
-            out my articles and leave a comment. I will be glad to hear from you.
+            </a>
+            . Hover over any card and click the arrow icon ↗ to read.
           </p>
-        </div>
-
-        <div className='section'>
-          <p className='p'>Hover over (or tap on) any of the cards below and click the arrow icon ↗ at the top right to read the article.</p>
         </div>
 
         <section className='flex flex-col gap-y-6 mt-10' aria-details='Stephen Articles'>

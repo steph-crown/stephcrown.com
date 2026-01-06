@@ -37,7 +37,7 @@ const ClipboardText: React.FC<{ text: string }> = ({ text }) => {
   }
 
   return (
-    <button onClick={handleCopyText} className='w-max max-w-[12rem] border-fg/50-dark border border-solid p-2  rounded-[4px] '>
+    <button onClick={handleCopyText} className='w-max max-w-[12rem] border-fg/50-dark border border-solid p-2  '>
       <span
         className='inline-block text-left break-all text-sm text-fg/100-dark rounded-[4px]'
         style={{ ...(isCopied ? copiedTextStyle : {}), lineHeight: '1.8' }}
@@ -46,9 +46,7 @@ const ClipboardText: React.FC<{ text: string }> = ({ text }) => {
       </span>
 
       {/* tooltip that says copied, styled well. */}
-      {isCopied && (
-        <span className='absolute top-0 left-0 bg-fg/100-dark text-fg/100-light text-xs p-1 rounded-bl-[4px] rounded-tr-[4px]'>Copied!</span>
-      )}
+      {isCopied && <span className='absolute top-0 left-0 bg-fg/100-dark text-fg/100-light text-xs p-1 '>Copied!</span>}
     </button>
   )
 }
