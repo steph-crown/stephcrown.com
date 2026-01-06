@@ -13,6 +13,7 @@ import {
   Mail as MailFilled,
   Sun,
   Moon,
+  Github,
 } from 'lucide-react'
 import { Link, useLocation } from 'react-router-dom'
 import { APP_ROUTES } from 'Constants'
@@ -105,29 +106,57 @@ const TopNav: FC = () => {
           </div>
         )
       })}
-      <div
-        className='relative flex items-center ml-auto'
-        onMouseEnter={() => setHoveredItem('theme')}
-        onMouseLeave={() => setHoveredItem(null)}
-        onFocus={() => setHoveredItem('theme')}
-        onBlur={() => setHoveredItem(null)}
-      >
-        <button
-          onClick={handleToggle}
-          aria-label={`Switch to ${isDark ? 'light' : 'dark'} mode`}
-          className='flex items-center justify-center transition-all text-fg/60-light dark:text-fg/60-dark hover:text-fg/100-light dark:hover:text-fg/100-light focus:outline-none focus:ring-2 focus:ring-fg/60-light dark:focus:ring-fg/60-dark focus:ring-offset-2 rounded'
+      <div className='flex items-center gap-6 ml-auto'>
+        <div
+          className='relative items-center hidden min-[380px]:flex'
+          onMouseEnter={() => setHoveredItem('github')}
+          onMouseLeave={() => setHoveredItem(null)}
+          onFocus={() => setHoveredItem('github')}
+          onBlur={() => setHoveredItem(null)}
         >
-          {isDark ? <Sun className='w-5 h-5' size={20} aria-hidden='true' /> : <Moon className='w-5 h-5' size={20} aria-hidden='true' />}
-        </button>
-        <span
-          className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs transition-all duration-300 ${
-            hoveredItem === 'theme' ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'
-          } text-fg/60-light dark:text-fg/60-dark`}
-          style={{ lineHeight: '1.8' }}
-          aria-hidden='true'
+          <a
+            href='https://github.com/steph-crown'
+            target='_blank'
+            rel='noopener noreferrer'
+            aria-label='Visit my GitHub profile'
+            className='flex items-center justify-center transition-all text-fg/60-light dark:text-fg/60-dark hover:text-fg/100-light dark:hover:text-fg/100-dark focus:outline-none focus:ring-2 focus:ring-fg/60-light dark:focus:ring-fg/60-dark focus:ring-offset-2 rounded'
+          >
+            <Github className='w-5 h-5' size={20} aria-hidden='true' />
+          </a>
+          <span
+            className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs transition-all duration-300 ${
+              hoveredItem === 'github' ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'
+            } text-fg/60-light dark:text-fg/60-dark`}
+            style={{ lineHeight: '1.8' }}
+            aria-hidden='true'
+          >
+            GitHub
+          </span>
+        </div>
+        <div
+          className='relative flex items-center'
+          onMouseEnter={() => setHoveredItem('theme')}
+          onMouseLeave={() => setHoveredItem(null)}
+          onFocus={() => setHoveredItem('theme')}
+          onBlur={() => setHoveredItem(null)}
         >
-          {isDark ? 'Light' : 'Dark'}
-        </span>
+          <button
+            onClick={handleToggle}
+            aria-label={`Switch to ${isDark ? 'light' : 'dark'} mode`}
+            className='flex items-center justify-center transition-all text-fg/60-light dark:text-fg/60-dark hover:text-fg/100-light dark:hover:text-fg/100-light focus:outline-none focus:ring-2 focus:ring-fg/60-light dark:focus:ring-fg/60-dark focus:ring-offset-2 rounded'
+          >
+            {isDark ? <Sun className='w-5 h-5' size={20} aria-hidden='true' /> : <Moon className='w-5 h-5' size={20} aria-hidden='true' />}
+          </button>
+          <span
+            className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs transition-all duration-300 ${
+              hoveredItem === 'theme' ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'
+            } text-fg/60-light dark:text-fg/60-dark`}
+            style={{ lineHeight: '1.8' }}
+            aria-hidden='true'
+          >
+            {isDark ? 'Light' : 'Dark'}
+          </span>
+        </div>
       </div>
     </nav>
   )
