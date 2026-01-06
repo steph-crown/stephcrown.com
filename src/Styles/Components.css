@@ -90,6 +90,14 @@
     border-bottom-color: #3a3a3a;
   }
 
+  @media (max-width: 768px) {
+    .nav-strip {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+  }
+
   /* ImageHoverSwitch */
   /* Define the styles for the black and white and colored images */
   .bw {

@@ -34,7 +34,7 @@ const TopNav: FC = () => {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null)
 
   return (
-    <nav className='nav-strip flex items-center gap-6 px-4 py-3'>
+    <nav className='nav-strip flex items-center gap-6 px-4 py-3 backdrop-blur-sm'>
       {navItems.map((item) => {
         const isActive = location.pathname === item.to
         const Icon = isActive ? item.iconFilled : item.icon
