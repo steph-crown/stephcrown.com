@@ -24,7 +24,7 @@ const HoverCard: FC<Props> = ({ bgImage, label, hoverContent, isTop, reducedHeig
     backdropFilter: 'blur(22.5px)',
   }
 
-  const hoverContentClassName = `w-full absolute top-0 bottom-0 left-0 right-0 ${reducedHeight ? 'h-[12rem]' : 'h-[17.5rem]'}`
+  const hoverContentClassName = `w-full absolute top-0 bottom-0 left-0 right-0 ${reducedHeight ? 'h-[11rem] md:h-[15rem]' : 'h-[17.5rem]'}`
 
   return (
     <article
@@ -43,8 +43,10 @@ const HoverCard: FC<Props> = ({ bgImage, label, hoverContent, isTop, reducedHeig
       }}
     >
       <div
-        className='w-full relative border border-solid border-navborder-light dark:border-navborder-dark focus:outline-none focus:ring-2 focus:ring-fg/60-light dark:focus:ring-fg/60-dark focus:ring-offset-2'
-        style={{ ...containerStyle, height: reducedHeight ? '12rem' : '17.5rem' }}
+        className={`w-full relative border border-solid border-navborder-light dark:border-navborder-dark focus:outline-none focus:ring-2 focus:ring-fg/60-light dark:focus:ring-fg/60-dark focus:ring-offset-2 ${
+          reducedHeight ? 'h-[11rem] md:h-[15rem]' : 'h-[17.5rem]'
+        }`}
+        style={containerStyle}
         onMouseOver={blur}
         onMouseOut={unblur}
         onFocus={blur}

@@ -28,16 +28,18 @@ const Home = () => {
           </div>
 
           <div className='section'>
-            <p className='p'>
+            {/* <p className='p'>
               I care deeply about what I do. I believe strongly in the saying, &quot;Whatever you do, do it right.&quot; I love learning and enjoy
               knowing a bit or a lot about a wide range of things. I graduated from the Department of Mathematics at the University of Lagos as the
               best graduating student in my department.
-            </p>
+            </p> */}
 
             <p className='p'>
               Beyond coding and solving analytical problems, I love to enjoy music. I play the keyboard and have a dream to one day play at an
               international concert for an international band. And yes, it&apos;s going to happen.
             </p>
+
+            <p className='p'>:D</p>
           </div>
 
           <nav className='navigation' aria-label='Home page navigation'>

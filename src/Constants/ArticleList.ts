@@ -16,12 +16,21 @@ import { ArticleType } from 'Types'
 
 const ARTICLE_LIST: ArticleType[] = [
   {
+    name: 'Vectorization In Machine Learning',
+    bgImage:
+      'https://blog.stephcrown.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1758044377338%2F44e72663-6a29-4495-bdf7-97cccd67fabf.png&w=3840&q=75',
+    url: 'https://blog.stephcrown.com/vectorization-in-python-for-machine-learning',
+    platform: 'Hashnode',
+    description:
+      'Vectorization is a technique used in machine learning to speed up the process of training and predicting models. This article will show you how to use it to your advantage.',
+  },
+  {
     name: "How to Use Typescript's 'omit' Utility Type",
     bgImage: 'https://blog.openreplay.com/images/how-to-use-typescripts-omit-utility-type/images/hero.png',
     url: 'https://blog.openreplay.com/how-to-use-typescripts-omit-utility-type/',
     platform: 'Open Replay',
     description:
-      'A commonly used utility type in TypeScript is Omit. This type allows developers to form a new type from an existing one by excluding specific fields. This tutorial shows how to use it to handle different scenarios, from simple to complex, and examines practical applications to see some real-life reasons why you might need to use it.',
+      'Omit allows developers to form a new type from an existing one by excluding specific fields. This tutorial shows how to use it to handle different scenarios and some real-life reasons why you might need to use it.',
   },
   {
     name: 'TypeScript Doesn’t Insulate Your Code From Failure!',

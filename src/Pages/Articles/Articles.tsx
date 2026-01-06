@@ -52,6 +52,7 @@ const Home = () => {
               <HoverCard
                 bgImage={article.bgImage}
                 label={article.name}
+                reducedHeight
                 hoverContent={
                   <ArticleCardHoverContent
                     platform={article.platform}
