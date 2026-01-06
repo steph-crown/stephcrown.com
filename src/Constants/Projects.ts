@@ -4,38 +4,52 @@ import { ProjectType } from 'Types'
 
 const PROJECTS: ProjectType[] = [
   {
+    title: 'FinTrack',
+    url: 'https://github.com/steph-crown/fintrack',
+    shortDescription:
+      'A local-first CLI financial tracker I built in Rust. Track your income and expenses on your own machine with zero cloud dependencies. Everything stays on your device, giving you complete control over your financial data. I distributed binaries for Mac, Linux, and Windows using cargo-dist, and used libraries for CLI table rendering, chart visualization, and terminal beautification.',
+    technologies: 'Rust, clap, cargo-dist, CLI libraries (tables, charts, coloring)',
+  },
+  {
+    title: 'filesearch',
+    url: 'https://github.com/steph-crown/filesearch',
+    shortDescription:
+      'A CLI tool I built as practice for Rust. It searches for files matching a given pattern within a directory—essentially a simple version of the find command. Supports wildcard patterns and recursive directory searching. Built with clap for command-line argument parsing.',
+    technologies: 'Rust, clap',
+  },
+  {
     title: 'SeaBaas',
     url: 'https://sterling.ng/sterling-sets-milestone/',
     shortDescription:
-      "Africa's first indigenous core banking system. I led the frontend team that developed key modules (Customer Management, Customer Forms Configuration, Product Factory) for the application",
+      "Africa's first indigenous core banking system. I led the frontend team that built key modules including Customer Management, Customer Forms Configuration, and Product Factory. Worked with microfrontends and microservices architecture to deliver a robust banking platform.",
     technologies: 'React, TypeScript, TailwindCSS, Redux Toolkit, Microfrontends, Microservices',
   },
   {
     title: 'Checkref',
     url: 'https://checkref.co/',
     shortDescription:
-      'Professional reference management platform that empowers HR departments to efficiently handle reference requests, track responses, and maintain organized records throughout the hiring process. Built with mobile-first design and secure document workflows.',
+      'A reference management platform for HR teams to handle reference requests and track responses throughout the hiring process. Built with mobile-first design and secure document workflows to keep everything organized and accessible.',
     technologies: 'Next.js, TypeScript, Chakra UI, TailwindCSS',
   },
   {
     title: 'NextBasket',
     url: 'https://nextbasket.com/',
     shortDescription:
-      'An AI-based software platform designed to empower businesses in building and managing their online stores, complete with integrated warehouse solutions for their products.',
+      'An AI-powered platform that helps businesses build and manage their online stores. Includes integrated warehouse solutions so companies can handle their entire e-commerce operation from one place.',
     technologies: 'Next.js, Internationalization, TailwindCSS, Storybook',
   },
   {
     title: 'Khaime AI',
     url: 'https://khaime.com/',
     shortDescription:
-      'AI-powered website builder that generates responsive, professional websites based on business type and user prompts. Built intelligent editor with real-time collaboration, drag-and-drop functionality, and automated design suggestions using OpenAI and Claude APIs.',
+      'An AI website builder that creates responsive websites from business type and user prompts. Built an intelligent editor with real-time collaboration, drag-and-drop functionality, and automated design suggestions powered by OpenAI and Claude APIs.',
     technologies: 'React, TypeScript, OpenAI API, Claude API, Real-time Collaboration',
   },
   {
     title: 'JobOS AI',
     url: 'https://jobos.ai',
     shortDescription:
-      "AI-powered resume optimization platform that transforms job seekers' resumes into ATS-beating documents. Features advanced AI orchestration across multiple providers (OpenAI, Claude, Gemini), intelligent resume analysis with keyword optimization, cover letter generation, interview coaching with scenario-based practice sessions, and comprehensive job application tracking. Built with world-class optimization algorithms that deliver 90%+ ATS compatibility and 3-5x interview callback improvements.",
+      'An AI-powered resume optimization platform that helps job seekers create ATS-beating resumes. Orchestrates multiple AI providers (OpenAI, Claude, Gemini) to analyze resumes, optimize keywords, generate cover letters, and provide interview coaching. Also includes job application tracking to keep everything organized.',
     technologies:
       'React, TypeScript, Node.js, Express.js, PostgreSQL, Drizzle ORM, OpenAI API, Claude API, Google AI, Stripe, TailwindCSS, Shadcn UI, TanStack Query',
   },
@@ -43,76 +57,80 @@ const PROJECTS: ProjectType[] = [
     title: 'Hill Emissaries',
     url: 'https://hillemissaries.com/',
     shortDescription:
-      'Faith-based organization platform featuring scholarship program management, event gallery, and community outreach initiatives. Built with comprehensive admin dashboard for managing programs, media, and user feedback. Includes dynamic content management, image uploads, and responsive design for showcasing faith outreach activities, educational scholarships, and community engagement programs.',
+      'A platform for a faith-based organization to manage scholarship programs, showcase event galleries, and handle community outreach. Built a comprehensive admin dashboard for managing programs, media, and user feedback. Includes dynamic content management and image uploads.',
     technologies:
       'React, Redux Toolkit, Elixir, Phoenix Framework, PostgreSQL, TailwindCSS, Material Tailwind, AWS S3, File Uploads, Admin Dashboard',
   },
   {
     title: 'SyncSkills CMS - Education Technology Platform',
-    url: 'https://syncskills.com.au/', // Replace with actual live URL
+    url: 'https://syncskills.com.au/',
     shortDescription:
-      'Full-stack education technology platform for career transition training. Has comprehensive CMS, mini-course enrollment system, student progress tracking, and referral programs. Features dynamic content management, Stripe payment processing, course scheduling, brochure downloads, and scalable learning infrastructure for professional development.',
+      'A full-stack education platform for career transition training. Built a comprehensive CMS with mini-course enrollment, student progress tracking, and referral programs. Integrated Stripe for payments and created a scalable learning infrastructure.',
     technologies: 'Next.js 14, TypeScript, PayloadCMS, MongoDB, Prisma, Redux Toolkit, TailwindCSS, Stripe',
   },
   {
     title: 'Flowmono Automate',
     url: 'https://www.flowmono.com/products/flowmono-automate',
     shortDescription:
-      'Built comprehensive workflow automation platform featuring a Process Designer with drag-and-drop interface for creating custom approval flows, request tracking systems, and task automation solutions. Developed pre-built workflow templates for common business processes including expense approvals, leave requests, and compliance sign-offs.',
+      'A workflow automation platform with a drag-and-drop Process Designer for creating custom approval flows and task automation. Built pre-made templates for common processes like expense approvals, leave requests, and compliance sign-offs.',
     technologies: 'Angular, TypeScript, Material UI, SVG manipulation, Drag and Drop',
   },
   {
     title: 'Flowmono Phoenix',
     url: 'https://www.flowmono.com/products/phoenix',
     shortDescription:
-      'Developed powerful no-code form builder enabling businesses to create custom forms and workflows without coding. Built smart form creation tools with advanced features for business process automation.',
+      'A no-code form builder that lets businesses create custom forms and workflows without writing code. Built smart form creation tools with advanced features to automate business processes.',
     technologies: 'Angular, TypeScript, Material UI, SVG manipulation, Drag and Drop',
   },
   {
     title: 'Movie Moments',
     url: 'https://movie-moments.vercel.app/',
     shortDescription:
-      "Chat with friends about movies you're watching on different platforms. Share reactions tied to specific timestamps, create private rooms, and discuss scenes without spoilers. Works while you watch on Netflix, Disney+, or any streaming service.",
+      'A real-time chat app for discussing movies with friends while watching. Share reactions tied to specific timestamps, create private rooms, and talk about scenes without spoilers. Works with any streaming service.',
     technologies: 'Next.js, TypeScript, Supabase, Real-time Chat, TailwindCSS',
   },
 
   {
     title: "Kemi's Portfolio",
     url: 'https://www.kemiadeleke.com/',
-    shortDescription: 'A personalized portfolio designed for Kemi Adeleke, showcasing her work as a product designer.',
+    shortDescription:
+      'A personalized portfolio I designed and built for Kemi Adeleke to showcase her work as a product designer. Clean, modern design that puts her projects front and center.',
     technologies: 'React, TypeScript, Styled Components',
   },
   {
     title: "Stephen's Portfolio",
     url: 'https://stephcrown.com/',
-    shortDescription: 'My personal portfolio showcasing my work, skills, and professional journey.',
+    shortDescription:
+      'My personal portfolio site showcasing my work, skills, and professional journey. Built with a clean, minimal design that focuses on the content.',
     technologies: 'React, TypeScript, TailwindCSS',
   },
   {
     title: 'LEA Portal',
     url: '',
     shortDescription:
-      'An enterprise in-house platform that allows the  bank to efficiently manage requests from law enforcement agencies concerning actions on customer accounts.',
+      'An enterprise platform for a bank to manage requests from law enforcement agencies regarding customer account actions. Built secure workflows to handle sensitive legal requests efficiently.',
     technologies: 'React, TypeScript, TailwindCSS, Redux Toolkit',
   },
   {
     title: 'Notification Engine',
     url: '',
     shortDescription:
-      'An enterprise in-house notification management system that enables the client bank to manage and automate notification dispatch based on various customer account criteria and groups, with the ability to configure templates for different types of notifications, including email and SMS.',
+      'A notification management system for a bank to automate and manage notification dispatch based on customer account criteria. Built template configuration for different notification types including email and SMS.',
     technologies: 'Angular, NgRx, Quill',
   },
   {
     title: 'Solace Imaging',
     url: 'https://solaceimaging.com/',
-    shortDescription: 'An application that allows diagnostic centers to securely send images to specialists for analysis and interpretation.',
+    shortDescription:
+      'A secure platform for diagnostic centers to send medical images to specialists for analysis and interpretation. Built with security and privacy in mind for sensitive medical data.',
     technologies: 'React, TypeScript, Styled Components',
   },
 
   {
     title: 'Projecttent',
     url: 'https://projecttent.com/',
-    shortDescription: 'Simple landing page for Projecttent. I did the UI design and development.',
+    shortDescription:
+      'A landing page for Projecttent. I handled both the UI design in Figma and the development, creating a clean and effective first impression.',
     technologies: 'Elixir, TailwindCSS, Figma',
   },
 ]
