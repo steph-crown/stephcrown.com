@@ -5,7 +5,7 @@ import { ProjectType } from 'Types'
 const PROJECTS: ProjectType[] = [
   {
     title: 'FinTrack',
-    url: 'https://github.com/steph-crown/fintrack',
+    url: 'https://fintrack.stephcrown.com',
     shortDescription:
       'A local-first CLI financial tracker I built in Rust. Track your income and expenses on your own machine with zero cloud dependencies. Everything stays on your device, giving you complete control over your financial data. I distributed binaries for Mac, Linux, and Windows using cargo-dist, and used libraries for CLI table rendering, chart visualization, and terminal beautification.',
     technologies: 'Rust, clap, cargo-dist, serde, chrono, colored',
