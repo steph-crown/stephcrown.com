@@ -38,7 +38,7 @@ const PortfolioLayout = () => {
               <span className='text-portfolio-muted'>Hi, I&apos;m</span> Stephen Emmanuel
             </h1>
 
-            <p className='text-portfolio-muted text-sm leading-relaxed max-w-xl mb-5' style={{ lineHeight: 1.7 }}>
+            <p className='text-[#888] text-sm leading-relaxed max-w-xl mb-5 font-normal' style={{ lineHeight: 1.7 }}>
               {BIO}
             </p>
 
@@ -84,7 +84,7 @@ const PortfolioLayout = () => {
 
         {/* Nav tabs: centered on mobile */}
         <nav
-          className='flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:justify-start md:gap-8 border-b border-portfolio-muted/30 pb-4 mb-6 md:mb-8'
+          className='flex flex-wrap items-center justify-center gap-4 sm:gap-7 md:justify-start mb-5'
           role='navigation'
           aria-label='Main navigation'
         >
@@ -94,8 +94,8 @@ const PortfolioLayout = () => {
               <NavLink
                 key={item.to}
                 to={item.to}
-                className={`text-sm uppercase tracking-wide transition-colors ${
-                  isActive ? 'text-portfolio-fg font-semibold' : 'text-portfolio-muted hover:text-portfolio-fg'
+                className={`text-xs uppercase tracking-[0] transition-colors leading-[1.375rem] ${
+                  isActive ? 'text-portfolio-fg font-medium' : 'text-portfolio-muted hover:text-portfolio-fg font-normal'
                 }`}
                 aria-current={isActive ? 'page' : undefined}
               >
