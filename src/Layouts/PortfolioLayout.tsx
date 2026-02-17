@@ -1,9 +1,9 @@
-import { NavLink, Outlet, useLocation } from 'react-router-dom'
-import { Github, Linkedin } from 'lucide-react'
-import { Suspense } from 'react'
+import { Avatar } from 'Assets/Svgs'
 import { Loader } from 'Components'
 import { APP_ROUTES } from 'Constants'
-import { Avatar } from 'Assets/Svgs'
+import { Github, Linkedin } from 'lucide-react'
+import { Suspense } from 'react'
+import { NavLink, Outlet, useLocation } from 'react-router-dom'
 
 const NAV_ITEMS = [
   { label: 'PROJECTS', to: APP_ROUTES.Home },
@@ -14,7 +14,8 @@ const NAV_ITEMS = [
 ]
 
 /* eslint-disable-next-line @typescript-eslint/quotes, quotes, prettier/prettier */
-const BIO = "I'm a software engineer with over 5 years of experience. I love building cool and useful digital products and finding simple ways to make things work well for users."
+const BIO =
+  'I am a software engineer with over 5 years of experience. I love building cool and useful digital products and finding simple ways to make things work well for users.'
 
 const PortfolioLayout = () => {
   const location = useLocation()
@@ -29,16 +30,16 @@ const PortfolioLayout = () => {
         Skip to main content
       </a>
 
-      <div className='max-w-5xl mx-auto px-6 pt-10 pb-6'>
-        {/* Hero */}
-        <header className='flex flex-col md:flex-row md:items-start md:justify-between gap-8 mb-10'>
-          <div className='flex-1 min-w-0'>
+      <div className='max-w-5xl mx-auto px-4 sm:px-6 pt-6 md:pt-10 pb-6'>
+        {/* Hero: mobile = avatar on top, all centered; desktop = text left, avatar right */}
+        <header className='flex flex-col items-center text-center md:flex-row md:items-start md:justify-between md:text-left gap-8 mb-8 md:mb-10'>
+          <div className='order-2 flex flex-col items-center text-center md:order-1 md:flex-1 md:min-w-0 md:items-start md:text-left'>
             <p className='text-portfolio-muted text-sm md:text-base mb-1'>Hi, I&apos;m</p>
             <h1 className='text-portfolio-fg text-2xl md:text-3xl font-semibold tracking-tight mb-4'>Stephen Emmanuel</h1>
             <p className='text-portfolio-muted text-sm md:text-base leading-relaxed max-w-xl mb-6' style={{ lineHeight: 1.7 }}>
               {BIO}
             </p>
-            <div className='flex items-center gap-6'>
+            <div className='flex flex-wrap items-center justify-center gap-4 md:gap-6 md:justify-start'>
               <a
                 href='https://github.com/steph-crown'
                 target='_blank'
@@ -61,14 +62,14 @@ const PortfolioLayout = () => {
               </a>
             </div>
           </div>
-          <div className='flex-shrink-0'>
-            <Avatar className='w-32 h-32 md:w-40 md:h-40 rounded-full object-cover' aria-hidden />
+          <div className='order-1 flex-shrink-0 md:order-2'>
+            <Avatar className='w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full object-cover' aria-hidden />
           </div>
         </header>
 
-        {/* Nav tabs */}
+        {/* Nav tabs: centered on mobile */}
         <nav
-          className='flex flex-wrap items-center gap-6 md:gap-8 border-b border-portfolio-muted/30 pb-4 mb-8'
+          className='flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:justify-start md:gap-8 border-b border-portfolio-muted/30 pb-4 mb-6 md:mb-8'
           role='navigation'
           aria-label='Main navigation'
         >
