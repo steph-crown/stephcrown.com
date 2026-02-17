@@ -32,22 +32,24 @@ const ProjectGridCard: FC<Props> = ({ project }) => {
   ) : null
 
   return (
-    <div className='block'>
-      <div className='bg-portfolio-card rounded-lg p-5 h-full flex flex-col'>
-        <div className='flex items-start gap-3 mb-3'>
-          {IconComponent && (
-            <div className='flex-shrink-0 w-9 h-9 flex items-center justify-center'>
-              <IconComponent className='w-9 h-9 text-portfolio-fg' aria-hidden />
-            </div>
-          )}
-          <div className='flex-1 min-w-0 flex items-start justify-between gap-2'>
-            <h3 className='text-portfolio-fg font-semibold text-base'>{project.title}</h3>
-            {linkIcon}
+    <div className='bg-portfolio-card rounded-none p-8 h-full flex flex-col'>
+      <div className='flex items-center gap-4 mb-5'>
+        {IconComponent && (
+          <div className='flex-shrink-0 w-9 h-9 flex items-center justify-center'>
+            <IconComponent className='w-9 h-9 text-portfolio-fg' aria-hidden />
           </div>
+        )}
+
+        <div className='flex-1 min-w-0 flex items-center justify-start gap-3.5'>
+          <h3 className='text-portfolio-fg font-normal text-base'>{project.title}</h3>
+
+          {linkIcon}
         </div>
-        <p className='text-portfolio-muted text-sm leading-relaxed line-clamp-3 flex-1'>{project.shortDescription}</p>
-        {techString && <p className='text-portfolio-muted text-xs mt-4 pt-3 border-t border-portfolio-muted/20'>{techString}</p>}
       </div>
+
+      <p className='text-portfolio-muted text-sm leading-[142%] line-clamp-3 flex-1'>{project.shortDescription}</p>
+
+      {techString && <p className='text-[#BEBEBE] text-sm mt-14'>{techString}</p>}
     </div>
   )
 }
