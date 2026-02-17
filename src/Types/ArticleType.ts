@@ -6,6 +6,8 @@ type ArticleType = {
   name: string
   description: string
   hasLightBg?: boolean
+  /** Estimated read time in minutes. Shown on article grid card. */
+  readTimeMinutes?: number
 }
 
 export default ArticleType

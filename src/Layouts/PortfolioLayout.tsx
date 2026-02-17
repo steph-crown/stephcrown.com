@@ -1,13 +1,12 @@
 import { Avatar } from 'Assets/Svgs'
 import { Loader } from 'Components'
 import { APP_ROUTES } from 'Constants'
-import { Github, Linkedin } from 'lucide-react'
 import { Suspense } from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 
 const NAV_ITEMS = [
   { label: 'PROJECTS', to: APP_ROUTES.Home },
-  { label: 'EXPERIENCE', to: APP_ROUTES.Experience },
+  // { label: 'EXPERIENCE', to: APP_ROUTES.Experience },
   { label: 'ARTICLES', to: APP_ROUTES.Articles },
   { label: 'RESUME', to: APP_ROUTES.Resume },
   { label: 'EMAIL', to: APP_ROUTES.Contact },

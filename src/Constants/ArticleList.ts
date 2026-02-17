@@ -23,6 +23,7 @@ const ARTICLE_LIST: ArticleType[] = [
     platform: 'Hashnode',
     description:
       'Vectorization is a technique used in machine learning to speed up the process of training and predicting models. This article will show you how to use it to your advantage.',
+    readTimeMinutes: 12,
   },
   {
     name: "How to Use Typescript's 'omit' Utility Type",
@@ -31,6 +32,7 @@ const ARTICLE_LIST: ArticleType[] = [
     platform: 'Open Replay',
     description:
       'Omit allows developers to form a new type from an existing one by excluding specific fields. This tutorial shows how to use it to handle different scenarios and some real-life reasons why you might need to use it.',
+    readTimeMinutes: 8,
   },
   {
     name: 'TypeScript Doesn’t Insulate Your Code From Failure!',
@@ -38,6 +40,7 @@ const ARTICLE_LIST: ArticleType[] = [
     url: 'https://blog.stephcrown.com/typescript-doesnt-insulate-your-code-from-failure',
     platform: 'Hashnode',
     description: 'Learn how TypeScript does not insulate your code from failure, and how to use it to your advantage.',
+    readTimeMinutes: 6,
   },
   {
     name: 'How to Build an Anonymous Messaging App With React and Phoenix',
@@ -46,6 +49,7 @@ const ARTICLE_LIST: ArticleType[] = [
     platform: 'Revent Academy Blog',
     description:
       'In this article, we’ll build an anonymous messaging application. We’ll use React to create a dynamic user interface and Phoenix to manage the server-side logic',
+    readTimeMinutes: 19,
   },
   {
     name: 'Building An Infinite Select Dropdown Component With React',
@@ -54,6 +58,7 @@ const ARTICLE_LIST: ArticleType[] = [
     platform: 'Open Replay',
     description:
       'Implementing select dropdown components that can deal with huge datasets is not trivial, and this article will show you how to go about it, avoiding performance problems and providing a slick user experience.',
+    readTimeMinutes: 15,
   },
   {
     name: 'My Fourth Year in Tech and University: A Holistic Review',
@@ -63,6 +68,7 @@ const ARTICLE_LIST: ArticleType[] = [
     platform: 'Hashnode',
     description:
       'This piece is a candid reflection on my journey through tech and academia, filled with ups, downs, and invaluable lessons learned along the way.',
+    readTimeMinutes: 14,
   },
   {
     name: '8 Ways Variables Are Declared in JavaScript',
@@ -71,6 +77,7 @@ const ARTICLE_LIST: ArticleType[] = [
     platform: 'Hashnode',
     description:
       'It is more common to say that we can declare variables in three ways, using var, let, or const. But there are even more ways to do this :)',
+    readTimeMinutes: 7,
   },
   {
     name: 'How to Build an Application with ClojureScript',
@@ -78,6 +85,7 @@ const ARTICLE_LIST: ArticleType[] = [
     url: 'https://blog.stephcrown.com/building-an-application-with-clojurescript',
     platform: 'Hashnode',
     description: 'Learn how to create a new ClojureScript project, and how to build a simple application with it.',
+    readTimeMinutes: 10,
   },
   {
     name: 'How to Set up A ClojureScript and Phoenix Project',
@@ -86,6 +94,7 @@ const ARTICLE_LIST: ArticleType[] = [
     platform: 'Hashnode',
     description: 'Learn how to set up a ClojureScript and Phoenix project, and how to build a simple application with it.',
     hasLightBg: true,
+    readTimeMinutes: 11,
   },
   {
     name: 'Writing Better Commit Messages',
@@ -94,6 +103,7 @@ const ARTICLE_LIST: ArticleType[] = [
     platform: 'Hashnode',
     description: 'Learn what commit messages are, and how to write commit messages in a consistent, readable way.',
     hasLightBg: true,
+    readTimeMinutes: 5,
   },
   {
     name: 'How to make your web app work offline with just HTML, CSS, and JavaScript.',
@@ -102,6 +112,7 @@ const ARTICLE_LIST: ArticleType[] = [
     platform: 'Hashnode',
     description: 'Learn how to use service workers to ensure that users can access our web app even after going offline.',
     hasLightBg: true,
+    readTimeMinutes: 9,
   },
   {
     name: 'Transitioning from React Router v5 to v6',
@@ -109,6 +120,7 @@ const ARTICLE_LIST: ArticleType[] = [
     url: 'https://stephcrown.hashnode.dev/transitioning-from-react-router-v5-to-v6',
     platform: 'Hashnode',
     description: 'Explore what is new in React-router v6 and how to upgrade an existing React project from v5 to v6.',
+    readTimeMinutes: 8,
   },
   {
     name: 'Commonly Confused Terms in Programming',
@@ -116,6 +128,7 @@ const ARTICLE_LIST: ArticleType[] = [
     url: 'https://stephcrown.hashnode.dev/commonly-confused-terms-in-programming',
     platform: 'Hashnode',
     description: 'Learn the difference between some commonly confused terms in programming.',
+    readTimeMinutes: 6,
   },
   {
     name: "Let's Differentiate UX From UI",
@@ -123,6 +136,7 @@ const ARTICLE_LIST: ArticleType[] = [
     url: 'https://stephcrown.hashnode.dev/lets-differentiate-ux-from-ui',
     platform: 'Hashnode',
     description: 'Learn the difference between UX and UI, and how they work together to create a great product.',
+    readTimeMinutes: 5,
   },
 ]
 
