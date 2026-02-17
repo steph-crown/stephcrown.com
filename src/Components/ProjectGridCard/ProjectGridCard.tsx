@@ -20,7 +20,7 @@ const ProjectGridCard: FC<Props> = ({ project }) => {
   const techString = techTags.join(' • ')
 
   const content = (
-    <div className='bg-portfolio-card rounded-lg p-5 h-full flex flex-col'>
+    <div className='bg-portfolio-card p-5 h-full flex flex-col'>
       <div className='flex items-start gap-3 mb-3'>
         {IconComponent && (
           <div className='flex-shrink-0 w-9 h-9 flex items-center justify-center'>
