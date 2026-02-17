@@ -5,12 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['Georgia', 'serif'],
-        MSMedium: ['MSMedium', 'sans-serif'],
-        MSMediumWide: ['MSMediumWide', 'sans-serif'],
-        MSMediumRegular: ['MSMediumRegular', 'sans-serif'],
-        MSMediumItalic: ['MSMediumItalic', 'monospace'],
-        MSXenonMediumItalic: ['MSXenonMediumItalic', 'monospace'],
+        sans: ['Airbnb', 'sans-serif'],
+        serif: ['Airbnb', 'sans-serif'],
       },
       colors: {
         portfolio: {

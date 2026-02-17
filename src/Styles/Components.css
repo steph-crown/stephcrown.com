@@ -16,7 +16,7 @@
     padding: 10px 24px;
     font-size: 14px;
     cursor: pointer;
-    font-family: Georgia, serif;
+    font-family: 'Airbnb', sans-serif;
     letter-spacing: 0.5px;
     line-height: 1.8;
   }
@@ -32,7 +32,7 @@
     padding: 10px 24px;
     font-size: 14px;
     cursor: pointer;
-    font-family: Georgia, serif;
+    font-family: 'Airbnb', sans-serif;
     letter-spacing: 0.5px;
     line-height: 1.8;
   }
@@ -51,7 +51,7 @@
   }
 
   .btn-secondary {
-    @apply bg-bg/5-light dark:bg-bg/5-dark text-fg/100-light dark:text-fg/100-dark border border-navborder-light dark:border-navborder-dark px-6 py-2.5 text-sm cursor-pointer font-serif;
+    @apply bg-bg/5-light dark:bg-bg/5-dark text-fg/100-light dark:text-fg/100-dark border border-navborder-light dark:border-navborder-dark px-6 py-2.5 text-sm cursor-pointer font-sans;
     letter-spacing: 0.5px;
     line-height: 1.8;
   }
@@ -175,7 +175,7 @@
   }
 
   .input {
-    @apply w-full px-4 py-3 border-solid border-[1px] border-navborder-light dark:border-navborder-dark bg-bg/container-light dark:bg-bg/container-dark text-fg/100-light dark:text-fg/100-dark block outline-none font-serif;
+    @apply w-full px-4 py-3 border-solid border-[1px] border-navborder-light dark:border-navborder-dark bg-bg/container-light dark:bg-bg/container-dark text-fg/100-light dark:text-fg/100-dark block outline-none font-sans;
     line-height: 1.8;
   }
 
