@@ -23,7 +23,7 @@ const PROJECTS: ProjectType[] = [
     url: 'https://sterling.ng/sterling-sets-milestone/',
     shortDescription:
       "Africa's first indigenous core banking system. I led the frontend team for Customer Management, Forms Configuration, and Product Factory.",
-    technologies: 'React, TypeScript, TailwindCSS, Redux Toolkit, Microfrontends, Microservices',
+    technologies: 'React, Microfrontends, Tailwind',
     icon: 'PodPod',
   },
   {
@@ -31,7 +31,7 @@ const PROJECTS: ProjectType[] = [
     url: 'https://checkref.co/',
     shortDescription:
       'Reference management for HR: handle reference requests and track responses through hiring. Mobile-first design and secure document workflows.',
-    technologies: 'Next.js, TypeScript, Chakra UI, TailwindCSS',
+    technologies: 'Next.js, TypeScript, TailwindCSS',
     icon: 'PodPod',
   },
   {
@@ -39,7 +39,7 @@ const PROJECTS: ProjectType[] = [
     url: 'https://nextbasket.com/',
     shortDescription:
       'AI-powered platform for building and managing online stores with integrated warehouse solutions and full e-commerce operations.',
-    technologies: 'Next.js, Internationalization, TailwindCSS, Storybook',
+    technologies: 'Next.js, I18N, Storybook',
     icon: 'PodPod',
   },
   {
@@ -47,7 +47,7 @@ const PROJECTS: ProjectType[] = [
     url: 'https://khaime.com/',
     shortDescription:
       'AI website builder from business type and prompts. Intelligent editor with real-time collaboration, drag-and-drop, and OpenAI/Claude design suggestions.',
-    technologies: 'React, TypeScript, OpenAI API, Claude API, Real-time Collaboration',
+    technologies: 'React, TypeScript, OpenAI API',
     icon: 'PodPod',
   },
   {
@@ -56,7 +56,7 @@ const PROJECTS: ProjectType[] = [
     shortDescription:
       'AI resume optimization for ATS-beating resumes. Multiple AI providers for keywords, cover letters, interview coaching, and application tracking.',
     technologies:
-      'React, TypeScript, Node.js, Express.js, PostgreSQL, Drizzle ORM, OpenAI API, Claude API, Google AI, Stripe, TailwindCSS, Shadcn UI, TanStack Query',
+      'React, TypeScript, Node.js, Express, PostgreSQL, Drizzle ORM, OpenAI API, Claude API, Google AI, Stripe, TailwindCSS, Shadcn UI, TanStack Query',
     icon: 'PodPod',
   },
   {
@@ -64,16 +64,15 @@ const PROJECTS: ProjectType[] = [
     url: 'https://hillemissaries.com/',
     shortDescription:
       'Faith-based platform for scholarships, event galleries, and outreach. Admin dashboard for programs, media, and feedback with dynamic CMS.',
-    technologies:
-      'React, Redux Toolkit, Elixir, Phoenix Framework, PostgreSQL, TailwindCSS, Material Tailwind, AWS S3, File Uploads, Admin Dashboard',
+    technologies: 'React, RTK, Phoenix, PostgreSQL',
     icon: 'PodPod',
   },
   {
-    title: 'SyncSkills CMS - Education Technology Platform',
+    title: 'SyncSkills CMS',
     url: 'https://syncskills.com.au/',
     shortDescription:
       'Full-stack education platform for career transition. CMS with mini-course enrollment, progress tracking, referral programs, and Stripe payments.',
-    technologies: 'Next.js 14, TypeScript, PayloadCMS, MongoDB, Prisma, Redux Toolkit, TailwindCSS, Stripe',
+    technologies: 'Next.js, TypeScript, PayloadCMS',
     icon: 'PodPod',
   },
   {
@@ -81,29 +80,21 @@ const PROJECTS: ProjectType[] = [
     url: 'https://www.flowmono.com/products/flowmono-automate',
     shortDescription:
       'Workflow automation with drag-and-drop Process Designer. Custom approval flows, task automation, and templates for expenses, leave, compliance.',
-    technologies: 'Angular, TypeScript, Material UI, SVG manipulation, Drag and Drop',
+    technologies: 'Angular, TypeScript, Material UI',
     icon: 'PodPod',
   },
   {
     title: 'Flowmono Phoenix',
     url: 'https://www.flowmono.com/products/phoenix',
     shortDescription: 'No-code form builder for custom forms and workflows. Smart form creation and automation for business processes.',
-    technologies: 'Angular, TypeScript, Material UI, SVG manipulation, Drag and Drop',
-    icon: 'PodPod',
-  },
-  {
-    title: 'Movie Moments',
-    url: 'https://movie-moments.vercel.app/',
-    shortDescription:
-      'Real-time chat for discussing movies with friends while watching. Reactions at timestamps, private rooms, works with any streaming service.',
-    technologies: 'Next.js, TypeScript, Supabase, Real-time Chat, TailwindCSS',
+    technologies: 'Angular, TypeScript, Material UI',
     icon: 'PodPod',
   },
   {
     title: "Kemi's Portfolio",
     url: 'https://www.kemiadeleke.com/',
     shortDescription: 'Portfolio for Kemi Adeleke, product designer. Clean, modern design showcasing her projects and work.',
-    technologies: 'React, TypeScript, Styled Components',
+    technologies: 'React, TypeScript, Styled Comps',
     icon: 'PodPod',
   },
   {
@@ -118,7 +109,7 @@ const PROJECTS: ProjectType[] = [
     url: '',
     shortDescription:
       'Enterprise platform for a bank to manage law-enforcement agency requests on customer accounts. Secure workflows for sensitive legal requests.',
-    technologies: 'React, TypeScript, TailwindCSS, Redux Toolkit',
+    technologies: 'React, TypeScript, TailwindCSS',
     icon: 'PodPod',
   },
   {
@@ -127,14 +118,6 @@ const PROJECTS: ProjectType[] = [
     shortDescription:
       'Bank notification system to automate and manage dispatch by account criteria. Template configuration for email, SMS, and other types.',
     technologies: 'Angular, NgRx, Quill',
-    icon: 'PodPod',
-  },
-  {
-    title: 'Solace Imaging',
-    url: 'https://solaceimaging.com/',
-    shortDescription:
-      'Secure platform for diagnostic centers to send medical images to specialists for analysis. Built for security and privacy of medical data.',
-    technologies: 'React, TypeScript, Styled Components',
     icon: 'PodPod',
   },
   {

@@ -11,12 +11,15 @@ const ICON_MAP: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>
   PodPod: Svgs.PodPod,
 }
 
+const MAX_TECH_TAGS = 4
+
 const ProjectGridCard: FC<Props> = ({ project }) => {
   const IconComponent = project.icon ? ICON_MAP[project.icon] : null
   const techTags = project.technologies
     .split(',')
     .map((t) => t.trim())
     .filter(Boolean)
+    .slice(0, MAX_TECH_TAGS)
   const techString = techTags.join(' • ')
 
   const linkIcon = project.url ? (
@@ -49,7 +52,9 @@ const ProjectGridCard: FC<Props> = ({ project }) => {
 
       <p className='text-portfolio-muted text-sm leading-[142%] line-clamp-3 flex-1'>{project.shortDescription}</p>
 
-      {techString && <p className='text-[#BEBEBE] text-sm mt-14'>{techString}</p>}
+      {techString && (
+        <p className='text-[#BEBEBE] text-xs mt-14 uppercase whitespace-nowrap overflow-hidden text-ellipsis tracking-wide'>{techString}</p>
+      )}
     </div>
   )
 }
