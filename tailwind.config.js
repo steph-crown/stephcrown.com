@@ -13,6 +13,12 @@ module.exports = {
         MSXenonMediumItalic: ['MSXenonMediumItalic', 'monospace'],
       },
       colors: {
+        portfolio: {
+          bg: '#151515',
+          card: '#1B1B1D',
+          fg: '#FFFFFF',
+          muted: '#777778',
+        },
         'bg/5': {
           dark: 'rgba(255, 255, 255, 0.05)',
           light: 'rgba(0, 0, 0, 0.05)',

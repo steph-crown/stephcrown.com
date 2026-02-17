@@ -1,6 +1,7 @@
 import { lazy } from 'react'
 
 export const Home = lazy(() => import('./Home/Home'))
+export const Experience = lazy(() => import('./Experience/Experience'))
 export const Courses = lazy(() => import('./Courses/Courses'))
 export const Projects = lazy(() => import('./Projects/Projects'))
 export const Articles = lazy(() => import('./Articles/Articles'))

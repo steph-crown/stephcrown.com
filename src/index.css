@@ -2,3 +2,9 @@
 @import url('./Styles/Components.css');
 @import url('./Styles/Utilities.css');
 @import url('./Styles/Fonts.css');
+
+/* Portfolio redesign: fixed dark theme, no theme switching */
+html,
+body {
+  background: #151515;
+}

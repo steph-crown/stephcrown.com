@@ -1,5 +1,7 @@
 export { ReactComponent as ArrowIcon } from './ArrowIcon.svg'
+export { ReactComponent as Avatar } from './Avatar.svg'
 export { ReactComponent as CourseIcon } from './CourseIcon.svg'
+export { ReactComponent as PodPod } from './PodPod.svg'
 export { ReactComponent as ToolIcon } from './ToolIcon.svg'
 export { ReactComponent as EmailIcon } from './EmailIcon.svg'
 export { ReactComponent as ArrowRightIcon } from './ArrowRightIcon.svg'

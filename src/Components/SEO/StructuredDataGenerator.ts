@@ -24,7 +24,7 @@ export const generateHomepageStructuredData = () => {
   ]
 }
 
-export const generatePageStructuredData = (pageType: string, pageData?: any) => {
+export const generatePageStructuredData = (pageType: string, pageData?: Record<string, unknown>) => {
   const baseData = [PERSON_STRUCTURED_DATA, ORGANIZATION_STRUCTURED_DATA]
 
   switch (pageType) {
