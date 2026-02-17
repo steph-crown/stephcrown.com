@@ -13,7 +13,7 @@ const Home = () => {
         structuredData={generateHomepageStructuredData()}
       />
       <main role='main' aria-label='Home page'>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-x-3 gap-y-5 lg:gap-y-3'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-x-3 gap-y-5 md:gap-y-3'>
           {PROJECTS.map((project) => (
             <ProjectGridCard key={`${project.title}-${project.url}`} project={project} />
           ))}
