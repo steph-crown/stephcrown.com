@@ -9,7 +9,7 @@ const PdfViewer = () => {
           download={true}
           aria-label='Download Stephen Emmanuel resume'
         >
-          <button className='btn flex items-center gap-2' type='button' aria-label='Download resume PDF'>
+          <button className='flex items-center gap-2 text-white/60 text-sm hover:text-white' type='button' aria-label='Download resume PDF'>
             Click to download <DownloadIcon className='h-4 w-4' aria-hidden='true' />
           </button>
         </a>

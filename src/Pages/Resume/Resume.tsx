@@ -17,7 +17,6 @@ const Resume = () => {
         structuredData={BREADCRUMB_STRUCTURED_DATA(breadcrumbData)}
       />
       <main role='main' aria-label='Resume page'>
-        <h1 className='h1 mb-6'>Resume</h1>
         <PdfViewer />
       </main>
     </>

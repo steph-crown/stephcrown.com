@@ -6,8 +6,8 @@ import { NavLink, Outlet, useLocation } from 'react-router-dom'
 
 const NAV_ITEMS = [
   { label: 'PROJECTS', to: APP_ROUTES.Home },
-  // { label: 'EXPERIENCE', to: APP_ROUTES.Experience },
   { label: 'ARTICLES', to: APP_ROUTES.Articles },
+  { label: 'EXPERIENCE', to: APP_ROUTES.Experience },
   { label: 'RESUME', to: APP_ROUTES.Resume },
   { label: 'EMAIL', to: APP_ROUTES.Contact },
 ]
@@ -88,7 +88,8 @@ const PortfolioLayout = () => {
           aria-label='Main navigation'
         >
           {NAV_ITEMS.map((item) => {
-            const isActive = item.to === APP_ROUTES.Home ? location.pathname === '/' : location.pathname === item.to
+            const isActive =
+              item.to === APP_ROUTES.Home ? location.pathname === '/' || location.pathname === '/projects' : location.pathname === item.to
             return (
               <NavLink
                 key={item.to}
