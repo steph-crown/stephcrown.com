@@ -7,7 +7,7 @@ import { NavLink, Outlet, useLocation } from 'react-router-dom'
 const NAV_ITEMS = [
   { label: 'PROJECTS', to: APP_ROUTES.Home },
   { label: 'ARTICLES', to: APP_ROUTES.Articles },
-  { label: 'EXPERIENCE', to: APP_ROUTES.Experience },
+  { label: 'WORK', to: APP_ROUTES.Experience },
   { label: 'RESUME', to: APP_ROUTES.Resume },
   { label: 'EMAIL', to: APP_ROUTES.Contact },
 ]
@@ -81,9 +81,9 @@ const PortfolioLayout = () => {
           </div>
         </header>
 
-        {/* Nav tabs: centered on mobile */}
+        {/* Nav tabs: horizontal scroll on small screens, no wrap, scrollbar hidden */}
         <nav
-          className='flex flex-wrap items-center gap-4 sm:gap-7 justify-center sm:justify-start mb-5'
+          className='flex flex-nowrap items-center gap-4 sm:gap-7 justify-center sm:justify-start mb-5 overflow-x-auto scrollbar-hide'
           role='navigation'
           aria-label='Main navigation'
         >
@@ -94,7 +94,7 @@ const PortfolioLayout = () => {
               <NavLink
                 key={item.to}
                 to={item.to}
-                className={`text-xs uppercase tracking-[0] transition-colors leading-[1.375rem] ${
+                className={`flex-shrink-0 text-xs uppercase tracking-[0] transition-colors leading-[1.375rem] ${
                   isActive ? 'text-portfolio-fg font-medium' : 'text-portfolio-muted hover:text-portfolio-fg font-normal'
                 }`}
                 aria-current={isActive ? 'page' : undefined}

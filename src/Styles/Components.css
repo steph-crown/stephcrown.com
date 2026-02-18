@@ -1,6 +1,14 @@
 @tailwind components;
 
 @layer components {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
   .border-nav {
     @apply border-solid border-navborder-light dark:border-navborder-dark;
   }

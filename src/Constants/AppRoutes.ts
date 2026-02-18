@@ -4,7 +4,7 @@
 const APP_ROUTES = {
   Home: '/',
   Projects: '/projects',
-  Experience: '/experience',
+  Experience: '/work',
   Articles: '/articles',
   Courses: '/courses',
   Tools: '/tools',
