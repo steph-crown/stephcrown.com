@@ -16,6 +16,15 @@ import { ArticleType } from 'Types'
 
 const ARTICLE_LIST: ArticleType[] = [
   {
+    name: 'How to Build a Local-First CLI Financial Tracker with Rust',
+    bgImage: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1767998415383/82c48f39-cd5e-4f66-af83-2b65bafccd65.png',
+    url: 'https://www.freecodecamp.org/news/how-to-build-a-local-first-cli-financial-tracker-with-rust/',
+    platform: 'FreeCodeCamp',
+    description:
+      'Most financial apps store your sensitive data on remote servers. This requires you to trust a company with your records and rely on their service staying online. But if you build a local-first application, you can keep your data on your own machine in a format you can actually read.',
+    readTimeMinutes: 30,
+  },
+  {
     name: 'Vectorization In Machine Learning',
     bgImage:
       'https://blog.stephcrown.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1758044377338%2F44e72663-6a29-4495-bdf7-97cccd67fabf.png&w=3840&q=75',
