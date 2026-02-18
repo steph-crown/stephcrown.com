@@ -7,9 +7,9 @@ import { NavLink, Outlet, useLocation } from 'react-router-dom'
 const NAV_ITEMS = [
   { label: 'PROJECTS', to: APP_ROUTES.Home },
   { label: 'ARTICLES', to: APP_ROUTES.Articles },
-  { label: 'WORK', to: APP_ROUTES.Experience },
   { label: 'RESUME', to: APP_ROUTES.Resume },
-  { label: 'EMAIL', to: APP_ROUTES.Contact },
+  { label: 'CONTACT', to: APP_ROUTES.Contact },
+  { label: 'EMAIL', href: 'mailto:emmanuelstephen024@gmail.com' },
 ]
 
 /* eslint-disable-next-line @typescript-eslint/quotes, quotes, prettier/prettier */
@@ -88,17 +88,29 @@ const PortfolioLayout = () => {
           aria-label='Main navigation'
         >
           {NAV_ITEMS.map((item) => {
+            const isLink = 'href' in item
             const isActive =
-              item.to === APP_ROUTES.Home ? location.pathname === '/' || location.pathname === '/projects' : location.pathname === item.to
+              !isLink &&
+              (item.to === APP_ROUTES.Home ? location.pathname === '/' || location.pathname === '/projects' : location.pathname === item.to)
+            const navClass = `flex-shrink-0 text-xs uppercase tracking-[0] transition-colors leading-[1.375rem] ${
+              isActive ? 'text-portfolio-fg font-medium' : 'text-portfolio-muted hover:text-portfolio-fg font-normal'
+            }`
+            if (isLink) {
+              return (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={navClass}
+                  aria-label='Send email to emmanuelstephen024@gmail.com'
+                >
+                  {item.label}
+                </a>
+              )
+            }
             return (
-              <NavLink
-                key={item.to}
-                to={item.to}
-                className={`flex-shrink-0 text-xs uppercase tracking-[0] transition-colors leading-[1.375rem] ${
-                  isActive ? 'text-portfolio-fg font-medium' : 'text-portfolio-muted hover:text-portfolio-fg font-normal'
-                }`}
-                aria-current={isActive ? 'page' : undefined}
-              >
+              <NavLink key={item.to} to={item.to} className={navClass} aria-current={isActive ? 'page' : undefined}>
                 {item.label}
               </NavLink>
             )

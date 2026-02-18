@@ -9,6 +9,7 @@ export { default as SocialCardHoverContent } from './SocialCardHoverContent/Soci
 export { default as ClipboardText } from './ClipboardText/ClipboardText'
 export { default as ArticleCardHoverContent } from './ArticleCardHoverContent/ArticleCardHoverContent'
 export { default as ArticleGridCard } from './ArticleGridCard/ArticleGridCard'
+export { default as ExperienceCard } from './ExperienceCard/ExperienceCard'
 export { default as ProjectCard } from './ProjectCard/ProjectCard'
 export { default as ProjectGridCard } from './ProjectGridCard/ProjectGridCard'
 export { default as TopNav } from './TopNav/TopNav'

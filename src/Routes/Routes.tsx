@@ -10,7 +10,7 @@ const RoutesSwitches = () => {
       <Routes>
         <Route element={<PortfolioLayout />}>
           <Route path='/' element={<Home />} />
-          <Route path={APP_ROUTES.Experience} element={<Experience />} />
+          {/* <Route path={APP_ROUTES.Experience} element={<Experience />} /> */}
           <Route path={APP_ROUTES.Articles} element={<Articles />} />
           <Route path={APP_ROUTES.Resume} element={<Resume />} />
           <Route path={APP_ROUTES.Contact} element={<Contact />} />

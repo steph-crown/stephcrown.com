@@ -45,7 +45,6 @@ const Contact = () => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
 
-    // Clear error when user starts typing
     if (errors[name as keyof FormErrors]) {
       setErrors((prev) => ({ ...prev, [name]: undefined }))
     }
@@ -61,16 +60,10 @@ const Contact = () => {
     setIsSubmitting(true)
 
     try {
-      // Here you would typically send the form data to your backend
-      // For now, we'll just simulate a submission
-
-      // Reset form after successful submission
       setFormData({ name: '', email: '', message: '' })
       setErrors({})
-
-      // You might want to show a success message here
       alert('Message sent successfully!')
-    } catch (error) {
+    } catch {
       alert('There was an error sending your message. Please try again.')
     } finally {
       setIsSubmitting(false)
@@ -82,95 +75,104 @@ const Contact = () => {
     { name: 'Contact', url: 'https://stephcrown.com/contact' },
   ]
 
+  const inputClass =
+    'w-full px-4 py-3 bg-portfolio-bg border border-portfolio-muted/30 text-portfolio-fg placeholder:text-portfolio-muted/70 text-sm outline-none focus:border-portfolio-muted'
+
   return (
     <>
       <SEO
         title='Contact Stephen Emmanuel (Chukwunonso) - Nigerian Software Engineer | Steph Crown'
-        description='Get in touch with Stephen Emmanuel (Chukwunonso), also known as Steph Crown, a Nigerian software engineer, frontend developer, backend developer, and systems engineer. Available for freelance projects, collaborations, and technical discussions. Contact via email or form.'
-        keywords='contact Stephen Emmanuel, contact Steph Crown, contact Chukwunonso, hire Nigerian software engineer, freelance developer Nigeria, React developer contact, TypeScript developer, web development services, software engineering consultation, Nigeria developer contact'
+        description='Get in touch with Stephen Emmanuel (Steph Crown), Nigerian software engineer. Available for freelance projects, collaborations, and technical discussions.'
         canonicalUrl='https://stephcrown.com/contact'
         structuredData={[...generatePageStructuredData('contact'), BREADCRUMB_STRUCTURED_DATA(breadcrumbData)]}
       />
       <main role='main' aria-label='Contact page'>
-        <h1 className='h1'>Send me a message</h1>
-
-        <div className='section'>
-          <p className='p'>
-            Fill the form below and hit send. I&apos;ll get back to you as soon as possible. As a <strong>software engineer</strong> and{' '}
-            <strong>frontend developer</strong>, I&apos;m available for <strong>freelance projects</strong>, <strong>collaborations</strong>, and{' '}
-            <strong>technical discussions</strong>. You can also send me an email at{' '}
-            <a target='_blank' rel='noreferrer' className='a' href='mailto:emmanuelstephen024@gmail.com'>
+        <div className='bg-portfolio-card rounded-none p-8'>
+          <h1 className='text-portfolio-fg font-normal text-2xl tracking-tight mb-2'>Send me a message</h1>
+          <p className='text-[#BEBEBE] text-sm leading-[142%] mb-8'>
+            Fill the form below and I&apos;ll get back to you as soon as possible. You can also email{' '}
+            <a
+              href='mailto:emmanuelstephen024@gmail.com'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-portfolio-fg underline hover:opacity-80'
+            >
               emmanuelstephen024@gmail.com
             </a>
+            .
           </p>
-        </div>
 
-        <form className='form' name='contact' method='post' onSubmit={handleSubmit} aria-label='Contact form'>
-          <input type='hidden' name='form-name' value='contact' />
-          <div className='flex gap-6 md:gap-10 flex-col lg:flex-row'>
-            <label className='label' htmlFor='contact-name'>
-              Name:{' '}
+          <form className='flex flex-col gap-6' name='contact' method='post' onSubmit={handleSubmit} aria-label='Contact form'>
+            <input type='hidden' name='form-name' value='contact' />
+
+            <div className='flex flex-col gap-2'>
+              <label htmlFor='contact-name' className='text-portfolio-fg text-sm'>
+                Name
+              </label>
               <input
                 type='text'
                 id='contact-name'
-                className='input'
-                placeholder='Enter your name'
+                className={inputClass}
+                placeholder='Your name'
                 name='name'
                 value={formData.name}
                 onChange={handleInputChange}
-                aria-required='false'
-                aria-invalid='false'
               />
-            </label>
+            </div>
 
-            <div className='label'>
-              <label htmlFor='contact-email'>Email address:</label>
+            <div className='flex flex-col gap-2'>
+              <label htmlFor='contact-email' className='text-portfolio-fg text-sm'>
+                Email address
+              </label>
               <input
                 type='email'
                 id='contact-email'
-                className={`input ${errors.email ? 'border-red-500 focus:border-red-500' : ''}`}
-                placeholder='Enter your email address'
+                className={`${inputClass} ${errors.email ? 'border-red-500 focus:border-red-500' : ''}`}
+                placeholder='Your email'
                 name='email'
                 value={formData.email}
                 onChange={handleInputChange}
-                aria-required='true'
                 aria-invalid={!!errors.email}
                 aria-describedby={errors.email ? 'email-error' : undefined}
               />
               {errors.email && (
-                <span id='email-error' className='text-red-500 text-sm mt-1 block' role='alert'>
+                <span id='email-error' className='text-red-400 text-xs' role='alert'>
                   {errors.email}
                 </span>
               )}
             </div>
-          </div>
 
-          <div className='label'>
-            <label htmlFor='contact-message'>Message:</label>
-            <textarea
-              id='contact-message'
-              className={`input h-32 ${errors.message ? 'border-red-500 focus:border-red-500' : ''}`}
-              placeholder='Enter your message'
-              name='message'
-              value={formData.message}
-              onChange={handleInputChange}
-              aria-required='true'
-              aria-invalid={!!errors.message}
-              aria-describedby={errors.message ? 'message-error' : undefined}
-            />
-            {errors.message && (
-              <span id='message-error' className='text-red-500 text-sm mt-1 block' role='alert'>
-                {errors.message}
-              </span>
-            )}
-          </div>
+            <div className='flex flex-col gap-2'>
+              <label htmlFor='contact-message' className='text-portfolio-fg text-sm'>
+                Message
+              </label>
+              <textarea
+                id='contact-message'
+                className={`${inputClass} min-h-[120px] resize-y ${errors.message ? 'border-red-500 focus:border-red-500' : ''}`}
+                placeholder='Your message'
+                name='message'
+                value={formData.message}
+                onChange={handleInputChange}
+                aria-invalid={!!errors.message}
+                aria-describedby={errors.message ? 'message-error' : undefined}
+              />
+              {errors.message && (
+                <span id='message-error' className='text-red-400 text-xs' role='alert'>
+                  {errors.message}
+                </span>
+              )}
+            </div>
 
-          <div className='navigation'>
-            <button className='btn' type='submit' disabled={isSubmitting} aria-label={isSubmitting ? 'Sending message' : 'Send message'}>
+            <button
+              type='submit'
+              disabled={isSubmitting}
+              className='self-start bg-portfolio-fg text-portfolio-bg px-6 py-2.5 text-sm font-normal hover:opacity-90 transition-opacity disabled:opacity-60'
+              aria-label={isSubmitting ? 'Sending message' : 'Send message'}
+            >
               {isSubmitting ? 'Sending...' : 'Send'}
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </main>
     </>
   )
