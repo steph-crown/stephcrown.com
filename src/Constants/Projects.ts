@@ -4,6 +4,13 @@ import { ProjectType } from 'Types'
 
 const PROJECTS: ProjectType[] = [
   {
+    title: 'ase',
+    url: 'https://github.com/steph-crown/ase',
+    shortDescription: 'Small Unix-style interactive shell in Rust. Builtins, pipelines, history, tab completion, and redirection.',
+    technologies: 'Rust, rustyline, shlex, pathsearch, React, TypeScript, Vite, TailwindCSS',
+    icon: 'PodPod',
+  },
+  {
     title: 'FinTrack',
     url: 'https://fintrack.stephcrown.com',
     shortDescription:
@@ -19,19 +26,19 @@ const PROJECTS: ProjectType[] = [
     icon: 'PodPod',
   },
   {
-    title: 'SeaBaas',
-    url: 'https://sterling.ng/sterling-sets-milestone/',
-    shortDescription:
-      "Africa's first indigenous core banking system. I led the frontend team for Customer Management, Forms Configuration, and Product Factory.",
-    technologies: 'React, Microfrontends, Tailwind',
-    icon: 'PodPod',
-  },
-  {
     title: 'Checkref',
     url: 'https://checkref.co/',
     shortDescription:
       'Reference management for HR: handle reference requests and track responses through hiring. Mobile-first design and secure document workflows.',
     technologies: 'Next.js, TypeScript, TailwindCSS',
+    icon: 'PodPod',
+  },
+  {
+    title: 'SeaBaas',
+    url: 'https://sterling.ng/sterling-sets-milestone/',
+    shortDescription:
+      "Africa's first indigenous core banking system. I led the frontend team for Customer Management, Forms Configuration, and Product Factory.",
+    technologies: 'React, Microfrontends, Tailwind',
     icon: 'PodPod',
   },
   {
