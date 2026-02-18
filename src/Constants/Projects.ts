@@ -16,14 +16,14 @@ const PROJECTS: ProjectType[] = [
     shortDescription:
       'A local-first CLI financial tracker in Rust. Track income and expenses on your machine with zero cloud—binaries for Mac, Linux, and Windows.',
     technologies: 'Rust, clap, cargo-dist, serde, chrono, colored',
-    icon: 'PodPod',
+    icon: 'Fintrack',
   },
   {
     title: 'filesearch',
     url: 'https://github.com/steph-crown/filesearch',
     shortDescription: 'CLI tool for Rust practice. Searches files by pattern in a directory with wildcards and recursive search. Built with clap.',
     technologies: 'Rust, clap, globset',
-    icon: 'PodPod',
+    icon: 'Filesearch',
   },
   {
     title: 'Checkref',
@@ -31,7 +31,7 @@ const PROJECTS: ProjectType[] = [
     shortDescription:
       'Reference management for HR: handle reference requests and track responses through hiring. Mobile-first design and secure document workflows.',
     technologies: 'Next.js, TypeScript, TailwindCSS',
-    icon: 'PodPod',
+    icon: 'Checkref',
   },
   {
     title: 'SeaBaas',
@@ -39,7 +39,7 @@ const PROJECTS: ProjectType[] = [
     shortDescription:
       "Africa's first indigenous core banking system. I led the frontend team for Customer Management, Forms Configuration, and Product Factory.",
     technologies: 'React, Microfrontends, Tailwind',
-    icon: 'PodPod',
+    icon: 'Seabaas',
   },
   {
     title: 'NextBasket',
@@ -47,7 +47,7 @@ const PROJECTS: ProjectType[] = [
     shortDescription:
       'AI-powered platform for building and managing online stores with integrated warehouse solutions and full e-commerce operations.',
     technologies: 'Next.js, I18N, Storybook',
-    icon: 'PodPod',
+    icon: 'Nextbasket',
   },
   {
     title: 'Khaime AI',
@@ -109,29 +109,6 @@ const PROJECTS: ProjectType[] = [
     url: 'https://stephcrown.com/',
     shortDescription: 'Personal portfolio for work, skills, and journey. Clean, minimal design focused on content.',
     technologies: 'React, TypeScript, TailwindCSS',
-    icon: 'PodPod',
-  },
-  {
-    title: 'LEA Portal',
-    url: '',
-    shortDescription:
-      'Enterprise platform for a bank to manage law-enforcement agency requests on customer accounts. Secure workflows for sensitive legal requests.',
-    technologies: 'React, TypeScript, TailwindCSS',
-    icon: 'PodPod',
-  },
-  {
-    title: 'Notification Engine',
-    url: '',
-    shortDescription:
-      'Bank notification system to automate and manage dispatch by account criteria. Template configuration for email, SMS, and other types.',
-    technologies: 'Angular, NgRx, Quill',
-    icon: 'PodPod',
-  },
-  {
-    title: 'Projecttent',
-    url: 'https://projecttent.com/',
-    shortDescription: 'Landing page for Projecttent. UI design in Figma and development for a clean, effective first impression.',
-    technologies: 'Elixir, TailwindCSS, Figma',
     icon: 'PodPod',
   },
 ]

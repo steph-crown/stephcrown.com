@@ -10,6 +10,11 @@ type Props = {
 const ICON_MAP: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
   PodPod: Svgs.PodPod,
   Ase: Svgs.Ase,
+  Fintrack: Svgs.Fintrack,
+  Filesearch: Svgs.Filesearch,
+  Checkref: Svgs.Checkref,
+  Seabaas: Svgs.Seabaas,
+  Nextbasket: Svgs.Nextbasket,
 }
 
 const MAX_TECH_TAGS = 4
