@@ -8,7 +8,7 @@ const NAV_ITEMS = [
   { label: 'PROJECTS', to: APP_ROUTES.Home },
   { label: 'ARTICLES', to: APP_ROUTES.Articles },
   { label: 'RESUME', to: APP_ROUTES.Resume },
-  { label: 'CONTACT', to: APP_ROUTES.Contact },
+  // { label: 'CONTACT', to: APP_ROUTES.Contact },
   { label: 'EMAIL', href: 'mailto:emmanuelstephen024@gmail.com' },
 ]
 
@@ -117,7 +117,6 @@ const PortfolioLayout = () => {
           })}
         </nav>
 
-        {/* Page content */}
         <main id='main-content' className='min-h-[40vh]' tabIndex={-1}>
           <Suspense fallback={<Loader />}>
             <Outlet />
