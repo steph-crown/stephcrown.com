@@ -9,7 +9,8 @@ interface SEOProps {
   ogImage?: string
   ogType?: string
   twitterCard?: string
-  structuredData?: object
+  /** Single JSON-LD object or array of objects (both valid in one script tag). */
+  structuredData?: object | object[]
   noIndex?: boolean
 }
 
@@ -80,7 +81,7 @@ SEO.propTypes = {
   ogImage: PropTypes.string,
   ogType: PropTypes.string,
   twitterCard: PropTypes.string,
-  structuredData: PropTypes.object,
+  structuredData: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.object)]),
   noIndex: PropTypes.bool,
 }
 
