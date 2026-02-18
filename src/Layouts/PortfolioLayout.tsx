@@ -29,7 +29,7 @@ const PortfolioLayout = () => {
         Skip to main content
       </a>
 
-      <div className='max-w-[688px] mx-auto px-6 pt-10 md:pt-[72px] pb-6'>
+      <div className='max-w-[688px] mx-auto px-5 sm:px-6 pt-10 md:pt-[72px] pb-6'>
         {/* Hero: mobile = avatar on top, all centered; desktop = text left, avatar right */}
         <header className='flex flex-col items-center text-center md:flex-row md:items-start md:justify-between md:text-left gap-8 mb-12 md:mb-[52px]'>
           <div className='order-2 flex flex-col items-center text-center md:order-1 md:flex-1 md:min-w-0 md:items-start md:text-left'>
