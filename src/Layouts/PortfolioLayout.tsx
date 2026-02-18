@@ -7,8 +7,8 @@ import { NavLink, Outlet, useLocation } from 'react-router-dom'
 const NAV_ITEMS = [
   { label: 'PROJECTS', to: APP_ROUTES.Home },
   { label: 'ARTICLES', to: APP_ROUTES.Articles },
+  { label: 'WORK', to: APP_ROUTES.Experience },
   { label: 'RESUME', to: APP_ROUTES.Resume },
-  // { label: 'CONTACT', to: APP_ROUTES.Contact },
   { label: 'EMAIL', href: 'mailto:emmanuelstephen024@gmail.com' },
 ]
 
