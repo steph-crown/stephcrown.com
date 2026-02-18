@@ -5,7 +5,7 @@ import { ProjectType } from 'Types'
 const PROJECTS: ProjectType[] = [
   {
     title: 'ase',
-    url: 'https://github.com/steph-crown/ase',
+    url: 'https://ase.stephcrown.com',
     shortDescription: 'Small Unix-style interactive shell in Rust. Builtins, pipelines, history, tab completion, and redirection.',
     technologies: 'Rust, rustyline, shlex, pathsearch, React, TypeScript, Vite, TailwindCSS',
     icon: 'Ase',
