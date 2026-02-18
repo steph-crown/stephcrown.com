@@ -55,7 +55,7 @@ const PROJECTS: ProjectType[] = [
     shortDescription:
       'AI website builder from business type and prompts. Intelligent editor with real-time collaboration, drag-and-drop, and OpenAI/Claude design suggestions.',
     technologies: 'React, TypeScript, OpenAI API',
-    icon: 'PodPod',
+    icon: 'Khaime',
   },
   {
     title: 'JobOS AI',
@@ -64,7 +64,7 @@ const PROJECTS: ProjectType[] = [
       'AI resume optimization for ATS-beating resumes. Multiple AI providers for keywords, cover letters, interview coaching, and application tracking.',
     technologies:
       'React, TypeScript, Node.js, Express, PostgreSQL, Drizzle ORM, OpenAI API, Claude API, Google AI, Stripe, TailwindCSS, Shadcn UI, TanStack Query',
-    icon: 'PodPod',
+    icon: 'Jobos',
   },
   {
     title: 'Hill Emissaries',
@@ -72,7 +72,7 @@ const PROJECTS: ProjectType[] = [
     shortDescription:
       'Faith-based platform for scholarships, event galleries, and outreach. Admin dashboard for programs, media, and feedback with dynamic CMS.',
     technologies: 'React, RTK, Phoenix, PostgreSQL',
-    icon: 'PodPod',
+    icon: 'HillEmissaries',
   },
   {
     title: 'SyncSkills CMS',
@@ -80,7 +80,7 @@ const PROJECTS: ProjectType[] = [
     shortDescription:
       'Full-stack education platform for career transition. CMS with mini-course enrollment, progress tracking, referral programs, and Stripe payments.',
     technologies: 'Next.js, TypeScript, PayloadCMS',
-    icon: 'PodPod',
+    icon: 'SyncSkills',
   },
   {
     title: 'Flowmono Automate',
@@ -88,28 +88,28 @@ const PROJECTS: ProjectType[] = [
     shortDescription:
       'Workflow automation with drag-and-drop Process Designer. Custom approval flows, task automation, and templates for expenses, leave, compliance.',
     technologies: 'Angular, TypeScript, Material UI',
-    icon: 'PodPod',
+    icon: 'FlowmonoAutomate',
   },
   {
     title: 'Flowmono Phoenix',
     url: 'https://www.flowmono.com/products/phoenix',
     shortDescription: 'No-code form builder for custom forms and workflows. Smart form creation and automation for business processes.',
     technologies: 'Angular, TypeScript, Material UI',
-    icon: 'PodPod',
+    icon: 'FlowmonoPhoenix',
   },
   {
     title: "Kemi's Portfolio",
     url: 'https://www.kemiadeleke.com/',
     shortDescription: 'Portfolio for Kemi Adeleke, product designer. Clean, modern design showcasing her projects and work.',
     technologies: 'React, TypeScript, Styled Comps',
-    icon: 'PodPod',
+    icon: 'Kemi',
   },
   {
     title: "Stephen's Portfolio",
     url: 'https://stephcrown.com/',
     shortDescription: 'Personal portfolio for work, skills, and journey. Clean, minimal design focused on content.',
     technologies: 'React, TypeScript, TailwindCSS',
-    icon: 'PodPod',
+    icon: 'Stephen',
   },
 ]
 
