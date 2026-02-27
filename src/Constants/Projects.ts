@@ -4,6 +4,14 @@ import { ProjectType } from 'Types'
 
 const PROJECTS: ProjectType[] = [
   {
+    title: 'Anonify (In Progress)',
+    url: 'https://anonify-steph.netlify.app/',
+    shortDescription:
+      'Browser-based PII scrubber for prompts. Detects and masks sensitive data with context-aware tokens, session history, and reversible mappings for LLM workflows.',
+    technologies: 'Next.js, TailwindCSS, IndexedDB, Compromise.js',
+    icon: 'Anonify',
+  },
+  {
     title: 'ase',
     url: 'https://ase.stephcrown.com',
     shortDescription: 'Small Unix-style interactive shell in Rust. Builtins, pipelines, history, tab completion, and redirection.',

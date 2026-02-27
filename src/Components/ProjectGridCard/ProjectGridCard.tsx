@@ -10,6 +10,7 @@ type Props = {
 const ICON_MAP: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
   PodPod: Svgs.PodPod,
   Ase: Svgs.Ase,
+  Anonify: Svgs.Anonify,
   Checkref: Svgs.Checkref,
   Fintrack: Svgs.Fintrack,
   Filesearch: Svgs.Filesearch,
