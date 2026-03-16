@@ -12,6 +12,7 @@ const ICON_MAP: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>
   Ase: Svgs.Ase,
   Anonify: Svgs.Anonify,
   Checkref: Svgs.Checkref,
+  CodeSesh: Svgs.CodeSesh,
   Fintrack: Svgs.Fintrack,
   Filesearch: Svgs.Filesearch,
   FlowmonoAutomate: Svgs.FlowmonoAutomate,
@@ -65,7 +66,7 @@ const ProjectGridCard: FC<Props> = ({ project }) => {
         </div>
       </div>
 
-      <p className='text-portfolio-muted text-sm leading-[160%] line-clamp-3 flex-1'>{project.shortDescription}</p>
+      <p className='text-portfolio-muted text-sm leading-[142%] line-clamp-3 flex-1'>{project.shortDescription}</p>
 
       {techString && (
         <p className='text-[#BEBEBE] text-xs mt-16 uppercase whitespace-nowrap overflow-hidden text-ellipsis tracking-wide'>{techString}</p>
