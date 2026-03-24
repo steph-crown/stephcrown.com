@@ -4,8 +4,8 @@ import { ProjectType } from 'Types'
 
 const PROJECTS: ProjectType[] = [
   {
-    title: 'CodeSesh (In Progress)',
-    url: 'https://codesesh.stephcrown.com',
+    title: 'CodeSesh',
+    url: 'https://codesesh.xyz',
     shortDescription:
       'Real-time collaborative code editor with multi-user cursor tracking and conflict resolution. WebSocket-based state sync across concurrent sessions with sub-20ms broadcast latency.',
     technologies: 'Rust, Axum, WebSockets, React, TypeScript, Monaco Editor',
