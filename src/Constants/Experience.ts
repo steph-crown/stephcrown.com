@@ -6,7 +6,7 @@ const EXPERIENCE: ExperienceType[] = [
     role: 'Frontend Engineer',
     startDate: 'Jan 2026',
     endDate: 'Present',
-    technologies: 'React • TypeScript • Storybook • Chromatic • Husky • Prettier',
+    technologies: 'React • TypeScript • Storybook • Java • SpringBoot • Prettier',
   },
   {
     company: 'SyncSkills, Australia',
