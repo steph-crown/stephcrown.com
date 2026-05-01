@@ -6,7 +6,7 @@ type Props = {
 }
 
 const TestimonialCard: FC<Props> = ({ testimonial }) => {
-  const { name, role, quote, avatarUrl, context } = testimonial
+  const { name, role, quote, avatarUrl } = testimonial
 
   return (
     <article className='bg-portfolio-card rounded-none p-8 flex flex-col gap-5 h-full'>
@@ -24,7 +24,6 @@ const TestimonialCard: FC<Props> = ({ testimonial }) => {
         <div className='min-w-0 flex-1'>
           <h3 className='text-portfolio-fg font-medium text-sm tracking-tight'>{name}</h3>
           <p className='text-portfolio-muted text-xs mt-0.5 leading-snug'>{role}</p>
-          {context && <p className='text-portfolio-muted/80 text-[11px] mt-1 leading-snug'>{context}</p>}
         </div>
       </div>
       <blockquote className='text-[#BEBEBE] text-sm leading-relaxed border-l-2 border-portfolio-muted/40 pl-4 m-0'>

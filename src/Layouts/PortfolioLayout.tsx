@@ -1,31 +1,9 @@
 import { Avatar } from 'Assets/Svgs'
-import { Loader } from 'Components'
+import { Loader, PortfolioMobileNav } from 'Components'
 import { APP_ROUTES } from 'Constants'
+import { FOOTER_ROUTE_ITEMS, isPortfolioNavRoute, PORTFOLIO_NAV_ITEMS } from 'Constants/PortfolioNav'
 import { Suspense } from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
-
-type NavRouteItem = { label: string; to: string; navAriaLabel?: string }
-type NavEmailItem = { label: string; href: string }
-type NavItem = NavRouteItem | NavEmailItem
-
-const isNavRoute = (item: NavItem): item is NavRouteItem => 'to' in item
-
-const NAV_ITEMS: NavItem[] = [
-  { label: 'PROJECTS', to: APP_ROUTES.Home },
-  { label: 'ARTICLES', to: APP_ROUTES.Articles },
-  { label: 'WORK', to: APP_ROUTES.Experience },
-  { label: 'TESTIMONIALS', to: APP_ROUTES.Testimonials },
-  { label: 'RESUME', to: APP_ROUTES.Resume },
-  { label: 'EMAIL', href: 'mailto:emmanuelstephen024@gmail.com' },
-]
-
-const FOOTER_NAV: NavRouteItem[] = [
-  { label: 'PROJECTS', to: APP_ROUTES.Home },
-  { label: 'ARTICLES', to: APP_ROUTES.Articles },
-  { label: 'WORK', to: APP_ROUTES.Experience },
-  { label: 'TESTIMONIALS', to: APP_ROUTES.Testimonials },
-  { label: 'RESUME', to: APP_ROUTES.Resume },
-]
 
 /* eslint-disable-next-line @typescript-eslint/quotes, quotes, prettier/prettier */
 const BIO =
@@ -96,16 +74,18 @@ const PortfolioLayout = () => {
           </div>
         </header>
 
-        {/* Nav tabs: horizontal scroll on small screens, no wrap, scrollbar hidden */}
+        <PortfolioMobileNav />
+
+        {/* Desktop (≥500px): full tab row — same tabs as before; centered only from sm up */}
         <nav
-          className='flex flex-nowrap items-center gap-4 sm:gap-7 justify-center sm:justify-start mb-5 overflow-x-auto scrollbar-hide'
+          className='mb-5 hidden min-[500px]:flex flex-nowrap items-center gap-4 sm:gap-7 justify-center sm:justify-start overflow-x-visible scrollbar-hide'
           role='navigation'
           aria-label='Main navigation'
         >
-          {NAV_ITEMS.map((item) => {
-            const isLink = !isNavRoute(item)
+          {PORTFOLIO_NAV_ITEMS.map((item) => {
+            const isLink = !isPortfolioNavRoute(item)
             const isActive =
-              isNavRoute(item) &&
+              isPortfolioNavRoute(item) &&
               (item.to === APP_ROUTES.Home ? location.pathname === '/' || location.pathname === '/projects' : location.pathname === item.to)
             const navClass = `flex-shrink-0 text-xs uppercase tracking-[0] transition-colors leading-[1.375rem] ${
               isActive ? 'text-portfolio-fg font-medium' : 'text-portfolio-muted hover:text-portfolio-fg font-normal'
@@ -113,7 +93,7 @@ const PortfolioLayout = () => {
             if (isLink) {
               return (
                 <a
-                  key={item.label}
+                  key={item.id}
                   href={item.href}
                   target='_blank'
                   rel='noopener noreferrer'
@@ -125,14 +105,7 @@ const PortfolioLayout = () => {
               )
             }
             return (
-              <NavLink
-                key={item.to}
-                to={item.to}
-                className={navClass}
-                aria-current={isActive ? 'page' : undefined}
-                aria-label={item.navAriaLabel}
-                title={item.navAriaLabel}
-              >
+              <NavLink key={item.id} to={item.to} className={navClass} aria-current={isActive ? 'page' : undefined}>
                 {item.label}
               </NavLink>
             )
@@ -156,14 +129,8 @@ const PortfolioLayout = () => {
                 className='flex flex-wrap items-center gap-x-5 gap-y-1 text-xs uppercase tracking-[0.08em] text-portfolio-muted'
                 aria-label='Footer navigation'
               >
-                {FOOTER_NAV.map((item) => (
-                  <NavLink
-                    key={item.to}
-                    to={item.to}
-                    className='hover:text-portfolio-fg transition-colors duration-200'
-                    aria-label={item.navAriaLabel}
-                    title={item.navAriaLabel}
-                  >
+                {FOOTER_ROUTE_ITEMS.map((item) => (
+                  <NavLink key={item.id} to={item.to} className='hover:text-portfolio-fg transition-colors duration-200'>
                     {item.label}
                   </NavLink>
                 ))}
