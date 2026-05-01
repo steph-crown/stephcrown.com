@@ -12,6 +12,7 @@ const APP_ROUTES = {
   Resume: '/resume',
   Credits: '/credits',
   Contact: '/contact',
+  Recommendations: '/recommendations',
 }
 
 export default APP_ROUTES

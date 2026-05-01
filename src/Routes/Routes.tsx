@@ -1,4 +1,4 @@
-import { Articles, Contact, Courses, Credits, Home, Experience, Resume, Socials, Tools } from 'Pages'
+import { Articles, Contact, Courses, Credits, Home, Experience, Recommendations, Resume, Socials, Tools } from 'Pages'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import { APP_ROUTES } from 'Constants'
@@ -11,6 +11,7 @@ const RoutesSwitches = () => {
         <Route element={<PortfolioLayout />}>
           <Route path='/' element={<Home />} />
           <Route path={APP_ROUTES.Experience} element={<Experience />} />
+          <Route path={APP_ROUTES.Recommendations} element={<Recommendations />} />
           <Route path={APP_ROUTES.Articles} element={<Articles />} />
           <Route path={APP_ROUTES.Resume} element={<Resume />} />
           <Route path={APP_ROUTES.Contact} element={<Contact />} />

@@ -4,18 +4,26 @@ import { APP_ROUTES } from 'Constants'
 import { Suspense } from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 
-const NAV_ITEMS = [
+type NavRouteItem = { label: string; to: string; navAriaLabel?: string }
+type NavEmailItem = { label: string; href: string }
+type NavItem = NavRouteItem | NavEmailItem
+
+const isNavRoute = (item: NavItem): item is NavRouteItem => 'to' in item
+
+const NAV_ITEMS: NavItem[] = [
   { label: 'PROJECTS', to: APP_ROUTES.Home },
   { label: 'ARTICLES', to: APP_ROUTES.Articles },
   { label: 'WORK', to: APP_ROUTES.Experience },
+  { label: 'TESTIMONIALS', to: APP_ROUTES.Recommendations, navAriaLabel: 'Recommendations' },
   { label: 'RESUME', to: APP_ROUTES.Resume },
   { label: 'EMAIL', href: 'mailto:emmanuelstephen024@gmail.com' },
 ]
 
-const FOOTER_NAV: Array<{ label: string; to: string }> = [
+const FOOTER_NAV: NavRouteItem[] = [
   { label: 'PROJECTS', to: APP_ROUTES.Home },
   { label: 'ARTICLES', to: APP_ROUTES.Articles },
   { label: 'WORK', to: APP_ROUTES.Experience },
+  { label: 'TESTIMONIALS', to: APP_ROUTES.Recommendations, navAriaLabel: 'Recommendations' },
   { label: 'RESUME', to: APP_ROUTES.Resume },
 ]
 
@@ -95,9 +103,9 @@ const PortfolioLayout = () => {
           aria-label='Main navigation'
         >
           {NAV_ITEMS.map((item) => {
-            const isLink = 'href' in item
+            const isLink = !isNavRoute(item)
             const isActive =
-              !isLink &&
+              isNavRoute(item) &&
               (item.to === APP_ROUTES.Home ? location.pathname === '/' || location.pathname === '/projects' : location.pathname === item.to)
             const navClass = `flex-shrink-0 text-xs uppercase tracking-[0] transition-colors leading-[1.375rem] ${
               isActive ? 'text-portfolio-fg font-medium' : 'text-portfolio-muted hover:text-portfolio-fg font-normal'
@@ -117,7 +125,14 @@ const PortfolioLayout = () => {
               )
             }
             return (
-              <NavLink key={item.to} to={item.to} className={navClass} aria-current={isActive ? 'page' : undefined}>
+              <NavLink
+                key={item.to}
+                to={item.to}
+                className={navClass}
+                aria-current={isActive ? 'page' : undefined}
+                aria-label={item.navAriaLabel}
+                title={item.navAriaLabel}
+              >
                 {item.label}
               </NavLink>
             )
@@ -142,7 +157,13 @@ const PortfolioLayout = () => {
                 aria-label='Footer navigation'
               >
                 {FOOTER_NAV.map((item) => (
-                  <NavLink key={item.to} to={item.to} className='hover:text-portfolio-fg transition-colors duration-200'>
+                  <NavLink
+                    key={item.to}
+                    to={item.to}
+                    className='hover:text-portfolio-fg transition-colors duration-200'
+                    aria-label={item.navAriaLabel}
+                    title={item.navAriaLabel}
+                  >
                     {item.label}
                   </NavLink>
                 ))}
