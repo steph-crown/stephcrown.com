@@ -10,6 +10,6 @@ export const Socials = lazy(() => import('./Socials/Socials'))
 export const Resume = lazy(() => import('./Resume/Resume'))
 export const Credits = lazy(() => import('./Credits/Credits'))
 export const Contact = lazy(() => import('./Contact/Contact'))
-export const Recommendations = lazy(() => import('./Recommendations/Recommendations'))
+export const Testimonials = lazy(() => import('./Testimonials/Testimonials'))
 
 export const NotFound = lazy(() => import('./NotFound/NotFound'))

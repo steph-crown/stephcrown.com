@@ -1,6 +1,6 @@
 import type { TestimonialType } from 'Types'
 
-/** LinkedIn recommendations — quotes summarized from colleagues’ endorsements. */
+/** Colleague testimonials (e.g. LinkedIn) — quotes summarized from endorsements. */
 const TESTIMONIALS: TestimonialType[] = [
   {
     name: 'Gabriel Georgiev',

@@ -14,7 +14,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: 'PROJECTS', to: APP_ROUTES.Home },
   { label: 'ARTICLES', to: APP_ROUTES.Articles },
   { label: 'WORK', to: APP_ROUTES.Experience },
-  { label: 'TESTIMONIALS', to: APP_ROUTES.Recommendations, navAriaLabel: 'Recommendations' },
+  { label: 'TESTIMONIALS', to: APP_ROUTES.Testimonials },
   { label: 'RESUME', to: APP_ROUTES.Resume },
   { label: 'EMAIL', href: 'mailto:emmanuelstephen024@gmail.com' },
 ]
@@ -23,7 +23,7 @@ const FOOTER_NAV: NavRouteItem[] = [
   { label: 'PROJECTS', to: APP_ROUTES.Home },
   { label: 'ARTICLES', to: APP_ROUTES.Articles },
   { label: 'WORK', to: APP_ROUTES.Experience },
-  { label: 'TESTIMONIALS', to: APP_ROUTES.Recommendations, navAriaLabel: 'Recommendations' },
+  { label: 'TESTIMONIALS', to: APP_ROUTES.Testimonials },
   { label: 'RESUME', to: APP_ROUTES.Resume },
 ]
 
