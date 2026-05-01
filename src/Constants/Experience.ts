@@ -10,18 +10,18 @@ const EXPERIENCE: ExperienceType[] = [
   },
   {
     company: 'SyncSkills, Australia',
-    role: 'Senior Full Stack Engineer',
-    startDate: 'Jun 2025',
+    role: 'Full Stack Engineer',
+    startDate: 'Apr 2025',
     endDate: 'Dec 2025',
     technologies: 'Next.js • React • Redux • React Query • TailwindCSS • Stripe',
   },
-  {
-    company: 'Elite Software Automation, USA',
-    role: 'Software Engineer (Contract)',
-    startDate: 'Apr 2025',
-    endDate: 'Jun 2025',
-    technologies: 'React • React Query • TailwindCSS • Material UI',
-  },
+  // {
+  //   company: 'Elite Software Automation, USA',
+  //   role: 'Software Engineer (Contract)',
+  //   startDate: 'Apr 2025',
+  //   endDate: 'Jun 2025',
+  //   technologies: 'React • React Query • TailwindCSS • Material UI',
+  // },
   {
     company: 'NextBasket, Bulgaria',
     role: 'Senior Software Engineer (Frontend)',
