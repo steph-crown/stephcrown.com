@@ -1,6 +1,7 @@
-import { ProjectGridCard, SEO } from 'Components'
+import { ProjectGridCard, SEO, TestimonialCard } from 'Components'
 import { generateHomepageStructuredData } from 'Components/SEO/StructuredDataGenerator'
 import PROJECTS from 'Constants/Projects'
+import TESTIMONIALS from 'Constants/Testimonials'
 
 const Home = () => {
   return (
@@ -18,6 +19,20 @@ const Home = () => {
             <ProjectGridCard key={`${project.title}-${project.url}`} project={project} />
           ))}
         </div>
+
+        <section className='mt-16 md:mt-20' aria-labelledby='recommendations-heading'>
+          <div className='mb-8 md:mb-10'>
+            <h2 id='recommendations-heading' className='text-portfolio-fg text-lg font-normal tracking-tight'>
+              Recommendations
+            </h2>
+            <p className='text-portfolio-muted text-xs uppercase tracking-[0.08em] mt-2'>From colleagues on LinkedIn</p>
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-x-3 gap-y-5 md:gap-y-3'>
+            {TESTIMONIALS.map((t) => (
+              <TestimonialCard key={`${t.name}-${t.avatarUrl}`} testimonial={t} />
+            ))}
+          </div>
+        </section>
       </main>
     </>
   )

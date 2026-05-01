@@ -12,12 +12,20 @@ const PROJECTS: ProjectType[] = [
     icon: 'CodeSesh',
   },
   {
-    title: 'Anonify (In Progress)',
-    url: 'https://anonify-steph.netlify.app/',
+    title: 'ActiveHive',
+    url: 'https://activehive.com',
     shortDescription:
-      'Browser-based PII scrubber for prompts. Detects and masks sensitive data with context-aware tokens, session history, and reversible mappings for LLM workflows.',
-    technologies: 'Next.js, TailwindCSS, IndexedDB, Compromise.js',
-    icon: 'Anonify',
+      'Gym management platform: members, classes, staff, and payments from one dashboard. Includes multi-location, analytics, and a full product suite (landing + web app).',
+    technologies: 'Next.js, React, TypeScript, Vite, TailwindCSS, TanStack Query, Zustand',
+    icon: 'ActiveHive',
+  },
+  {
+    title: 'Afefe',
+    url: 'https://afefe.com',
+    shortDescription:
+      'AI-powered Learning Management System for Nigeria and Africa: corporate training, course delivery, progress tracking, certifications, and intelligent learning recommendations.',
+    technologies: 'Next.js, React, TypeScript, TanStack Query, Radix UI, Tiptap, Zustand, GSAP',
+    icon: 'Afefe',
   },
   {
     title: 'ase',
