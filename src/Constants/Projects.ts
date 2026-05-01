@@ -13,11 +13,19 @@ const PROJECTS: ProjectType[] = [
   },
   {
     title: 'ActiveHive',
-    url: 'https://activehive.com',
+    url: 'https://activehive.co',
     shortDescription:
       'Gym management platform: members, classes, staff, and payments from one dashboard. Includes multi-location, analytics, and a full product suite (landing + web app).',
     technologies: 'Next.js, React, TypeScript, Vite, TailwindCSS, TanStack Query, Zustand',
     icon: 'ActiveHive',
+  },
+  {
+    title: 'Flowmono Automate',
+    url: 'https://www.flowmono.com/products/flowmono-automate',
+    shortDescription:
+      'Workflow automation with drag-and-drop Process Designer. Custom approval flows, task automation, and templates for expenses, leave, compliance.',
+    technologies: 'Angular, TypeScript, Material UI',
+    icon: 'FlowmonoAutomate',
   },
   {
     title: 'Afefe',
@@ -26,6 +34,14 @@ const PROJECTS: ProjectType[] = [
       'AI-powered Learning Management System for Nigeria and Africa: corporate training, course delivery, progress tracking, certifications, and intelligent learning recommendations.',
     technologies: 'Next.js, React, TypeScript, TanStack Query, Radix UI, Tiptap, Zustand, GSAP',
     icon: 'Afefe',
+  },
+  {
+    title: 'Checkref',
+    url: 'https://checkref.co/',
+    shortDescription:
+      'Reference management for HR: handle reference requests and track responses through hiring. Mobile-first design and secure document workflows.',
+    technologies: 'Next.js, TypeScript, TailwindCSS',
+    icon: 'Checkref',
   },
   {
     title: 'ase',
@@ -49,14 +65,7 @@ const PROJECTS: ProjectType[] = [
     technologies: 'Rust, clap, globset',
     icon: 'Filesearch',
   },
-  {
-    title: 'Checkref',
-    url: 'https://checkref.co/',
-    shortDescription:
-      'Reference management for HR: handle reference requests and track responses through hiring. Mobile-first design and secure document workflows.',
-    technologies: 'Next.js, TypeScript, TailwindCSS',
-    icon: 'Checkref',
-  },
+
   {
     title: 'SeaBaas',
     url: 'https://sterling.ng/sterling-sets-milestone/',
@@ -106,14 +115,7 @@ const PROJECTS: ProjectType[] = [
     technologies: 'Next.js, TypeScript, PayloadCMS',
     icon: 'SyncSkills',
   },
-  {
-    title: 'Flowmono Automate',
-    url: 'https://www.flowmono.com/products/flowmono-automate',
-    shortDescription:
-      'Workflow automation with drag-and-drop Process Designer. Custom approval flows, task automation, and templates for expenses, leave, compliance.',
-    technologies: 'Angular, TypeScript, Material UI',
-    icon: 'FlowmonoAutomate',
-  },
+
   {
     title: 'Flowmono Phoenix',
     url: 'https://www.flowmono.com/products/phoenix',
