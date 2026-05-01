@@ -10,10 +10,10 @@ const Testimonials = () => {
         canonicalUrl='https://stephcrown.com/testimonials'
       />
       <main role='main' aria-label='Testimonials'>
-        <div className='mb-8 md:mb-10'>
+        {/* <div className='mb-8 md:mb-10'>
           <h1 className='text-portfolio-fg text-lg font-normal tracking-tight'>Testimonials</h1>
           <p className='text-portfolio-muted text-xs uppercase tracking-[0.08em] mt-2'>From colleagues</p>
-        </div>
+        </div> */}
         <div className='grid grid-cols-1 md:grid-cols-2 gap-x-3 gap-y-5 md:gap-y-3'>
           {TESTIMONIALS.map((t) => (
             <TestimonialCard key={`${t.name}-${t.avatarUrl}`} testimonial={t} />
