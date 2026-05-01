@@ -43,7 +43,7 @@ const HoverCard: FC<Props> = ({ bgImage, label, hoverContent, isTop, reducedHeig
       }}
     >
       <div
-        className={`w-full relative border border-solid border-navborder-light dark:border-navborder-dark focus:outline-none focus:ring-2 focus:ring-fg/60-light dark:focus:ring-fg/60-dark focus:ring-offset-2 ${
+        className={`w-full relative border border-solid border-navborder-light dark:border-navborder-dark transition-[transform,box-shadow] duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_18px_40px_-18px_rgba(0,0,0,0.45)] focus:outline-none focus:ring-2 focus:ring-fg/60-light dark:focus:ring-fg/60-dark focus:ring-offset-2 ${
           reducedHeight ? 'h-[11rem] md:h-[15rem]' : 'h-[17.5rem]'
         }`}
         style={containerStyle}

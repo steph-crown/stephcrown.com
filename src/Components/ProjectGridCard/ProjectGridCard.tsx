@@ -39,23 +39,11 @@ const ProjectGridCard: FC<Props> = ({ project }) => {
     .slice(0, MAX_TECH_TAGS)
   const techString = techTags.join(' • ')
 
-  const linkIcon = project.url ? (
-    <a
-      href={project.url}
-      target='_blank'
-      rel='noopener noreferrer'
-      className='flex-shrink-0 text-portfolio-muted hover:text-portfolio-fg transition-colors focus:outline-none focus:ring-2 focus:ring-portfolio-fg focus:ring-offset-2 focus:ring-offset-portfolio-card rounded'
-      aria-label={`Open ${project.title} in new tab`}
-    >
-      <ExternalLink className='w-4 h-4' aria-hidden />
-    </a>
-  ) : null
-
-  return (
-    <div className='bg-portfolio-card rounded-none p-8 h-full flex flex-col'>
+  const cardBody = (
+    <>
       <div className='flex items-center gap-4 mb-5'>
         {IconComponent && (
-          <div className='flex-shrink-0 w-9 h-9 flex items-center justify-center'>
+          <div className='flex-shrink-0 w-9 h-9 flex items-center justify-center pointer-events-none'>
             <IconComponent className='w-9 h-9 text-portfolio-fg' aria-hidden />
           </div>
         )}
@@ -63,7 +51,11 @@ const ProjectGridCard: FC<Props> = ({ project }) => {
         <div className='flex-1 min-w-0 flex items-center justify-start gap-3.5'>
           <h3 className='text-portfolio-fg font-normal text-base'>{project.title}</h3>
 
-          {linkIcon}
+          {project.url ? (
+            <span className='flex-shrink-0 text-portfolio-muted transition-colors group-hover:text-portfolio-fg pointer-events-none' aria-hidden>
+              <ExternalLink className='w-4 h-4' />
+            </span>
+          ) : null}
         </div>
       </div>
 
@@ -72,7 +64,23 @@ const ProjectGridCard: FC<Props> = ({ project }) => {
       {techString && (
         <p className='text-[#BEBEBE] text-xs mt-16 uppercase whitespace-nowrap overflow-hidden text-ellipsis tracking-wide'>{techString}</p>
       )}
-    </div>
+    </>
+  )
+
+  if (!project.url) {
+    return <div className='portfolio-card-surface rounded-none p-8 h-full flex flex-col'>{cardBody}</div>
+  }
+
+  return (
+    <a
+      href={project.url}
+      target='_blank'
+      rel='noopener noreferrer'
+      aria-label={`Open ${project.title} (opens in new tab)`}
+      className='group portfolio-card-surface rounded-none p-8 h-full flex flex-col text-inherit no-underline outline-offset-2 outline-none focus-visible:ring-2 focus-visible:ring-portfolio-fg focus-visible:ring-offset-2 focus-visible:ring-offset-portfolio-bg'
+    >
+      {cardBody}
+    </a>
   )
 }
 

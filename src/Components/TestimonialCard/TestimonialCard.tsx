@@ -9,7 +9,7 @@ const TestimonialCard: FC<Props> = ({ testimonial }) => {
   const { name, role, quote, avatarUrl } = testimonial
 
   return (
-    <article className='bg-portfolio-card rounded-none p-8 flex flex-col gap-5 h-full'>
+    <article className='portfolio-card-surface rounded-none p-8 flex flex-col gap-5 h-full'>
       <div className='flex gap-4'>
         <img
           src={avatarUrl}

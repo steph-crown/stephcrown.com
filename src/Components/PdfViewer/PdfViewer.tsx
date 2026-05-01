@@ -14,7 +14,7 @@ const PdfViewer = () => {
           </button>
         </a>
       </div>
-      <div className='h-[calc(100vh_-_14rem)] overflow-y-auto border-nav border'>
+      <div className='portfolio-card-surface rounded-none h-[calc(100vh_-_14rem)] overflow-y-auto overflow-hidden'>
         <iframe
           style={{ width: '100%', height: '100%' }}
           src='https://docs.google.com/document/d/19mHhO3be3o8soVd9fqdWpAM2Y4WSau_8wgi2zLUDMB8/preview?embedded=true'

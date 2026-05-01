@@ -87,7 +87,7 @@ const Contact = () => {
         structuredData={[...generatePageStructuredData('contact'), BREADCRUMB_STRUCTURED_DATA(breadcrumbData)]}
       />
       <main role='main' aria-label='Contact page'>
-        <div className='bg-portfolio-card rounded-none p-8'>
+        <div className='portfolio-card-surface rounded-none p-8'>
           <h1 className='text-portfolio-fg font-normal text-2xl tracking-tight mb-2'>Send me a message</h1>
           <p className='text-[#BEBEBE] text-sm leading-[142%] mb-8'>
             Fill the form below and I&apos;ll get back to you as soon as possible. You can also email{' '}

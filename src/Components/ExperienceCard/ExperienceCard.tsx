@@ -10,7 +10,7 @@ const ExperienceCard: FC<Props> = ({ experience }) => {
   const dateRange = `${startDate} - ${endDate}`
 
   return (
-    <article className='bg-portfolio-card rounded-none p-8 h-full flex flex-col' aria-label={`${role} at ${company}`}>
+    <article className='portfolio-card-surface rounded-none p-8 h-full flex flex-col' aria-label={`${role} at ${company}`}>
       <div className='flex flex-col sm:flex-row gap-2 sm:gap-6 md:gap-10'>
         <div className='flex-shrink-0 sm:w-24 md:w-28'>
           <p className='text-portfolio-muted text-sm'>{dateRange}</p>
