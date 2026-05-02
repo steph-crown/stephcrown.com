@@ -23,6 +23,7 @@ const ICON_MAP: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>
   Kemi: Svgs.Kemi,
   Khaime: Svgs.Khaime,
   Nextbasket: Svgs.Nextbasket,
+  OpenNG: Svgs.OpenNG,
   Seabaas: Svgs.Seabaas,
   Stephen: Svgs.Stephen,
   SyncSkills: Svgs.SyncSkills,

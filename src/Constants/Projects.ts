@@ -20,6 +20,13 @@ const PROJECTS: ProjectType[] = [
     icon: 'ActiveHive',
   },
   {
+    title: 'OpenNG (In Progress)',
+    url: 'https://github.com/steph-crown/ngdata',
+    shortDescription: 'Open API and no-code Data Explorer for Nigerian public data—browse, filter, and export datasets.',
+    technologies: 'TanStack Start, TypeScript, Vite, Drizzle ORM, PostgreSQL, TanStack Router',
+    icon: 'OpenNG',
+  },
+  {
     title: 'Flowmono Automate',
     url: 'https://www.flowmono.com/products/flowmono-automate',
     shortDescription:
