@@ -23,7 +23,7 @@ const PROJECTS: ProjectType[] = [
     title: 'OpenNG (In Progress)',
     url: 'https://github.com/steph-crown/ngdata',
     shortDescription: 'Open API and no-code Data Explorer for Nigerian public data—browse, filter, and export datasets.',
-    technologies: 'TanStack Start, TypeScript, Vite, Drizzle ORM, PostgreSQL, TanStack Router',
+    technologies: 'Hono, TanStack Start, TypeScript, Vite, Drizzle ORM, PostgreSQL, Redis, TanStack Router',
     icon: 'OpenNG',
   },
   {

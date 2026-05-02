@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect, useState } from 'react'
 import { ExternalLink } from 'lucide-react'
 import { ProjectType } from 'Types'
 import * as Svgs from 'Assets/Svgs'
@@ -31,14 +31,52 @@ const ICON_MAP: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>
 
 const MAX_TECH_TAGS = 4
 
+type TechLineProps = {
+  displayText: string
+  fullText: string
+}
+
+const ProjectTechLine: FC<TechLineProps> = ({ displayText, fullText }) => {
+  const [preferNativeTitle, setPreferNativeTitle] = useState(false)
+
+  useEffect(() => {
+    const mq = globalThis.matchMedia('(hover: none)')
+    const apply = () => setPreferNativeTitle(mq.matches)
+    apply()
+    mq.addEventListener('change', apply)
+    return () => mq.removeEventListener('change', apply)
+  }, [])
+
+  return (
+    <div className='relative z-10 mt-16 -mx-1 px-1 group/tech'>
+      <p
+        title={preferNativeTitle ? fullText : undefined}
+        className='text-[#BEBEBE] text-xs uppercase whitespace-nowrap overflow-hidden text-ellipsis tracking-wide cursor-help'
+        aria-label={`Technologies: ${fullText}`}
+      >
+        {displayText}
+      </p>
+      <div
+        aria-hidden
+        className='pointer-events-none absolute bottom-full left-0 z-50 mb-2 w-max max-w-[min(calc(100vw-2rem),22rem)] translate-y-1 opacity-0 transition-[opacity,transform] duration-150 ease-out [@media(hover:hover)]:group-hover/tech:translate-y-0 [@media(hover:hover)]:group-hover/tech:opacity-100'
+      >
+        <div className='border border-portfolio-muted/25 bg-portfolio-card px-3 py-2.5 shadow-[0_12px_32px_-8px_rgba(0,0,0,0.65)]'>
+          <p className='text-left text-xs font-normal normal-case leading-relaxed tracking-normal text-[#BEBEBE]'>{fullText}</p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 const ProjectGridCard: FC<Props> = ({ project }) => {
   const IconComponent = project.icon ? ICON_MAP[project.icon] : null
-  const techTags = project.technologies
+  const allTechTags = project.technologies
     .split(',')
     .map((t) => t.trim())
     .filter(Boolean)
-    .slice(0, MAX_TECH_TAGS)
-  const techString = techTags.join(' • ')
+  const displayTechTags = allTechTags.slice(0, MAX_TECH_TAGS)
+  const techStringDisplay = displayTechTags.join(' • ')
+  const fullTechnologiesText = allTechTags.join(', ')
 
   const cardBody = (
     <>
@@ -62,9 +100,7 @@ const ProjectGridCard: FC<Props> = ({ project }) => {
 
       <p className='text-portfolio-muted text-sm leading-[142%] line-clamp-3 flex-1'>{project.shortDescription}</p>
 
-      {techString && (
-        <p className='text-[#BEBEBE] text-xs mt-16 uppercase whitespace-nowrap overflow-hidden text-ellipsis tracking-wide'>{techString}</p>
-      )}
+      {techStringDisplay && fullTechnologiesText ? <ProjectTechLine displayText={techStringDisplay} fullText={fullTechnologiesText} /> : null}
     </>
   )
 
