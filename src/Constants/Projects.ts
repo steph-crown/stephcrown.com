@@ -47,14 +47,14 @@ const PROJECTS: ProjectType[] = [
     url: 'https://checkref.co/',
     shortDescription:
       'Reference management for HR: handle reference requests and track responses through hiring. Mobile-first design and secure document workflows.',
-    technologies: 'Next.js, TypeScript, TailwindCSS',
+    technologies: 'Next.js, TypeScript, TailwindCSS, Chakra UI, Node.js, PostgreSQL, Redis',
     icon: 'Checkref',
   },
   {
     title: 'ase',
     url: 'https://ase.stephcrown.com',
     shortDescription: 'Small Unix-style interactive shell in Rust. Builtins, pipelines, history, tab completion, and redirection.',
-    technologies: 'Rust, rustyline, shlex, pathsearch, React, TypeScript, Vite, TailwindCSS',
+    technologies: 'Rust, rustyline, shlex, pathsearch, glon, libc, strum, React, TypeScript, Vite, TailwindCSS, Homebrew, cargo-dist',
     icon: 'Ase',
   },
   {
@@ -62,14 +62,14 @@ const PROJECTS: ProjectType[] = [
     url: 'https://fintrack.stephcrown.com',
     shortDescription:
       'A local-first CLI financial tracker in Rust. Track income and expenses on your machine with zero cloud—binaries for Mac, Linux, and Windows.',
-    technologies: 'Rust, clap, cargo-dist, serde, chrono, colored',
+    technologies: 'Rust, clap, serde, chrono, colored, cargo-dist, Homebrew',
     icon: 'Fintrack',
   },
   {
     title: 'filesearch',
     url: 'https://github.com/steph-crown/filesearch',
     shortDescription: 'CLI tool for Rust practice. Searches files by pattern in a directory with wildcards and recursive search. Built with clap.',
-    technologies: 'Rust, clap, globset',
+    technologies: 'Rust, clap, globset, cargo-dist, Homebrew',
     icon: 'Filesearch',
   },
 
@@ -94,7 +94,7 @@ const PROJECTS: ProjectType[] = [
     url: 'https://khaime.com/',
     shortDescription:
       'AI website builder from business type and prompts. Intelligent editor with real-time collaboration, drag-and-drop, and OpenAI/Claude design suggestions.',
-    technologies: 'React, TypeScript, OpenAI API',
+    technologies: 'React, TypeScript, TanStack Query, Zustand, OpenAI API',
     icon: 'Khaime',
   },
   {
@@ -111,7 +111,7 @@ const PROJECTS: ProjectType[] = [
     url: 'https://hillemissaries.com/',
     shortDescription:
       'Faith-based platform for scholarships, event galleries, and outreach. Admin dashboard for programs, media, and feedback with dynamic CMS.',
-    technologies: 'React, RTK, Phoenix, PostgreSQL',
+    technologies: 'React, RTK, Elixir, Phoenix, PostgreSQL',
     icon: 'HillEmissaries',
   },
   {
