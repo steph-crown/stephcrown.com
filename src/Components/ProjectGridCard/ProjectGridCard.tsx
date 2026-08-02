@@ -14,6 +14,7 @@ const ICON_MAP: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>
   Ase: Svgs.Ase,
   Checkref: Svgs.Checkref,
   CodeSesh: Svgs.CodeSesh,
+  ClackRace: Svgs.ClackRace,
   Fintrack: Svgs.Fintrack,
   Filesearch: Svgs.Filesearch,
   FlowmonoAutomate: Svgs.FlowmonoAutomate,

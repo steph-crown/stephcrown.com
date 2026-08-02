@@ -4,6 +4,14 @@ import { ProjectType } from 'Types'
 
 const PROJECTS: ProjectType[] = [
   {
+    title: 'ClackRace',
+    url: 'https://clackrace.com',
+    shortDescription:
+      'Real-time multiplayer typing race: type a passage and race animated cars on a track. Matchmaking, friend challenges, streaks, and leaderboards—no account required to play.',
+    technologies: 'Next.js, TypeScript, TailwindCSS, Fastify, Socket.IO, PostgreSQL, Redis, Drizzle ORM, GSAP, Motion',
+    icon: 'ClackRace',
+  },
+  {
     title: 'CodeSesh',
     url: 'https://codesesh.xyz',
     shortDescription:
